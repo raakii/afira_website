@@ -103,12 +103,12 @@ export default function Services(){
             </div>
         </section>
         <div className="container-fluid px-0">
-            <div className="py-5 position-relative" style={{backgroundImage:"url('/images/about-us.png')", backgroundPosition:'center'}}>
+            <div className="py-5 position-relative" style={{backgroundImage:"url('/images/busi04.jpg')", backgroundPosition:'center'}}>
                 <div className="bg-overlay bg-gradient-overlay"></div>
                 <div className="container my-5">
                     <div className="row align-items-center">
                         <div className="col-lg-8 col-md-7">
-                            <h4 className="display-6 h4 mb-0 text-white title-dark fw-medium">Make your website unforgettable <br/> Join the Starty community.</h4>
+                            <h4 className="display-6 h4 mb-0 text-white title-dark fw-medium">Catalyst for Growth<br/> Join the Afira community.</h4>
                         </div>
 
                         <div className="col-lg-4 col-md-5 text-md-end mt-4 mt-sm-0">

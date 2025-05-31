@@ -14,8 +14,8 @@ export default function Home() {
   const aboutData = [
     {
         icon: (props: React.HTMLAttributes<HTMLElement>) => <i className="bi bi-credit-card" {...props}></i>,
-        title:'Nanocrédit – Le coup de pouce pour démarrer',
-        desc:'Un petit montant, un grand potentiel.\nLe Nanocrédit d’Afira est conçu pour celles et ceux qui ont une idée, un besoin urgent ou un projet à lancer — mais qui ne trouvent pas de solution dans les circuits financiers traditionnels.'
+        title:'Why it matters ?',
+        desc:'Bridging the Digital Divide. \nWhile urban centers surge ahead with 5G, apps, and AI, rural communities remain digitally invisible — locked out by high costs, low digital literacy, and a lack of relevant services. \nThis is not just a network issue. It\’s a human issue.'
     }
 ]
   return(
@@ -46,22 +46,22 @@ export default function Home() {
                                     <p className="text-muted mt-2 mb-0">{item.desc}</p>
                                     <ul>    
                                         <li>
-                                            Montants accessibles dès 5 000 FCFA
+                                            Mobile connectivity drives digital transformation in Sub-Saharan Africa.
                                         </li>
                                         <li>
-                                            Remboursements flexibles, adaptés à votre rythme
-                                        </li>
-                                        <li>
-                                            Accessible en quelques clics, sans paperasse inutile
+                                            Inclusion means affordable devices, local content, and digital literacy.
                                         </li>
                                     </ul>
-                                    <p className="text-muted mt-2 mb-0">Parce qu’un petit crédit peut changer toute une vie.
-
-</p>
+                                    
+                                       
                                 </div>
                             </div>
                             )
                         })}
+                        <div className="card features feature-primary">
+                            <Link href="/page-single-service" className="h5 title text-dark">We are changing that</Link>
+                            <p className="text-muted mt-2 mb-0">Our platform supports inclusive, affordable, and locally relevant mobile solutions to accelerate digital transformation across Sub-Saharan Africa.</p>
+                       </div> 
                     </div>
                 </div>
             </div>

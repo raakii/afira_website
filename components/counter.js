@@ -8,23 +8,23 @@ export default function Counter(){
     const counterData = [
         {
             start:'0',
-            end:'5458',
-            title:'Investment Projects'
+            end:'1',
+            title:'Milliard de Comptes Momo'
         },
         {
             start:'0',
-            end:'15',
-            title:'Years of Experience'
+            end:'170',
+            title:'milliards de dollars d’ici 2030'
         },
         {
             start:'0',
-            end:'54',
-            title:'Offices in the World'
+            end:'4',
+            title:'Millions d’emplois générés'
         },
         {
             start:'0',
-            end:'214',
-            title:'Successful Cases'
+            end:'25',
+            title:' % Afrique subsaharienne Internet mobile'
         },
     ]
 

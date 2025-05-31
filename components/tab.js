@@ -16,14 +16,14 @@ export default function Tab(){
         {
             id:2,
             image:'/images/about-us2.png',
-            tag:'Finance',
+            tag:'Technologie',
             title:'How to Get a Successful Ad for Your Business',
             desc:"The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century."
         },
         {
             id:3,
             image:'/images/about-us2.png',
-            tag:'Finance',
+            tag:'Education',
             title:'How to Get a Successful Ad for Your Business',
             desc:"The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century."
         },
@@ -37,7 +37,7 @@ export default function Tab(){
                     <li className="nav-item">
                         <Link className={`${activeIndex === 1 ? 'active' : ''} nav-link rounded shadow`} href="#" scroll={false} onClick={() => setActiveIndex(1)}>
                             <div className="text-start p-4">
-                                <h5>Developing strategy</h5>
+                                <h5>Inclusion financière ciblée</h5>
                                 <p className="mb-0 text-muted tab-para mt-3">It is advantageous when the dummy text is realistic</p>
                             </div>
                         </Link>
@@ -46,7 +46,7 @@ export default function Tab(){
                     <li className="nav-item mt-4 pt-2">
                         <Link className={`${activeIndex === 2 ? 'active' : ''} nav-link rounded shadow`} href="#" scroll={false} onClick={() => setActiveIndex(2)}>
                             <div className="text-start p-4">
-                                <h5>Blazing performance</h5>
+                                <h5>Technologie mobile accessible</h5>
                                 <p className="mb-0 text-muted tab-para mt-3">It is advantageous when the dummy text is realistic</p>
                             </div>
                         </Link>
@@ -55,7 +55,7 @@ export default function Tab(){
                     <li className="nav-item mt-4 pt-2">
                         <Link className={`${activeIndex === 3 ? 'active' : ''} nav-link rounded shadow`} href="#" scroll={false} onClick={() => setActiveIndex(3)}>
                             <div className="text-start p-4">
-                                <h5>Customer satisfaction</h5>
+                                <h5>Éducation économique intégrée</h5>
                                 <p className="mb-0 text-muted tab-para mt-3">It is advantageous when the dummy text is realistic</p>
                             </div>
                         </Link>
