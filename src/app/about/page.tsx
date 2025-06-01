@@ -4,12 +4,10 @@ import Image from "next/image";
 
 import NavbarTwo from "../../../components/navbarTwo";
 import ClientTwo from "../../../components/ClientTwo";
-import Partners from "../../../components/partners";
 
 import Counter from "../../../components/counter";
 import FooterFour from "../../../components/FooterFour";
 import ScrollTop from "../../../components/ScrollTop";
-import aboutus1 from "../../../public/images/about-us.png";
 import aboutus2 from "../../../public/images/about-us2.png";
 
 export default function PageAboutUs(){
