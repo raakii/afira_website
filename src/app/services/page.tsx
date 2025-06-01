@@ -10,33 +10,30 @@ import FooterFour from "../../../components/FooterFour";
 import ScrollTop from "../../../components/ScrollTop";
 import Tab from "../../../components/tab";
 
-import {FiLayers, FiShoppingCart,FiAward,FiThumbsUp} from "../../../public/assets/icons/vander"
-import {HiOutlineChip} from "react-icons/hi"
-
 export default function Services(){
 
     const aboutData =[
         {
             id:1,
-            icon :FiLayers,
+            icon : "",
             title:'1. Enregistrement & Onboarding',
             desc:'🎯 Créez votre compte et découvrez nos services\nRemplissez votre profil en quelques étapes simples. Accédez à une initiation interactive à la gestion financière et aux fonctionnalités de la plateforme' 
         },
         {
             id:2,
-            icon :FiLayers,
+            icon :"",
             title:'2. Demande de Crédit',
             desc:'💸 Un microcrédit qui s’adapte à vous\nChoisissez le montant dont vous avez besoin, répondez à quelques questions, et recevez une réponse rapide grâce à notre système d’évaluation alternatif.' 
         },
         {
             id:3,
-            icon :FiShoppingCart,
+            icon :"",
             title:'3. Remboursement Flexible',
             desc:'📅 Gérez vos échéances à votre rythme\nSuivez votre échéancier, recevez des rappels et ajustez votre remboursement selon votre situation. Vous gardez le contrôle.' 
         },
         {
             id:4,
-            icon :FiShoppingCart,
+            icon :"",
             title:'4. Suivi & Support Client',
             desc:'🤝 Vous n’êtes jamais seul·e\nAccédez à nos mini-vidéos d’éducation financière, posez vos questions via chat ou appel, et bénéficiez d’un accompagnement humain et bienveillant.' 
         }

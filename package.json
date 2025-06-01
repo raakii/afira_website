@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next install next build",
+    "build": "next build",
     "build:static": "node scripts/build-static.js",
     "start": "next start",
     "serve:static": "cd out && python -m http.server 3000",

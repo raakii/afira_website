@@ -9,7 +9,6 @@ import Partners from "../../../components/partners";
 import Counter from "../../../components/counter";
 import FooterFour from "../../../components/FooterFour";
 import ScrollTop from "../../../components/ScrollTop";
-import { FiArrowRight, FiAirplay, LiaReact, FiUsers} from '../../../public/assets/icons/vander'
 import aboutus1 from "../../../public/images/about-us.png";
 import aboutus2 from "../../../public/images/about-us2.png";
 
@@ -134,7 +133,7 @@ Nous nous appuyons sur ces constats pour concevoir une plateforme qui renforce l
 
                                 <Link href="/page-single-service" className="d-flex align-items-center justify-content-between">
                                     <span className="fw-medium text-dark">Read More</span>
-                                   <FiArrowRight/>
+                                  
                                 </Link>
                             </div>
                         </div>
