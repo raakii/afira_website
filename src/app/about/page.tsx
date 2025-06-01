@@ -2,12 +2,12 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import NavbarTwo from "../../../components/navbarTwo";
-import ClientTwo from "../../../components/ClientTwo";
+import NavbarTwo from "../../../components/navbarTwo.js";
+import ClientTwo from "../../../components/ClientTwo.js";
 
-import Counter from "../../../components/counter";
-import FooterFour from "../../../components/FooterFour";
-import ScrollTop from "../../../components/ScrollTop";
+import Counter from "../../../components/counter.js";
+import FooterFour from "../../../components/footerFour.js";
+import ScrollTop from "../../../components/scrollTop.js";
 import aboutus2 from "../../../public/images/about-us2.png";
 
 export default function PageAboutUs(){

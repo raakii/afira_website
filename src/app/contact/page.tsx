@@ -1,8 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import NavbarTwo from "../../../components/navbarTwo";
-import FooterSeven from "../../../components/footerSeven";
-import ScrollTop from "../../../components/ScrollTop";
+import NavbarTwo from "../../../components/navbarTwo.js";
+import FooterSeven from "../../../components/footerSeven.js";
+import ScrollTop from "../../../components/scrollTop.js";
 
 export default function Contact(){
     return(

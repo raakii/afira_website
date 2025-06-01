@@ -2,11 +2,11 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import NavbarTwo from "../../../components/navbarTwo";
-import ClientTwo from "../../../components/ClientTwo";
-import BlogOne from "../../../components/blogTwo";
-import FooterFour from "../../../components/FooterFour";
-import ScrollTop from "../../../components/ScrollTop";
+import NavbarTwo from "../../../components/navbarTwo.js";
+import ClientTwo from "../../../components/clientTwo.js";
+import BlogOne from "../../../components/blogTwo.js";
+import FooterFour from "../../../components/footerFour.js";
+import ScrollTop from "../../../components/scrollTop.js";
 import Tab from "../../../components/tab";
 
 export default function Services(){
