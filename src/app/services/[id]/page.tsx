@@ -4,7 +4,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import NavbarTwo from "../../../../components/navbarTwo";
-import {AiOutlineCheckCircle} from "../../../../public/assets/icons/vander"
 import FooterSeven from "../../../../components/footerSeven";
 import ScrollTop from "../../../../components/ScrollTop";
 // Import du VideoModalWrapper directement ici
@@ -117,9 +116,9 @@ export default async function SingleService({ params }: { params: { id: string }
                                 <h5 className="mt-4">Features: </h5>
 
                                 <ul className="list-unstyled text-muted mb-0">
-                                    <li className="mb-0"><span className="text-primary h5 me-2"><AiOutlineCheckCircle className="align-middle" /></span>Beautiful and easy to understand animations</li>
-                                    <li className="mb-0"><span className="text-primary h5 me-2"><AiOutlineCheckCircle className="align-middle" /></span>Our Talented & Experienced Marketing Agency</li>
-                                    <li className="mb-0"><span className="text-primary h5 me-2"><AiOutlineCheckCircle className="align-middle" /></span>Theme advantages are pixel perfect design</li>
+                                    <li className="mb-0"><span className="text-primary h5 me-2"></span>Beautiful and easy to understand animations</li>
+                                    <li className="mb-0"><span className="text-primary h5 me-2"></span>Our Talented & Experienced Marketing Agency</li>
+                                    <li className="mb-0"><span className="text-primary h5 me-2"></span>Theme advantages are pixel perfect design</li>
                                 </ul>
 
                                 <h5 className="mt-4">Ability: </h5>

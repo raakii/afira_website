@@ -9,7 +9,7 @@ import Partners from "../../../components/partners";
 import Counter from "../../../components/counter";
 import FooterFour from "../../../components/FooterFour";
 import ScrollTop from "../../../components/ScrollTop";
-import { AiOutlineCheckCircle, FiArrowRight, FiAirplay, LiaReact, FiUsers} from '../../../public/assets/icons/vander'
+import { FiArrowRight, FiAirplay, LiaReact, FiUsers} from '../../../public/assets/icons/vander'
 import aboutus1 from "../../../public/images/about-us.png";
 import aboutus2 from "../../../public/images/about-us2.png";
 
@@ -76,8 +76,8 @@ Notre mission est de démocratiser l’accès aux services financiers et à l’
 
 Nous combinons technologie mobile, microcrédit flexible et contenu éducatif accessible pour offrir à chacun·e les outils concrets vers l’autonomie financière.</p>
                             <ul className="list-unstyled text-muted mb-0">
-                                <li className="mb-0"><span className="text-dark h5 me-2"><AiOutlineCheckCircle className="align-middle"/></span>Notre vision : Un monde où chaque jeune femme, chaque étudiant, chaque travailleur informel peut accéder aux ressources nécessaires pour concrétiser ses idées, sortir de la précarité et devenir acteur de son avenir.</li>
-                                <li className="mb-0"><span className="text-dark h5 me-2"><AiOutlineCheckCircle className="align-middle"/></span> Our Mission :
+                                <li className="mb-0"><span className="text-dark h5 me-2"></span>Notre vision : Un monde où chaque jeune femme, chaque étudiant, chaque travailleur informel peut accéder aux ressources nécessaires pour concrétiser ses idées, sortir de la précarité et devenir acteur de son avenir.</li>
+                                <li className="mb-0"><span className="text-dark h5 me-2"></span> Our Mission :
                                     L'accès ne suffit pas.
 L'inclusion véritable signifie créer des solutions pour celles et ceux qui sont systématiquement oubliés :
 
@@ -99,7 +99,7 @@ Pertinents pour les besoins quotidiens.
 
 Ce n’est pas un problème de réseau.
 C’est un enjeu humain.</li>
-                                <li className="mb-0"><span className="text-dark h5 me-2"><AiOutlineCheckCircle className="align-middle"/></span>Pourquoi Afira :
+                                <li className="mb-0"><span className="text-dark h5 me-2"></span>Pourquoi Afira :
 La connectivité mobile est aujourd’hui un moteur essentiel de la transformation numérique et de la croissance socio-économique en Afrique subsaharienne.
 
 Selon le rapport GSMA Mobile Economy 2024 :

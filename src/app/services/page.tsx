@@ -10,7 +10,7 @@ import FooterFour from "../../../components/FooterFour";
 import ScrollTop from "../../../components/ScrollTop";
 import Tab from "../../../components/tab";
 
-import {FiLayers,LuLayout, FiShoppingCart,FiAward,FiThumbsUp} from "../../../public/assets/icons/vander"
+import {FiLayers, FiShoppingCart,FiAward,FiThumbsUp} from "../../../public/assets/icons/vander"
 import {HiOutlineChip} from "react-icons/hi"
 
 export default function Services(){
@@ -24,7 +24,7 @@ export default function Services(){
         },
         {
             id:2,
-            icon :LuLayout,
+            icon :FiLayers,
             title:'2. Demande de Crédit',
             desc:'💸 Un microcrédit qui s’adapte à vous\nChoisissez le montant dont vous avez besoin, répondez à quelques questions, et recevez une réponse rapide grâce à notre système d’évaluation alternatif.' 
         },
@@ -77,7 +77,7 @@ export default function Services(){
                         return(
                         <div className="col-lg-3 col-md-6 mt-4 pt-4" key={item.id}>
                             <div className="card border-0 p-4 text-center rounded features features-classic feature-primary">
-                                <Icon className="h1 mb-3 text-primary w-100"/>
+                                <Icon/>
                                 <div className="content">
                                     <Link href={`/services/${item.id}`} className="title text-dark h5">{item.title}</Link>
 

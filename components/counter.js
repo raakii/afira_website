@@ -24,7 +24,7 @@ export default function Counter(){
         {
             start:'0',
             end:'25',
-            title:' % Afrique subsaharienne Internet mobile'
+            title:' % utilisation Internet mobile'
         },
     ]
 
