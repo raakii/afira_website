@@ -1,11 +1,11 @@
 import Image from "next/image";
-import HeroSlider from "../../components/HeroSlider"; 
-import NavbarTwo from "../../components/navbarTwo";  
-import Cta from "../../components/Cta";
-import ClientTwo from "../../components/ClientTwo";
-import BlogTwo from "../../components/blogTwo";
-import FooterFour from "../../components/FooterFour";
-import ScrollTop from "../../components/ScrollTop";
+import HeroSlider from "../../components/heroSlider.js"; 
+import NavbarTwo from "../../components/navbarTwo.js";  
+import Cta from "../../components/cta.js";
+import ClientTwo from "../../components/clientTwo.js";
+import BlogTwo from "../../components/blogTwo.js";
+import FooterFour from "../../components/footerFour.js";
+import ScrollTop from "../../components/scrollTop.js";
 
 import Link from "next/link";
 

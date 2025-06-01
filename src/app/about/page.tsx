@@ -3,7 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 import NavbarTwo from "../../../components/navbarTwo.js";
-import ClientTwo from "../../../components/ClientTwo.js";
+import ClientTwo from "../../../components/clientTwo.js";
 
 import Counter from "../../../components/counter.js";
 import FooterFour from "../../../components/footerFour.js";
