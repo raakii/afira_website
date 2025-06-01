@@ -2,8 +2,6 @@
 import React,{useState} from "react";
 import Link from "next/link";
 
-import {FiArrowUp} from '../public/assets/icons/vander'
-
 export default function ScrollTop(){
     let [visible, setVisible] = useState(false) 
 
@@ -28,7 +26,7 @@ export default function ScrollTop(){
   
     return(
         <>
-        <Link href="#" id="back-to-top" className="back-to-top rounded-pill fs-5" onClick={scrollToTop} style={{display: visible ? 'block' : 'none'}}><FiArrowUp className="fea icon-sm align-middle"/></Link>
+        <Link href="#" id="back-to-top" className="back-to-top rounded-pill fs-5" onClick={scrollToTop} style={{display: visible ? 'block' : 'none'}}></Link>
         </>
     )
 }

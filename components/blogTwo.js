@@ -4,8 +4,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import {FiArrowRight} from "../public/assets/icons/vander"
-
 export default function BlogTwo(){
     return(
         <>
@@ -57,7 +55,7 @@ export default function BlogTwo(){
                     <div className="card-body content">
                         <Link href="/education" className="h5 title text-dark d-block mb-0">Building Your project with Afira</Link>
                         <p className="text-muted mt-2 mb-2">The most well-known dummy text is the Lorem Ipsum, in the 16th century.</p>
-                        <Link href="/education" className="link text-dark">Read More <FiArrowRight className="ms-1 align-middle"/></Link>
+                        <Link href="/education" className="link text-dark">Read More </Link>
                     </div>
                 </div>
             </div>
@@ -75,7 +73,7 @@ export default function BlogTwo(){
                     <div className="card-body content">
                         <Link href="/#" className="h5 title text-dark d-block mb-0">Stuck in a Financial Debt? Here’s an Easy Way Out</Link>
                         <p className="text-muted mt-2 mb-2">The most well-known dummy text is the Lorem Ipsum, in the 16th century.</p>
-                        <Link href="#" className="link text-dark">Read More <FiArrowRight className="ms-1 align-middle"/></Link>
+                        <Link href="#" className="link text-dark">Read More </Link>
                     </div>
                 </div>
             </div>

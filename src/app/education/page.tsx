@@ -7,8 +7,6 @@ import BlogSidebar from "../../../components/BlogSidebar";
 import FooterSeven from "../../../components/footerSeven";
 import ScrollTop from "../../../components/ScrollTop";
 
-import {FiArrowRight} from "../../../public/assets/icons/vander"
-
 export default function GridSidebar(){
 
     const blogData =[
@@ -141,7 +139,7 @@ export default function GridSidebar(){
                                             <div className="card-body content">
                                                 <Link href={`/education/${item.id}`} className="h5 title text-dark d-block mb-0">The Right Hand of Business IT World</Link>
                                                 <p className="text-muted mt-2 mb-2">The most well-known dummy text is the Lorem Ipsum, in the 16th century.</p>
-                                                <Link href={`/education/${item.id}`} className="link text-dark">Read More <FiArrowRight className="align-middle"/></Link>
+                                                <Link href={`/education/${item.id}`} className="link text-dark">Read More</Link>
                                             </div>
                                         </div>
                                     </div>

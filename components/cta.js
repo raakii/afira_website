@@ -4,8 +4,6 @@ import Link from "next/link";
 
 import { Parallax } from 'react-parallax';
 
-import ModalVideo from 'react-modal-video';
-
 
 export default function Cta(){
     let [isOpen, setOpen] = useState(false);

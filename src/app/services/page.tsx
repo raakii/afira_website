@@ -3,7 +3,6 @@ import Link from "next/link";
 import Image from "next/image";
 
 import NavbarTwo from "../../../components/navbarTwo";
-import Counter from "../../../components/counter";
 import ClientTwo from "../../../components/ClientTwo";
 import BlogOne from "../../../components/blogTwo";
 import FooterFour from "../../../components/FooterFour";
@@ -74,7 +73,7 @@ export default function Services(){
                         return(
                         <div className="col-lg-3 col-md-6 mt-4 pt-4" key={item.id}>
                             <div className="card border-0 p-4 text-center rounded features features-classic feature-primary">
-                                <Icon/>
+                                Icon
                                 <div className="content">
                                     <Link href={`/services/${item.id}`} className="title text-dark h5">{item.title}</Link>
 

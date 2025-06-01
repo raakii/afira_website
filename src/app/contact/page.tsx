@@ -1,7 +1,6 @@
 import React from "react";
 import Link from "next/link";
 import NavbarTwo from "../../../components/navbarTwo";
-import {FiPhone, FiMail,FiMapPin} from '../../../public/assets/icons/vander'
 import FooterSeven from "../../../components/footerSeven";
 import ScrollTop from "../../../components/ScrollTop";
 
@@ -38,7 +37,6 @@ export default function Contact(){
                     <div className="col-md-4">
                         <div className="card border-0 text-center features feature-clean bg-transparent">
                             <div className="icons text-primary text-center mx-auto">
-                                <FiPhone className="d-block rounded h3 mb-0"/>
                             </div>
                             <div className="content mt-3">
                                 <h5 className="footer-head">Phone</h5>
@@ -51,7 +49,6 @@ export default function Contact(){
                     <div className="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <div className="card border-0 text-center features feature-clean bg-transparent">
                             <div className="icons text-primary text-center mx-auto">
-                               <FiMail className="d-block rounded h3 mb-0"/>
                             </div>
                             <div className="content mt-3">
                                 <h5 className="footer-head">Email</h5>
@@ -64,7 +61,6 @@ export default function Contact(){
                     <div className="col-md-4 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <div className="card border-0 text-center features feature-clean bg-transparent">
                             <div className="icons text-primary text-center mx-auto">
-                                <FiMapPin className="d-block rounded h3 mb-0"/>
                             </div>
                             <div className="content mt-3">
                                 <h5 className="footer-head">Location</h5>

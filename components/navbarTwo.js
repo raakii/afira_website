@@ -4,9 +4,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from 'next/navigation'
 
-import {LuSearch, BiBriefcaseAlt2,HiOutlinePresentationChartLine,AiOutlinePieChart,SiSimpleanalytics, BsPhone,FiAirplay,CgClapperBoard,ImLoop2,GiStamper,TbCoinBitcoin,RiCupLine,FiUser,ImImage,PiBracketsCurly,FiThumbsUp,TfiLayoutListThumb,AiOutlineShopping,LuBookMinus} from "../public/assets/icons/vander"
-
-
 export default function NavbarTwo({navClass,manuClass,navDark}){
     let [scroll, setScroll] = useState(false);
     let [isMenu, setisMenu] = useState(false);
