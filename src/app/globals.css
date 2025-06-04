@@ -40,3 +40,65 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Swiper Custom Styles */
+.testimonial-slider {
+    padding: 0px 20px;
+    position: relative;
+    padding-bottom: 100px;
+    margin-bottom: 30px;
+}
+
+.testimonial-slider .swiper-button-next,
+.testimonial-slider .swiper-button-prev {
+    color: #3c4858;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.testimonial-slider .swiper-button-next {
+    right: 0;
+}
+
+.testimonial-slider .swiper-button-prev {
+    left: 0;
+}
+
+.testimonial-slider .swiper-button-next:after,
+.testimonial-slider .swiper-button-prev:after {
+    font-size: 18px;
+}
+
+.testimonial-slider .swiper-pagination {
+    bottom: 20px !important;
+}
+
+.testimonial-slider .swiper-pagination-bullet {
+    background: #3c4858;
+    margin: 0 5px;
+}
+
+.testimonial-slider .swiper-pagination-bullet-active {
+    background: #2f55d4;
+}
+
+.testimonial-slider .swiper-slide {
+    opacity: 0.4;
+    transition: all 0.3s ease;
+}
+
+.testimonial-slider .swiper-slide-active {
+    opacity: 1;
+}
+
+/* Add margin to the card content */
+.testimonial-slider .card {
+    margin-bottom: 40px;
+}
+
+.testimonial-slider .card-body {
+    padding-bottom: 30px;
+}

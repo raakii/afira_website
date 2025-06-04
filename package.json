@@ -20,6 +20,7 @@
     "react-dom": "^19.0.0",
     "react-parallax": "^3.5.2",
     "react-responsive-carousel": "^3.2.23",
+    "swiper": "^11.2.8",
     "tiny-slider": "^2.9.4",
     "tiny-slider-react": "^0.5.7"
   },

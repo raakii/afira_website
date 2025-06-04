@@ -3,13 +3,17 @@ import React,{useState,useEffect} from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from 'next/navigation'
+import { useLanguage } from '../context/LanguageContext';
+import enTranslations from '../translations/en.json';
+import frTranslations from '../translations/fr.json';
 
 export default function NavbarTwo({navClass,manuClass,navDark}){
     let [scroll, setScroll] = useState(false);
     let [isMenu, setisMenu] = useState(false);
-
     let [manu , setManu] = useState('');
     let pathname = usePathname();
+    const { language, setLanguage } = useLanguage();
+    const translations = language === 'en' ? enTranslations : frTranslations;
 
     useEffect(() => {
         setManu(pathname)
@@ -23,28 +27,25 @@ export default function NavbarTwo({navClass,manuClass,navDark}){
           return () => {
             window.removeEventListener('scroll', scrollHandler);
         };
-      }, [setManu]);
+      }, [pathname]);
 
-     
-        // Toggle menu
-        const toggleMenu = () => {
-            setisMenu(!isMenu);
-            if (document.getElementById("navigation")) {
-                const anchorArray = Array.from(document.getElementById("navigation").getElementsByTagName("a"));
-                anchorArray.forEach(element => {
-                    element.addEventListener('click', (elem) => {
-                        const target = elem.target.getAttribute("href")
-                        if (target !== "") {
-                            if (elem.target.nextElementSibling) {
-                                var submenu = elem.target.nextElementSibling.nextElementSibling;
-                                submenu.classList.toggle('open');
-                            }
+    const toggleMenu = () => {
+        setisMenu(!isMenu);
+        if (document.getElementById("navigation")) {
+            const anchorArray = Array.from(document.getElementById("navigation").getElementsByTagName("a"));
+            anchorArray.forEach(element => {
+                element.addEventListener('click', (elem) => {
+                    const target = elem.target.getAttribute("href")
+                    if (target !== "") {
+                        if (elem.target.nextElementSibling) {
+                            var submenu = elem.target.nextElementSibling.nextElementSibling;
+                            submenu.classList.toggle('open');
                         }
-                    })
-                });
-            }
-        };
-
+                    }
+                })
+            });
+        }
+    };
 
     return(
         <>
@@ -75,38 +76,33 @@ export default function NavbarTwo({navClass,manuClass,navDark}){
                     </div>
                 </div>
 
-                
                 <div id="navigation" style={{ display: isMenu ? 'block' : 'none' }}>
                     <ul className={manuClass}>
                         <li className="/index-business">
-                            <Link href="/about">A propos</Link><span className="menu-arrow"></span>
+                            <Link href="/about">{translations.nav.about}</Link><span className="menu-arrow"></span>
                         </li>
 
                         <li className={` has-submenu parent-menu-item`}>
-                            <Link href="/services">Services</Link><span className="menu-arrow"></span>
-                            {/* <ul className="submenu">
-                                <li className={`${["/blog-grid","/blog-masonry", "/blog-list","/blog-grid-sidebar","/blog-masonry-sidebar","/blog-list-sidebar"].includes(manu)? "active" : ""} has-submenu parent-menu-item`}><Link href="#">Service 1</Link>
-                                    
-                                </li>
-                                <li className={`${["/blog-image-grid","/blog-image-masonry", "/blog-image-grid-sidebar","/blog-image-masonry-sidebar"].includes(manu)? "active" : ""} has-submenu parent-menu-item`}><Link href="#">Service 2</Link>
-                                
-                                </li>
-                                <li className={`${["/blog-detail-one","/blog-detail-two", "/blog-detail-three","/blog-detail-four","/blog-detail-five"].includes(manu)? "active" : ""} has-submenu parent-menu-item`}><Link href="#">Service 3</Link>
-                                    
-                                </li>
-                            </ul> */}
+                            <Link href="/services">{translations.nav.services}</Link><span className="menu-arrow"></span>
                         </li>
         
                         <li className="/page-services">
-                            <Link href="/education">education Financière</Link><span className="menu-arrow"></span>
-                            {/* <ul className="submenu">
-                                <li className={`${["/page-services","/page-services-two", "/page-single-service"].includes(manu)? "active" : ""} has-submenu parent-menu-item`}><Link href="/asademy">Mini academy</Link><span className="submenu-arrow"></span> </li>
-                            </ul> */}
+                            <Link href="/education">{translations.nav.education}</Link><span className="menu-arrow"></span>
                         </li>
 
+                        <li className={manu === "/page-contact" || "" ? "active" : ""}>
+                            <Link href="/contact" className="sub-menu-item">{translations.nav.contact}</Link>
+                        </li>
 
-
-                        <li className={manu === "/page-contact" || "" ? "active" : ""}><Link href="/contact" className="sub-menu-item">Contact us</Link></li>
+                        <li>
+                            <button 
+                                onClick={() => setLanguage(language === 'en' ? 'fr' : 'en')}
+                                className="btn btn-primary"
+                                style={{ marginLeft: '10px', marginTop: '15px' }}
+                            >
+                                {language === 'en' ? 'FR' : 'EN'}
+                            </button>
+                        </li>
                     </ul>
                 </div>
             </div>

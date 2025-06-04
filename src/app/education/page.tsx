@@ -2,10 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 
-import NavbarTwo from "../../../components/navbarTwo.js";
-import BlogSidebar from "../../../components/blogSidebar.js";
-import FooterSeven from "../../../components/footerSeven.js";
-import ScrollTop from "../../../components/scrollTop.js";
+import NavbarTwo from "../../components/navbarTwo.js";
+import BlogSidebar from "../../components/blogSidebar.js";
+import FooterSeven from "../../components/footerSeven.js";
+import ScrollTop from "../../components/scrollTop.js";
 
 export default function GridSidebar(){
 

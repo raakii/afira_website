@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "home": {
+    "whyItMatters": "Why it matters?",
+    "bridgingDigitalDivide": "Bridging the Digital Divide",
+    "digitalDivideDesc": "While urban centers surge ahead with 5G, apps, and AI, rural communities remain digitally invisible — locked out by high costs, low digital literacy, and a lack of relevant services. This is not just a network issue. It's a human issue.",
+    "mobileConnectivity": "Mobile connectivity drives digital transformation in Sub-Saharan Africa.",
+    "inclusion": "Inclusion means affordable devices, local content, and digital literacy.",
+    "weAreChanging": "We are changing that",
+    "changingDesc": "Our platform supports inclusive, affordable, and locally relevant mobile solutions to accelerate digital transformation across Sub-Saharan Africa."
+  },
+  "cta": {
+    "mainText": "Afira is by your side to help you achieve your projects."
+  },
+  "hero": {
+    "slide1": {
+      "title": "Money to start a business, everywhere, for everyone",
+      "description": "Afira supports women, youth, and informal workers through inclusive microfinance and accessible financial education. We help build a self-reliant, responsible generation ready to transform their reality — one story at a time.",
+      "button": "View Our Services"
+    },
+    "slide2": {
+      "title": "The first 100% digital nanocredit platform in West Africa",
+      "description": "A simple solution for accessing financing with just one click!",
+      "button": "View Our Services"
+    },
+    "slide3": {
+      "title": "Small credit. Big impact. Zero paper",
+      "description": "Every project is a story. Afira helps you write it.",
+      "button": "Get Started"
+    }
+  },
+  "blog": {
+    "title": "Blogs",
+    "subtitle": "Latest Blog and News",
+    "description": "Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!",
+    "posts": {
+      "post1": {
+        "category": "Finance",
+        "title": "How to Get a Successful Ad for Your Business",
+        "author": "Calvin Carlo",
+        "date": "13th April 2021"
+      },
+      "post2": {
+        "category": "Corporate",
+        "title": "Building Your project with Afira",
+        "description": "The most well-known dummy text is the Lorem Ipsum, in the 16th century.",
+        "readMore": "Read More"
+      },
+      "post3": {
+        "category": "Business",
+        "title": "Stuck in a Financial Debt? Here's an Easy Way Out",
+        "description": "The most well-known dummy text is the Lorem Ipsum, in the 16th century.",
+        "readMore": "Read More"
+      }
+    }
+  },
+  "about": {
+    "title": "We support you in achieving your projects!",
+    "intro": "At Afira, we believe that financial inclusion is a powerful lever for transforming lives and building a sustainable future. Our mission is to democratize access to financial services and economic education, especially for those often left behind by traditional systems: young women, students, informal workers, and aspiring entrepreneurs. We combine mobile technology, flexible microcredit, and accessible educational content to provide everyone with concrete tools for financial autonomy.",
+    "vision": {
+      "title": "Our Vision",
+      "description": "A world where every young woman, every student, every informal worker can access the resources needed to realize their ideas, escape precariousness, and become an actor in their future."
+    },
+    "mission": {
+      "title": "Our Mission",
+      "description": "Access is not enough. True inclusion means creating solutions for those who are systematically forgotten: rural users, women, low-income communities. We develop inclusive digital services that are: Affordable, Easy to use, even with low digital literacy, Available in local languages, Relevant to daily needs. This is not a network issue. It's a human issue."
+    },
+    "whyAfira": {
+      "title": "Why Afira",
+      "description": "Mobile connectivity is now an essential driver of digital transformation and socio-economic growth in Sub-Saharan Africa. According to the GSMA Mobile Economy 2024 report: 'Mobile technology contributes to SDG 4, which aims to ensure inclusive and equitable quality education and promote lifelong learning opportunities.' 'Digital transformation makes educational resources more accessible, improves learning outcomes, and supports continuous learning.' We build on these findings to design a platform that strengthens community capabilities and generates lasting impact."
+    },
+    "header": {
+      "subtitle": "Who are we?",
+      "title": "Growth Catalyst"
+    },
+    "breadcrumb": {
+      "home": "Afira",
+      "current": "About Us"
+    },
+    "impact": {
+      "title": "Our Impact",
+      "readMore": "Read More"
+    },
+    "sdgs": {
+      "sdg4": {
+        "title": "📚 SDG 4 – Quality Education",
+        "description": "Ensure access to financial education for all, inclusive and quality, and promote learning opportunities."
+      },
+      "sdg5": {
+        "title": "👩🏽‍🤝‍👨🏾 SDG 5 – Gender Equality",
+        "description": "Empower women and girls with a particular focus on the economic empowerment of young women."
+      },
+      "sdg8": {
+        "title": "💼 SDG 8 – Decent Work and Economic Growth",
+        "description": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all."
+      },
+      "sdg10": {
+        "title": "🏘️ SDG 10 – Reduced Inequalities",
+        "description": "Reduce inequalities and barriers to financial services for excluded populations."
+      }
+    }
+  }
+} 

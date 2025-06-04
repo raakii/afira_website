@@ -1,33 +1,40 @@
+'use client'
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useLanguage } from '../../context/LanguageContext';
+import enTranslations from '../../translations/en.json';
+import frTranslations from '../../translations/fr.json';
 
-import NavbarTwo from "../../../components/navbarTwo.js";
-import ClientTwo from "../../../components/clientTwo.js";
+import NavbarTwo from "../../components/navbarTwo.js";
+import ClientTwo from "../../components/clientTwo.js";
 
-import Counter from "../../../components/counter.js";
-import FooterFour from "../../../components/footerFour.js";
-import ScrollTop from "../../../components/scrollTop.js";
+import Counter from "../../components/counter.js";
+import FooterFour from "../../components/footerFour.js";
+import ScrollTop from "../../components/scrollTop.js";
 import aboutus2 from "../../../public/images/about-us2.png";
 
 export default function PageAboutUs(){
+    const { language } = useLanguage();
+    const translations = language === 'en' ? enTranslations : frTranslations;
 
     const aboutData = [
         {
-            title:'📚 ODD 4 – Éducation de qualité',
-            desc:'Assurer l\'accès de tous à une éducation financière, inclusive et de qualité, et promouvoir des opportunités d\'apprentissage.'
+            title: translations.about.sdgs.sdg4.title,
+            desc: translations.about.sdgs.sdg4.description
         },
         {
-            title:'👩🏽‍🤝‍👨🏾 ODD 5 – Égalité entre les sexes',
-            desc:'Autonomiserles femmes et les filles en mettant un accent particulier sur l’autonomisation économique des jeunes femmes.'
-        },
-         {
-            title:'💼 ODD 8 – Travail décent et croissance économique',
-            desc:'Promouvoir une croissance économique soutenue, inclusive et durable, le plein emploi productif et un travail décent pour tous.'
+            title: translations.about.sdgs.sdg5.title,
+            desc: translations.about.sdgs.sdg5.description
         },
         {
-            title:'🏘️ ODD 10 – Réduction des inégalités',
-            desc:'Réduire les inégalités et les barrières d’accès aux services financiers pour les populations exclues.'
+            title: translations.about.sdgs.sdg8.title,
+            desc: translations.about.sdgs.sdg8.description
+        },
+        {
+            title: translations.about.sdgs.sdg10.title,
+            desc: translations.about.sdgs.sdg10.description
         }
     ]
 
@@ -41,8 +48,8 @@ export default function PageAboutUs(){
                 <div className="row mt-5 justify-content-center">
                     <div className="col-12">
                         <div className="title-heading text-center">
-                            <small className="text-white-50 mb-1 fw-medium text-uppercase mx-auto">Qui sommes nous?</small>
-                            <h5 className="heading fw-semibold mb-0 page-heading text-white title-dark">Catalyseur de croissance</h5>
+                            <small className="text-white-50 mb-1 fw-medium text-uppercase mx-auto">{translations.about.header.subtitle}</small>
+                            <h5 className="heading fw-semibold mb-0 page-heading text-white title-dark">{translations.about.header.title}</h5>
                         </div>
                     </div>
                 </div>
@@ -50,8 +57,8 @@ export default function PageAboutUs(){
                 <div className="position-middle-bottom">
                     <nav aria-label="breadcrumb" className="d-block">
                         <ul className="breadcrumb breadcrumb-muted mb-0 p-0">
-                            <li className="breadcrumb-item"><Link href="/">Afira</Link></li>
-                            <li className="breadcrumb-item active" aria-current="page">About Us</li>
+                            <li className="breadcrumb-item"><Link href="/">{translations.about.breadcrumb.home}</Link></li>
+                            <li className="breadcrumb-item active" aria-current="page">{translations.about.breadcrumb.current}</li>
                         </ul>
                     </nav>
                 </div>
@@ -67,45 +74,20 @@ export default function PageAboutUs(){
 
                     <div className="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
                         <div className="section-title ms-lg-5">
-                            <h4 className="title mb-3">Nous vous accompagnons dans la réalisation de vos projets!</h4>
-                            <p className="text-muted">Chez Afira, nous croyons que l’inclusion financière est un levier puissant pour transformer des vies et bâtir un avenir durable.
-Notre mission est de démocratiser l’accès aux services financiers et à l’éducation économique, en particulier pour celles et ceux que les systèmes traditionnels laissent souvent de côté : jeunes femmes, étudiants, travailleurs informels et entrepreneurs en devenir.
-
-Nous combinons technologie mobile, microcrédit flexible et contenu éducatif accessible pour offrir à chacun·e les outils concrets vers l’autonomie financière.</p>
+                            <h4 className="title mb-3">{translations.about.title}</h4>
+                            <p className="text-muted">{translations.about.intro}</p>
                             <ul className="list-unstyled text-muted mb-0">
-                                <li className="mb-0"><span className="text-dark h5 me-2"></span>Notre vision : Un monde où chaque jeune femme, chaque étudiant, chaque travailleur informel peut accéder aux ressources nécessaires pour concrétiser ses idées, sortir de la précarité et devenir acteur de son avenir.</li>
-                                <li className="mb-0"><span className="text-dark h5 me-2"></span> Our Mission :
-                                    L'accès ne suffit pas.
-L'inclusion véritable signifie créer des solutions pour celles et ceux qui sont systématiquement oubliés :
-
-les utilisateurs en zone rurale,
-
-les femmes,
-
-les communautés à faibles revenus.
-
-Nous développons des services numériques inclusifs, qui sont :
-
-Abordables,
-
-Faciles à utiliser, même en cas de faible littératie numérique,
-
-Disponibles dans les langues locales,
-
-Pertinents pour les besoins quotidiens.
-
-Ce n’est pas un problème de réseau.
-C’est un enjeu humain.</li>
-                                <li className="mb-0"><span className="text-dark h5 me-2"></span>Pourquoi Afira :
-La connectivité mobile est aujourd’hui un moteur essentiel de la transformation numérique et de la croissance socio-économique en Afrique subsaharienne.
-
-Selon le rapport GSMA Mobile Economy 2024 :
-
-« La technologie mobile contribue à l’ODD 4, qui vise à garantir une éducation de qualité, inclusive et équitable, et à promouvoir des possibilités d’apprentissage tout au long de la vie. »
-
-« La transformation numérique rend les ressources éducatives plus accessibles, améliore les résultats scolaires et soutient l’apprentissage continu. »
-
-Nous nous appuyons sur ces constats pour concevoir une plateforme qui renforce les capacités des communautés et génère un impact durable.
+                                <li className="mb-0">
+                                    <span className="text-dark h5 me-2">{translations.about.vision.title}</span>
+                                    {translations.about.vision.description}
+                                </li>
+                                <li className="mb-0">
+                                    <span className="text-dark h5 me-2">{translations.about.mission.title}</span>
+                                    {translations.about.mission.description}
+                                </li>
+                                <li className="mb-0">
+                                    <span className="text-dark h5 me-2">{translations.about.whyAfira.title}</span>
+                                    {translations.about.whyAfira.description}
                                 </li>
                             </ul>                        
                         </div>
@@ -114,7 +96,7 @@ Nous nous appuyons sur ces constats pour concevoir une plateforme qui renforce l
             </div>
 
             <div className="container mt-100 mt-60">
-                <h1 className="mb-16 text-center">Our Impact</h1>
+                <h1 className="mb-16 text-center">{translations.about.impact.title}</h1>
                 <div className="row justify-content-center mt-8">
                     {aboutData.map((item, index) =>{
                         //let Icon = item.icon 
@@ -130,7 +112,7 @@ Nous nous appuyons sur ces constats pour concevoir une plateforme qui renforce l
                                 </div>
 
                                 <Link href="/page-single-service" className="d-flex align-items-center justify-content-between">
-                                    <span className="fw-medium text-dark">Read More</span>
+                                    <span className="fw-medium text-dark">{translations.about.impact.readMore}</span>
                                   
                                 </Link>
                             </div>
