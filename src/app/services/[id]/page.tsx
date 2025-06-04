@@ -61,9 +61,10 @@ const progressData = [
 ];
 
 // Le composant principal (server component) est maintenant async
-export default async function SingleService({ params }: { params: { id: string } }) {
-    // Attendre les paramètres (même si ce n'est pas une vraie attente, c'est nécessaire pour satisfaire Next.js)
-    const id = parseInt(params.id);
+export default async function SingleService({ params }: { params: Promise<{ id: string }> }) {
+    // Attendre les paramètres (maintenant c'est une vraie Promise)
+    const { id: idString } = await params;
+    const id = parseInt(idString);
     const data = services.find((service) => service.id === id);
 
     return (

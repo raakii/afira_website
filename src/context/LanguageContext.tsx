@@ -1,7 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { useRouter, usePathname } from 'next/navigation';
+
 
 type LanguageContextType = {
   language: string;
@@ -14,8 +14,7 @@ const LanguageContext = createContext<LanguageContextType>({
 });
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const router = useRouter();
-  const pathname = usePathname();
+  
   const [language, setLanguage] = useState('en');
 
   useEffect(() => {

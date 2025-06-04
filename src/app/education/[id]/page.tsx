@@ -113,10 +113,13 @@ export async function generateStaticParams() {
     }));
 }
 
-// Le composant principal (server component) est maintenant async
-export default async function BlogDetailTwo({ params }: { params: { id: string } }) {
+// FIXED: Updated type definition and await params
+export default async function BlogDetailTwo({ params }: { params: Promise<{ id: string }> }) {
+    // FIXED: Await the params Promise
+    const resolvedParams = await params;
+    
     // Recherche de l'éducation correspondante
-    const id = parseInt(params.id);
+    const id = parseInt(resolvedParams.id);
     const data = educationData.find((blog) => blog.id === id);
 
     return (

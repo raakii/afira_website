@@ -1,13 +1,10 @@
 'use client'
-import React, { useState } from "react";
-import Link from "next/link";
 import { Parallax } from 'react-parallax';
 import { useLanguage } from '../context/LanguageContext';
 import enTranslations from '../translations/en.json';
 import frTranslations from '../translations/fr.json';
 
 export default function Cta() {
-    const [isOpen, setOpen] = useState(false);
     const { language } = useLanguage();
     const translations = language === 'en' ? enTranslations : frTranslations;
 
