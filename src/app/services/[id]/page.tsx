@@ -3,9 +3,9 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import NavbarTwo from "../../../../components/navbarTwo";
-import FooterSeven from "../../../../components/footerSeven";
-import ScrollTop from "../../../../components/ScrollTop";
+import NavbarTwo from "../../../components/navbarTwo.js";
+import FooterSeven from "../../../components/footerSeven.js";
+import ScrollTop from "../../../components/scrollTop.js";
 // Import du VideoModalWrapper directement ici
 import VideoModalWrapper from "./video-modal-wrapper";
 

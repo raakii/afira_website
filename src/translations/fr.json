@@ -1,0 +1,109 @@
+{
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "services": "Services",
+    "education": "Éducation",
+    "contact": "Contact"
+  },
+  "home": {
+    "whyItMatters": "Pourquoi c'est important ?",
+    "bridgingDigitalDivide": "Combler la fracture numérique",
+    "digitalDivideDesc": "Alors que les centres urbains avancent avec la 5G, les applications et l'IA, les communautés rurales restent numériquement invisibles — exclues par des coûts élevés, une faible littératie numérique et un manque de services pertinents. Ce n'est pas seulement un problème de réseau. C'est un problème humain.",
+    "mobileConnectivity": "La connectivité mobile stimule la transformation numérique en Afrique subsaharienne.",
+    "inclusion": "L'inclusion signifie des appareils abordables, du contenu local et une littératie numérique.",
+    "weAreChanging": "Nous changeons cela",
+    "changingDesc": "Notre plateforme soutient des solutions mobiles inclusives, abordables et localement pertinentes pour accélérer la transformation numérique à travers l'Afrique subsaharienne."
+  },
+  "cta": {
+    "mainText": "Afira est à vos côtés pour vous aider à réaliser vos projets."
+  },
+  "hero": {
+    "slide1": {
+      "title": "L'argent pour entreprendre, partout, pour tous",
+      "description": "Afira soutient les femmes, les jeunes et les travailleurs informels grâce à une microfinance inclusive et une éducation financière accessible. Nous contribuons à construire une génération autonome, responsable et prête à transformer sa réalité — une histoire à la fois.",
+      "button": "Voir Nos Services"
+    },
+    "slide2": {
+      "title": "La première plateforme nanocrédit 100% numérique en Afrique de l'Ouest",
+      "description": "Une solution simple d'accès au financement en un clic !",
+      "button": "Voir Nos Services"
+    },
+    "slide3": {
+      "title": "Petit crédit. Grand impact. Zéro papier",
+      "description": "Chaque projet est une histoire. Afira vous aide à l'écrire.",
+      "button": "Bénéficier"
+    }
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Derniers Articles et Actualités",
+    "description": "Nos projets de design sont frais et simples et bénéficieront grandement à votre entreprise. En savoir plus sur notre travail !",
+    "posts": {
+      "post1": {
+        "category": "Finance",
+        "title": "Comment obtenir une publicité réussie pour votre entreprise",
+        "author": "Calvin Carlo",
+        "date": "13 Avril 2021"
+      },
+      "post2": {
+        "category": "Entreprise",
+        "title": "Construire votre projet avec Afira",
+        "description": "Le texte fictif le plus connu est le Lorem Ipsum, datant du 16ème siècle.",
+        "readMore": "Lire Plus"
+      },
+      "post3": {
+        "category": "Business",
+        "title": "Bloqué dans une dette financière ? Voici une solution simple",
+        "description": "Le texte fictif le plus connu est le Lorem Ipsum, datant du 16ème siècle.",
+        "readMore": "Lire Plus"
+      }
+    }
+  },
+  "about": {
+    "title": "Nous vous accompagnons dans la réalisation de vos projets !",
+    "intro": "Chez Afira, nous croyons que l'inclusion financière est un levier puissant pour transformer des vies et bâtir un avenir durable. Notre mission est de démocratiser l'accès aux services financiers et à l'éducation économique, en particulier pour celles et ceux que les systèmes traditionnels laissent souvent de côté : jeunes femmes, étudiants, travailleurs informels et entrepreneurs en devenir. Nous combinons technologie mobile, microcrédit flexible et contenu éducatif accessible pour offrir à chacun·e les outils concrets vers l'autonomie financière.",
+    "vision": {
+      "title": "Notre vision",
+      "description": "Un monde où chaque jeune femme, chaque étudiant, chaque travailleur informel peut accéder aux ressources nécessaires pour concrétiser ses idées, sortir de la précarité et devenir acteur de son avenir."
+    },
+    "mission": {
+      "title": "Notre Mission",
+      "description": "L'accès ne suffit pas. L'inclusion véritable signifie créer des solutions pour celles et ceux qui sont systématiquement oubliés : les utilisateurs en zone rurale, les femmes, les communautés à faibles revenus. Nous développons des services numériques inclusifs, qui sont : Abordables, Faciles à utiliser, même en cas de faible littératie numérique, Disponibles dans les langues locales, Pertinents pour les besoins quotidiens. Ce n'est pas un problème de réseau. C'est un enjeu humain."
+    },
+    "whyAfira": {
+      "title": "Pourquoi Afira",
+      "description": "La connectivité mobile est aujourd'hui un moteur essentiel de la transformation numérique et de la croissance socio-économique en Afrique subsaharienne. Selon le rapport GSMA Mobile Economy 2024 : « La technologie mobile contribue à l'ODD 4, qui vise à garantir une éducation de qualité, inclusive et équitable, et à promouvoir des possibilités d'apprentissage tout au long de la vie. » « La transformation numérique rend les ressources éducatives plus accessibles, améliore les résultats scolaires et soutient l'apprentissage continu. » Nous nous appuyons sur ces constats pour concevoir une plateforme qui renforce les capacités des communautés et génère un impact durable."
+    },
+    "header": {
+      "subtitle": "Qui sommes nous?",
+      "title": "Catalyseur de croissance"
+    },
+    "breadcrumb": {
+      "home": "Afira",
+      "current": "À propos"
+    },
+    "impact": {
+      "title": "Notre Impact",
+      "readMore": "Lire Plus"
+    },
+    "sdgs": {
+      "sdg4": {
+        "title": "📚 ODD 4 – Éducation de qualité",
+        "description": "Assurer l'accès de tous à une éducation financière, inclusive et de qualité, et promouvoir des opportunités d'apprentissage."
+      },
+      "sdg5": {
+        "title": "👩🏽‍🤝‍👨🏾 ODD 5 – Égalité entre les sexes",
+        "description": "Autonomiser les femmes et les filles en mettant un accent particulier sur l'autonomisation économique des jeunes femmes."
+      },
+      "sdg8": {
+        "title": "💼 ODD 8 – Travail décent et croissance économique",
+        "description": "Promouvoir une croissance économique soutenue, inclusive et durable, le plein emploi productif et un travail décent pour tous."
+      },
+      "sdg10": {
+        "title": "🏘️ ODD 10 – Réduction des inégalités",
+        "description": "Réduire les inégalités et les barrières d'accès aux services financiers pour les populations exclues."
+      }
+    }
+  }
+} 

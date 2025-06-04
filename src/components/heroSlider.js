@@ -4,8 +4,14 @@ import React from 'react';
 import Link from 'next/link';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import { useLanguage } from '../context/LanguageContext';
+import enTranslations from '../translations/en.json';
+import frTranslations from '../translations/fr.json';
 
 export default function HeroSlider() {
+    const { language } = useLanguage();
+    const translations = language === 'en' ? enTranslations : frTranslations;
+
     return (
         <section className="home-slider position-relative">
             <Carousel 
@@ -25,17 +31,15 @@ export default function HeroSlider() {
                                 <div className="col-12">
                                     <div className="title-heading text-center">
                                         <h1 className="fw-semibold display-3 text-white title-dark mb-4">
-                                            L’argent pour entreprendre, partout, pour tous
-                                            
+                                            {translations.hero.slide1.title}
                                         </h1>
                         
                                         <p className="para-desc mx-auto text-white-50">
-                                            Afira soutient les femmes, les jeunes et les travailleurs informels grâce à une microfinance inclusive et une éducation financière accessible.
-                                            Nous contribuons à construire une génération autonome, responsable et prête à transformer sa réalité — une histoire à la fois.
+                                            {translations.hero.slide1.description}
                                         </p>
                                         <div className="mt-4 pt-2">
                                             <Link href="/page-services" className="btn btn-primary">
-                                                Voir Nos Services
+                                                {translations.hero.slide1.button}
                                             </Link>
                                         </div>
                                     </div>
@@ -53,14 +57,14 @@ export default function HeroSlider() {
                                 <div className="col-12">
                                     <div className="title-heading text-center">
                                         <h1 className="fw-semibold display-3 text-white title-dark mb-4">
-                                            La première plateforme nanocrédit 100% numérique en Afrique de l'Ouest.
+                                            {translations.hero.slide2.title}
                                         </h1>
                                         <p className="para-desc mx-auto text-white-50">
-                                            Une solution simple d'accès au financement en un clic !
+                                            {translations.hero.slide2.description}
                                         </p>
                                         <div className="mt-4 pt-2">
                                             <Link href="/page-services" className="btn btn-primary">
-                                                Voir Nos Services
+                                                {translations.hero.slide2.button}
                                             </Link>
                                         </div>
                                     </div>
@@ -78,14 +82,14 @@ export default function HeroSlider() {
                                 <div className="col-12">
                                     <div className="title-heading text-center">
                                         <h1 className="fw-semibold display-3 text-white title-dark mb-4">
-                                            Petit crédit. Grand impact. Zéro papier
+                                            {translations.hero.slide3.title}
                                         </h1>
                                         <p className="para-desc mx-auto text-white-50">
-                                            Chaque projet est une histoire. Afira vous aide à l’écrire.
+                                            {translations.hero.slide3.description}
                                         </p>
                                         <div className="mt-4 pt-2">
                                             <Link href="/page-aboutus" className="btn btn-primary">
-                                                Bénéficier
+                                                {translations.hero.slide3.button}
                                             </Link>
                                         </div>
                                     </div>

@@ -4,6 +4,10 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '../../public/assets/scss/style.scss';
 import '../../public/assets/css/materialdesignicons.min.css';
 import PreloadAllPages from './preload-pages';
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
+import './globals.css'
+import { LanguageProvider } from '../context/LanguageContext'
 
 // Configuration des polices
 const poppins = Poppins({
@@ -42,12 +46,18 @@ const kaushan = Kaushan_Script({
   variable: '--font-kaushan',
 });
 
-export const metadata = {
-  title: 'Afira',
-  description: 'Afira website',
-};
+const inter = Inter({ subsets: ['latin'] })
 
-export default function RootLayout({ children }: { children: ReactNode }) {
+export const metadata: Metadata = {
+  title: 'Afira Website',
+  description: 'Afira Website',
+}
+
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
       <head>
@@ -72,10 +82,12 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           }}
         />
       </head>
-      <body className={`${poppins.variable} ${ubuntu.variable} ${teko.variable} ${noto.variable} ${libre.variable} ${kaushan.variable}`}>
+      <body className={`${poppins.variable} ${ubuntu.variable} ${teko.variable} ${noto.variable} ${libre.variable} ${kaushan.variable} ${inter.className}`}>
         {/* Composant pour précharger toutes les pages */}
         <PreloadAllPages />
-        {children}
+        <LanguageProvider>
+          {children}
+        </LanguageProvider>
       </body>
     </html>
   );

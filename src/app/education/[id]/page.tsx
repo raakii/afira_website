@@ -4,15 +4,13 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 
-import NavbarTwo from "../../../../components/navbarTwo";
-import FooterSeven from "../../../../components/footerSeven";
-import ScrollTop from "../../../../components/ScrollTop";
+import NavbarTwo from "../../../components/navbarTwo.js";
+import FooterSeven from "../../../components/footerSeven.js";
+import ScrollTop from "../../../components/scrollTop.js";
 
 // Importation directe des wrappers client
 import VideoModalWrapper from "./video-modal-wrapper";
 import CommentsWrapper from "./comments-wrapper";
-
-import {AiOutlineCalendar, AiOutlineClockCircle, FiArrowRight} from "../../../../public/assets/icons/vander";
 
 // Données d'éducation
 const educationData = [
@@ -146,8 +144,8 @@ export default async function BlogDetailTwo({ params }: { params: { id: string }
                                 </div>
 
                                 <ul className="list-inline d-flex pt-4 mb-0 border-top justify-content-between">
-                                    <li className="list-inline-item text-muted h6"><AiOutlineCalendar className="me-1 h5 text-dark" />{data?.date}</li>
-                                    <li className="list-inline-item text-muted h6"><AiOutlineClockCircle className="me-1 h5 text-dark" /> 10 min read</li>
+                                    <li className="list-inline-item text-muted h6">{data?.date}</li>
+                                    <li className="list-inline-item text-muted h6">10 min read</li>
                                 </ul>
                             </div>
 
@@ -242,7 +240,7 @@ export default async function BlogDetailTwo({ params }: { params: { id: string }
                                                         <div className="card-body content">
                                                             <Link href={`/education/${item.id}`} className="h5 title text-dark d-block mb-0">{item.title}</Link>
                                                             <p className="text-muted mt-2 mb-2">{item.desc}</p>
-                                                            <Link href={`/education/${item.id}`} className="link text-dark">Read More <FiArrowRight className="align-middle" /></Link>
+                                                            <Link href={`/education/${item.id}`} className="link text-dark">Read More </Link>
                                                         </div>
                                                     </div>
                                                 </div>

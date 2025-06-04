@@ -1,23 +1,30 @@
-import Image from "next/image";
-import HeroSlider from "../../components/HeroSlider"; 
-import NavbarTwo from "../../components/navbarTwo";  
-import Cta from "../../components/Cta";
-import ClientTwo from "../../components/ClientTwo";
-import BlogTwo from "../../components/blogTwo";
-import FooterFour from "../../components/FooterFour";
-import ScrollTop from "../../components/ScrollTop";
+'use client';
 
+import Image from "next/image";
+import HeroSlider from "../components/heroSlider.js"; 
+import NavbarTwo from "../components/navbarTwo.js";  
+import Cta from "../components/cta.js";
+import ClientTwo from "../components/clientTwo.js";
+import BlogTwo from "../components/blogTwo.js";
+import FooterFour from "../components/footerFour.js";
+import ScrollTop from "../components/scrollTop.js";
+import { useLanguage } from '../context/LanguageContext';
+import enTranslations from '../translations/en.json';
+import frTranslations from '../translations/fr.json';
 import Link from "next/link";
 
 export default function Home() {
+  const { language } = useLanguage();
+  const translations = language === 'en' ? enTranslations : frTranslations;
 
   const aboutData = [
     {
         icon: (props: React.HTMLAttributes<HTMLElement>) => <i className="bi bi-credit-card" {...props}></i>,
-        title:'Why it matters ?',
-        desc:'Bridging the Digital Divide. \nWhile urban centers surge ahead with 5G, apps, and AI, rural communities remain digitally invisible — locked out by high costs, low digital literacy, and a lack of relevant services. \nThis is not just a network issue. It\’s a human issue.'
+        title: translations.home.whyItMatters,
+        desc: translations.home.digitalDivideDesc
     }
-]
+  ]
+
   return(
     <>
     <NavbarTwo navClass="defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" navDark={false}/>
@@ -29,7 +36,6 @@ export default function Home() {
                     <div className="features-absoluteTwo">
                         <div className="position-relative">
                             <Image src='/images/busi01.jpg' width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} className="img-fluid rounded shadow" alt=""/>
-                           
                         </div>
                     </div>
                 </div>
@@ -46,21 +52,19 @@ export default function Home() {
                                     <p className="text-muted mt-2 mb-0">{item.desc}</p>
                                     <ul>    
                                         <li>
-                                            Mobile connectivity drives digital transformation in Sub-Saharan Africa.
+                                            {translations.home.mobileConnectivity}
                                         </li>
                                         <li>
-                                            Inclusion means affordable devices, local content, and digital literacy.
+                                            {translations.home.inclusion}
                                         </li>
                                     </ul>
-                                    
-                                       
                                 </div>
                             </div>
                             )
                         })}
                         <div className="card features feature-primary">
-                            <Link href="/page-single-service" className="h5 title text-dark">We are changing that</Link>
-                            <p className="text-muted mt-2 mb-0">Our platform supports inclusive, affordable, and locally relevant mobile solutions to accelerate digital transformation across Sub-Saharan Africa.</p>
+                            <Link href="/page-single-service" className="h5 title text-dark">{translations.home.weAreChanging}</Link>
+                            <p className="text-muted mt-2 mb-0">{translations.home.changingDesc}</p>
                        </div> 
                     </div>
                 </div>
