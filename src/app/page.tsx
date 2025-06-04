@@ -43,7 +43,7 @@ export default function Home() {
                 <div className="col-lg-7 col-md-6 order-2 order-md-1">
                     <div className="row">
                         {aboutData.map((item,index)=>{
-                            let Icon = item.icon
+                            const Icon = item.icon
                             return(
                             <div className="col-lg-10 col-12 mb-4 pt-2" key={index}>
                                 <div className="card features feature-primary">

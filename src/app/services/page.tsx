@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 
 import NavbarTwo from "../../components/navbarTwo.js";
 import ClientTwo from "../../components/clientTwo.js";
@@ -69,11 +68,10 @@ export default function Services(){
             <div className="container">
                 <div className="row">
                     {aboutData.map((item)=>{
-                        let Icon = item.icon
                         return(
                         <div className="col-lg-3 col-md-6 mt-4 pt-4" key={item.id}>
                             <div className="card border-0 p-4 text-center rounded features features-classic feature-primary">
-                                Icon
+                            
                                 <div className="content">
                                     <Link href={`/services/${item.id}`} className="title text-dark h5">{item.title}</Link>
 

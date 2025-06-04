@@ -1,4 +1,3 @@
-import { ReactNode } from 'react';
 import { Poppins, Ubuntu, Teko, Noto_Sans, Libre_Baskerville, Kaushan_Script } from 'next/font/google';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../../public/assets/scss/style.scss';
