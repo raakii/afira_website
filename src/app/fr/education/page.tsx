@@ -56,9 +56,9 @@ export default function Education(){
                             <div className="card-body p-4">
                                 <h4 className="card-title">Comment épargner efficacement</h4>
                                 <p className="text-muted">Publié le 10 Mars 2024</p>
-                                <p className="text-muted">L'épargne est la clé de la sécurité financière. Découvrez nos stratégies pour épargner plus efficacement :</p>
+                                <p className="text-muted">L&apos;épargne est la clé de la sécurité financière. Découvrez nos stratégies pour épargner plus efficacement :</p>
                                 <ul className="list-unstyled text-muted">
-                                    <li>✓ Fixez-vous des objectifs d'épargne</li>
+                                    <li>✓ Fixez-vous des objectifs d&apos;épargne</li>
                                     <li>✓ Automatisez vos versements</li>
                                     <li>✓ Réduisez vos dépenses non essentielles</li>
                                     <li>✓ Investissez intelligemment</li>
@@ -68,7 +68,7 @@ export default function Education(){
                     </div>
 
                     <div className="col-lg-4 col-md-6 mt-4 mt-sm-0">
-                        <BlogSidebar/>
+                        <BlogSidebar search={true}/>
                     </div>
                 </div>
             </div>

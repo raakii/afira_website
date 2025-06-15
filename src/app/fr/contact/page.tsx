@@ -52,7 +52,7 @@ export default function Contact(){
                             <div className="card-body p-4">
                                 <h4 className="card-title">Adresse</h4>
                                 <div className="mt-3">
-                                    <p className="text-muted mb-0">123 Rue de l'Innovation</p>
+                                    <p className="text-muted mb-0">123 Rue de l&apos;Innovation</p>
                                     <p className="text-muted mb-0">75001 Dakar, Senegal</p>
                                 </div>
                             </div>
