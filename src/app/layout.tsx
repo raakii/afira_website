@@ -6,7 +6,7 @@ import PreloadAllPages from './preload-pages';
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import { LanguageProvider } from '../context/LanguageContext'
+import { LanguageProvider } from '@/context/LanguageContext'
 
 // Configuration des polices
 const poppins = Poppins({
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
   description: 'Afira Website',
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode
@@ -68,7 +68,7 @@ export default function RootLayout({
             __html: `
               // Préchargement immédiat des pages principales
               document.addEventListener('DOMContentLoaded', function() {
-                const criticalRoutes = ['/', '/about', '/services', '/contact'];
+                const criticalRoutes = ['/en', '/fr', '/en/about', '/fr/about', '/en/services', '/fr/services', '/en/contact', '/fr/contact'];
                 criticalRoutes.forEach(route => {
                   const link = document.createElement('link');
                   link.rel = 'prefetch';

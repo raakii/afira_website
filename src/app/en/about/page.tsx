@@ -3,17 +3,15 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { useLanguage } from '../../context/LanguageContext';
-import enTranslations from '../../translations/en.json';
-import frTranslations from '../../translations/fr.json';
+import { useLanguage } from '@/context/LanguageContext';
+import enTranslations from '@/translations/en.json';
+import frTranslations from '@/translations/fr.json';
 
-import NavbarTwo from "../../components/navbarTwo.js";
-import ClientTwo from "../../components/clientTwo.js";
-
-import Counter from "../../components/counter.js";
-import FooterFour from "../../components/footerFour.js";
-import ScrollTop from "../../components/scrollTop.js";
-import aboutus2 from "../../../public/images/about-us2.png";
+import NavbarTwo from "@/components/navbarTwo.js";
+import ClientTwo from "@/components/clientTwo.js";
+import Counter from "@/components/counter.js";
+import FooterFour from "@/components/footerFour.js";
+import ScrollTop from "@/components/scrollTop.js";
 
 export default function PageAboutUs(){
     const { language } = useLanguage();
@@ -69,7 +67,7 @@ export default function PageAboutUs(){
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-5 col-md-6">
-                        <Image src={aboutus2} width={0} height={0} sizes="100vw" style={{width:'100%',height:'auto' }} className="img-fluid rounded shadow" alt=""/>
+                        <Image src="/images/about-us2.png" width={0} height={0} sizes="100vw" style={{width:'100%',height:'auto' }} className="img-fluid rounded shadow" alt=""/>
                     </div>
 
                     <div className="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
@@ -99,21 +97,15 @@ export default function PageAboutUs(){
                 <h1 className="mb-16 text-center">{translations.about.impact.title}</h1>
                 <div className="row justify-content-center mt-8">
                     {aboutData.map((item, index) =>{
-                        //let Icon = item.icon 
                         return(
                         <div className="col-lg-3 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0" key={index}>
                             <div className="card shadow p-4 rounded features features-classic feature-primary">
-                                {/* <Icon className="h1 mb-0 text-primary"/> */}
-
                                 <div className="content my-3 border-bottom">
                                     <Link href="/page-single-service" className="title h5 text-dark">{item.title}</Link>
-
                                     <p className="text-muted mt-3">{item.desc}</p>
                                 </div>
-
                                 <Link href="/page-single-service" className="d-flex align-items-center justify-content-between">
                                     <span className="fw-medium text-dark">{translations.about.impact.readMore}</span>
-                                  
                                 </Link>
                             </div>
                         </div>
@@ -122,14 +114,9 @@ export default function PageAboutUs(){
                 </div>
             </div>
 
-            
             <div className=" mt-100 mt-60">
                 <ClientTwo/>
             </div>
-
-            {/* <div className="container mt-5">
-                <Partners/>
-            </div> */}
 
             <Counter/>
         </section>

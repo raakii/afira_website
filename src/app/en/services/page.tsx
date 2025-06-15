@@ -1,12 +1,12 @@
 import React from "react";
 import Link from "next/link";
 
-import NavbarTwo from "../../components/navbarTwo.js";
-import ClientTwo from "../../components/clientTwo.js";
-import BlogOne from "../../components/blogTwo.js";
-import FooterFour from "../../components/footerFour.js";
-import ScrollTop from "../../components/scrollTop.js";
-import Tab from "../../components/tab.js";
+import NavbarTwo from "@/components/navbarTwo.js";
+import ClientTwo from "@/components/clientTwo.js";
+import BlogOne from "@/components/blogTwo.js";
+import FooterFour from "@/components/footerFour.js";
+import ScrollTop from "@/components/scrollTop.js";
+import Tab from "@/components/tab.js";
 
 export default function Services(){
 
@@ -21,7 +21,7 @@ export default function Services(){
             id:2,
             icon :"",
             title:'2. Demande de Crédit',
-            desc:'💸 Un microcrédit qui s’adapte à vous\nChoisissez le montant dont vous avez besoin, répondez à quelques questions, et recevez une réponse rapide grâce à notre système d’évaluation alternatif.' 
+            desc:'💸 Un microcrédit qui s\'adapte à vous\nChoisissez le montant dont vous avez besoin, répondez à quelques questions, et recevez une réponse rapide grâce à notre système d\'évaluation alternatif.' 
         },
         {
             id:3,
@@ -33,7 +33,7 @@ export default function Services(){
             id:4,
             icon :"",
             title:'4. Suivi & Support Client',
-            desc:'🤝 Vous n’êtes jamais seul·e\nAccédez à nos mini-vidéos d’éducation financière, posez vos questions via chat ou appel, et bénéficiez d’un accompagnement humain et bienveillant.' 
+            desc:'🤝 Vous n\'êtes jamais seule\nAccédez à nos mini-vidéos d\'éducation financière, posez vos questions via chat ou appel, et bénéficiez d\'un accompagnement humain et bienveillant.' 
         }
     ]
 

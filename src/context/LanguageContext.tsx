@@ -1,7 +1,7 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-
+import { usePathname, useRouter } from 'next/navigation';
 
 type LanguageContextType = {
   language: string;
@@ -14,20 +14,23 @@ const LanguageContext = createContext<LanguageContextType>({
 });
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  
+  const pathname = usePathname();
+  const router = useRouter();
   const [language, setLanguage] = useState('en');
 
   useEffect(() => {
-    // Get the language from localStorage on initial load
-    const savedLanguage = localStorage.getItem('language') || 'en';
-    setLanguage(savedLanguage);
-  }, []);
+    // Get the language from the URL path
+    const pathLang = pathname.split('/')[1];
+    if (pathLang === 'fr' || pathLang === 'en') {
+      setLanguage(pathLang);
+    }
+  }, [pathname]);
 
   const handleLanguageChange = (newLang: string) => {
     setLanguage(newLang);
-    localStorage.setItem('language', newLang);
-    // Refresh the page to apply the new language
-    window.location.reload();
+    // Update the URL to reflect the new language
+    const newPath = pathname.replace(/^\/[a-z]{2}/, `/${newLang}`);
+    router.push(newPath);
   };
 
   return (

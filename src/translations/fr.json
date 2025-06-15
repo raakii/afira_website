@@ -9,9 +9,7 @@
   "home": {
     "whyItMatters": "Pourquoi c'est important ?",
     "bridgingDigitalDivide": "Combler la fracture numérique",
-    "digitalDivideDesc": "Alors que les centres urbains avancent avec la 5G, les applications et l'IA, les communautés rurales restent numériquement invisibles — exclues par des coûts élevés, une faible littératie numérique et un manque de services pertinents. Ce n'est pas seulement un problème de réseau. C'est un problème humain.",
-    "mobileConnectivity": "La connectivité mobile stimule la transformation numérique en Afrique subsaharienne.",
-    "inclusion": "L'inclusion signifie des appareils abordables, du contenu local et une littératie numérique.",
+    "digitalDivideDesc": "L’inclusion financière est l’une des grandes réussites de l’Afrique au cours de la dernière décennie. Plus que jamais, l’inclusion financière est un moyen d’atteindre un objectif. C’est un catalyseur pour le développement équitable et la croissance économique inclusive.",
     "weAreChanging": "Nous changeons cela",
     "changingDesc": "Notre plateforme soutient des solutions mobiles inclusives, abordables et localement pertinentes pour accélérer la transformation numérique à travers l'Afrique subsaharienne."
   },
@@ -65,11 +63,11 @@
     "intro": "Chez Afira, nous croyons que l'inclusion financière est un levier puissant pour transformer des vies et bâtir un avenir durable. Notre mission est de démocratiser l'accès aux services financiers et à l'éducation économique, en particulier pour celles et ceux que les systèmes traditionnels laissent souvent de côté : jeunes femmes, étudiants, travailleurs informels et entrepreneurs en devenir. Nous combinons technologie mobile, microcrédit flexible et contenu éducatif accessible pour offrir à chacun·e les outils concrets vers l'autonomie financière.",
     "vision": {
       "title": "Notre vision",
-      "description": "Un monde où chaque jeune femme, chaque étudiant, chaque travailleur informel peut accéder aux ressources nécessaires pour concrétiser ses idées, sortir de la précarité et devenir acteur de son avenir."
+      "description": "Un monde où chaque jeune femme entrepreneure, chaque travailleur informel peut accéder aux ressources nécessaires pour concrétiser ses idées, sortir de la précarité et devenir acteur de son avenir."
     },
     "mission": {
       "title": "Notre Mission",
-      "description": "L'accès ne suffit pas. L'inclusion véritable signifie créer des solutions pour celles et ceux qui sont systématiquement oubliés : les utilisateurs en zone rurale, les femmes, les communautés à faibles revenus. Nous développons des services numériques inclusifs, qui sont : Abordables, Faciles à utiliser, même en cas de faible littératie numérique, Disponibles dans les langues locales, Pertinents pour les besoins quotidiens. Ce n'est pas un problème de réseau. C'est un enjeu humain."
+      "description": "L'accès ne suffit pas. L'inclusion véritable signifie créer des solutions pour celles et ceux qui sont systématiquement oubliés : les femmes, les populations en zone rurale, les communautés à faibles revenus. Nous développons des services numériques inclusifs, qui sont : Abordables, Faciles à utiliser, même en cas de faible littératie numérique, Disponibles dans les langues locales, Pertinents pour les besoins quotidiens. Ce n'est pas un problème de réseau. C'est un enjeu humain."
     },
     "whyAfira": {
       "title": "Pourquoi Afira",

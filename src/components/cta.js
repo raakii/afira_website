@@ -24,7 +24,7 @@ export default function Cta() {
                     <div className="row">
                         <div className="col-12">
                             <div className="section-title text-center mb-4 pb-2 text-white">
-                                {translations.cta.mainText}
+                                <h2 className="display-8">{translations.cta.mainText}</h2>
                             </div>
                             {/* <div className="play-icon">
                                 <Link href="#" scroll={false} onClick={() => setOpen(true)} className="play-btn lightbox">
