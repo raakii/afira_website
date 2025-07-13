@@ -1,7 +1,11 @@
+'use client'
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-
+import { useLanguage } from '@/context/LanguageContext';
+import enTranslations from '@/translations/en.json';
+import frTranslations from '@/translations/fr.json';
 import NavbarTwo from "@/components/navbarTwo.js";
 import ClientTwo from "@/components/clientTwo.js";
 import BlogOne from "@/components/blogTwo.js";
@@ -10,32 +14,9 @@ import ScrollTop from "@/components/scrollTop.js";
 import Tab from "@/components/tab.js";
 
 export default function Services(){
-    const aboutData =[
-        {
-            id:1,
-            icon : "",
-            title:'1. Enregistrement & Onboarding',
-            desc:'🎯 Créez votre compte et découvrez nos services\nRemplissez votre profil en quelques étapes simples. Accédez à une initiation interactive à la gestion financière et aux fonctionnalités de la plateforme' 
-        },
-        {
-            id:2,
-            icon :"",
-            title:'2. Demande de Crédit',
-            desc:'💸 Un microcrédit qui s\'adapte à vous\nChoisissez le montant dont vous avez besoin, répondez à quelques questions, et recevez une réponse rapide grâce à notre système d\'évaluation alternatif.' 
-        },
-        {
-            id:3,
-            icon :"",
-            title:'3. Remboursement Flexible',
-            desc:'📅 Gérez vos échéances à votre rythme\nSuivez votre échéancier, recevez des rappels et ajustez votre remboursement selon votre situation. Vous gardez le contrôle.' 
-        },
-        {
-            id:4,
-            icon :"",
-            title:'4. Suivi & Support Client',
-            desc:'🤝 Vous n\'êtes jamais seul\nAccédez à nos mini-vidéos d\'éducation financière, posez vos questions via chat ou appel, et bénéficiez d\'un accompagnement humain et bienveillant.' 
-        }
-    ]
+    const { language } = useLanguage();
+    const translations = language === 'en' ? enTranslations : frTranslations;
+    const steps = translations.services.steps || [];
 
     return(
         <>
@@ -57,8 +38,8 @@ export default function Services(){
                 <div className="row mt-5 justify-content-center">
                     <div className="col-12">
                         <div className="title-heading text-center">
-                            <small className="text-white-50 mb-1 fw-medium text-uppercase mx-auto">Nos Produits</small>
-                            <h5 className="heading fw-semibold mb-0 page-heading text-white title-dark">La nanofinance 100 % mobile, 100 % pour vous.</h5>
+                            <small className="text-white-50 mb-1 fw-medium text-uppercase mx-auto">{translations.services.subtitle}</small>
+                            <h5 className="heading fw-semibold mb-0 page-heading text-white title-dark">{translations.services.title}</h5>
                         </div>
                     </div>
                 </div>
@@ -66,8 +47,8 @@ export default function Services(){
                 <div className="position-middle-bottom">
                     <nav aria-label="breadcrumb" className="d-block">
                         <ul className="breadcrumb breadcrumb-muted mb-0 p-0">
-                            <li className="breadcrumb-item"><Link href="/">Afira</Link></li>
-                            <li className="breadcrumb-item active" aria-current="page">Produits</li>
+                            <li className="breadcrumb-item"><Link href={`/${language}`}>Afira</Link></li>
+                            <li className="breadcrumb-item active" aria-current="page">{translations.services.breadcrumb}</li>
                         </ul>
                     </nav>
                 </div>
@@ -77,12 +58,12 @@ export default function Services(){
         <section className="section">
             <div className="container">
                 <div className="row">
-                    {aboutData.map((item)=>{
+                    {steps.map((item)=>{
                         return(
                         <div className="col-lg-3 col-md-6 mt-4 pt-4" key={item.id}>
                             <div className="card border-0 p-4 text-center rounded features features-classic feature-primary">
                                 <div className="content">
-                                    <Link href={`/fr/services/${item.id}`} className="title text-dark h5">{item.title}</Link>
+                                    <Link href={`/${language}/services/${item.id}`} className="title text-dark h5">{item.title}</Link>
                                     <p className="text-muted mb-0 mt-3">{item.desc}</p>
                                 </div>
                             </div>

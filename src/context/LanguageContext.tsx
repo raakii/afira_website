@@ -14,24 +14,25 @@ const LanguageContext = createContext<LanguageContextType>({
 });
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const pathname = usePathname();
-  const router = useRouter();
   const [language, setLanguage] = useState('en');
+  const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    // Get the language from the URL path
-    const pathLang = pathname.split('/')[1];
-    if (pathLang === 'fr' || pathLang === 'en') {
-      setLanguage(pathLang);
+    const savedLanguage = typeof window !== 'undefined' ? localStorage.getItem('language') : null;
+    if (savedLanguage && (savedLanguage === 'fr' || savedLanguage === 'en')) {
+      setLanguage(savedLanguage);
     }
-  }, [pathname]);
+    setMounted(true);
+  }, []);
 
   const handleLanguageChange = (newLang: string) => {
     setLanguage(newLang);
-    // Update the URL to reflect the new language
-    const newPath = pathname.replace(/^\/[a-z]{2}/, `/${newLang}`);
-    router.push(newPath);
+    if (typeof window !== 'undefined') {
+      localStorage.setItem('language', newLang);
+    }
   };
+
+  if (!mounted) return null;
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage: handleLanguageChange }}>

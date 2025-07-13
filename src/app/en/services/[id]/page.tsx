@@ -1,10 +1,11 @@
-// src/app/services/[id]/page.tsx
-// Ce fichier est un composant côté serveur par défaut (sans "use client")
+'use client'
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useLanguage } from '@/context/LanguageContext';
 import NavbarTwo from "@/components/navbarTwo.js";
-import FooterSeven from "@/components/footerSeven.js";
+import FooterFour from "@/components/footerFour.js";
 import ScrollTop from "@/components/scrollTop.js";
 // Import du VideoModalWrapper directement ici
 import VideoModalWrapper from "./video-modal-wrapper";
@@ -33,13 +34,6 @@ const services = [
     }
 ];
 
-// Cette fonction s'exécute côté serveur à la compilation
-export async function generateStaticParams() {
-    return services.map(service => ({
-        id: service.id.toString(),
-    }));
-}
-
 // Définition des données de progression
 const progressData = [
     {
@@ -60,11 +54,10 @@ const progressData = [
     },
 ];
 
-// Le composant principal (server component) est maintenant async
-export default async function SingleService({ params }: { params: Promise<{ id: string }> }) {
-    // Attendre les paramètres (maintenant c'est une vraie Promise)
-    const { id: idString } = await params;
-    const id = parseInt(idString);
+// Le composant principal
+export default function SingleService({ params }: { params: { id: string } }) {
+    const { language } = useLanguage();
+    const id = parseInt(params.id);
     const data = services.find((service) => service.id === id);
 
     return (
@@ -90,9 +83,9 @@ export default async function SingleService({ params }: { params: Promise<{ id: 
                             <div className="text-md-end text-center">
                                 <nav aria-label="breadcrumb" className="d-inline-block">
                                     <ul className="breadcrumb breadcrumb-muted mb-0 p-0">
-                                        <li className="breadcrumb-item"><Link href="/">Starty</Link></li>
-                                        <li className="breadcrumb-item"><Link href="#">Services</Link></li>
-                                        <li className="breadcrumb-item active" aria-current="page">Web Development</li>
+                                        <li className="breadcrumb-item"><Link href={`/${language}`}>Afira</Link></li>
+                                        <li className="breadcrumb-item"><Link href={`/${language}/services`}>Services</Link></li>
+                                        <li className="breadcrumb-item active" aria-current="page">{data?.title || 'Service'}</li>
                                     </ul>
                                 </nav>
                             </div>
@@ -189,7 +182,7 @@ export default async function SingleService({ params }: { params: Promise<{ id: 
                     </div>
                 </div>
             </section>
-            <FooterSeven />
+            <FooterFour />
             <ScrollTop />
         </>
     )

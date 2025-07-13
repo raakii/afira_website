@@ -1,12 +1,16 @@
+'use client'
+
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-
+import { useLanguage } from '@/context/LanguageContext';
 import NavbarTwo from "@/components/navbarTwo.js";
-import FooterSeven from "@/components/footerSeven.js";
+import FooterFour from "@/components/footerFour.js";
 import ScrollTop from "@/components/scrollTop.js";
 
 export default function Contact(){
+    const { language } = useLanguage();
+    
     return(
         <>
         <NavbarTwo navClass="defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" navDark={false}/>
@@ -36,7 +40,7 @@ export default function Contact(){
                 <div className="position-middle-bottom">
                     <nav aria-label="breadcrumb" className="d-block">
                         <ul className="breadcrumb breadcrumb-muted mb-0 p-0">
-                            <li className="breadcrumb-item"><Link href="/">Afira</Link></li>
+                            <li className="breadcrumb-item"><Link href={`/${language}`}>Afira</Link></li>
                             <li className="breadcrumb-item active" aria-current="page">Contact</li>
                         </ul>
                     </nav>
@@ -127,7 +131,7 @@ export default function Contact(){
             </div>
         </section>
 
-        <FooterSeven/>
+        <FooterFour/>
         <ScrollTop/>
         </>
     )

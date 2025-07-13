@@ -9,9 +9,9 @@
   "home": {
     "whyItMatters": "Why it matters?",
     "bridgingDigitalDivide": "Bridging the Digital Divide",
-    "digitalDivideDesc": "Financial inclusion is one of Africa’s great success stories over the past decade. More than ever, financial inclusion is a means to an end. It is a catalyst for equitable development and inclusive economic growth.",
+    "digitalDivideDesc": "There is a need in the broader industry across the continent to shift to the next generation of digital products. A broader, more multi-faceted market is asking for more sophisticated and relevant products beyond person-to-person payments. There are evident opportunities to develop digital banking, savings and credit products, as well as the digitization of value chain financing and merchant payments. This can significantly improve customer benefits and usage, as well as long-term sustainability for providers.",
     "weAreChanging": "We are changing that",
-    "changingDesc": "Our platform supports inclusive, affordable, and locally relevant mobile solutions to accelerate digital transformation across Sub-Saharan Africa."
+    "changingDesc": "By launching low-cost financial services we aim to develop new technological approaches and innovative business models. Both are opportunities and challenges in furthering financial inclusion"
   },
   "cta": {
     "mainText": "Afira is by your side to help you achieve your projects."
@@ -103,5 +103,32 @@
         "description": "Reduce inequalities and barriers to financial services for excluded populations."
       }
     }
+  },
+  "services": {
+    "breadcrumb": "Services",
+    "subtitle": "Our Products",
+    "title": "100% mobile nanofinance, 100% for you.",
+    "steps": [
+      {
+        "id": 1,
+        "title": "1. Registration & Onboarding",
+        "desc": "🎯 Create your account and discover our services\nComplete your profile in a few simple steps. Access an interactive introduction to financial management and platform features."
+      },
+      {
+        "id": 2,
+        "title": "2. Credit Request",
+        "desc": "💸 A microcredit that adapts to you\nChoose the amount you need, answer a few questions, and get a quick response thanks to our alternative evaluation system."
+      },
+      {
+        "id": 3,
+        "title": "3. Flexible Repayment",
+        "desc": "📅 Manage your deadlines at your own pace\nTrack your schedule, receive reminders, and adjust your repayment according to your situation. You stay in control."
+      },
+      {
+        "id": 4,
+        "title": "4. Tracking & Customer Support",
+        "desc": "🤝 You are never alone\nAccess our mini financial education videos, ask your questions via chat or call, and benefit from human and caring support."
+      }
+    ]
   }
 } 

@@ -48,7 +48,7 @@ export default function Home() {
                             <div className="col-lg-10 col-12 mb-4 pt-2" key={index}>
                                 <div className="card features feature-primary">
                                     <Icon className="icon h1 d-block mb-3"/>
-                                    <Link href="/page-single-service" className="h5 title text-dark">{item.title}</Link>
+                                    <Link href={`/${language}/services`} className="h5 title text-dark">{item.title}</Link>
                                     <p className="text-muted mt-2 mb-0">{item.desc}</p>
                                    
                                 </div>
@@ -56,7 +56,7 @@ export default function Home() {
                             )
                         })}
                         <div className="card features feature-primary">
-                            <Link href="/page-single-service" className="h5 title text-dark">{translations.home.weAreChanging}</Link>
+                            <Link href={`/${language}/services`} className="h5 title text-dark">{translations.home.weAreChanging}</Link>
                             <p className="text-muted mt-2 mb-0">{translations.home.changingDesc}</p>
                        </div> 
                     </div>

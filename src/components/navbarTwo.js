@@ -52,11 +52,11 @@ export default function NavbarTwo({navClass,manuClass,navDark}){
          <header id="topnav" className={`${scroll ? "nav-sticky" :""} ${navClass}`}>
             <div className="container">
                 {navDark === true ?  
-                <Link className="logo" href="/">
+                <Link className="logo" href={`/${language}`}>
                     <Image src='/images/logo-light.png' width={110} height={30} className="logo-light-mode" alt=""/>
                     <Image src='/images/logo-light.png' width={110} height={30} className="logo-dark-mode" alt=""/>
                 </Link> :
-                <Link className="logo" href="/">
+                <Link className="logo" href={`/${language}`}>
                     <span className="logo-light-mode">
                         <Image src='/images/logo-light.png' width={110} height={110} className="l-dark" alt=""/>
                         <Image src='/images/logo-light.png' width={110} height={110} className="l-light" alt=""/>
@@ -79,24 +79,30 @@ export default function NavbarTwo({navClass,manuClass,navDark}){
                 <div id="navigation" style={{ display: isMenu ? 'block' : 'none' }}>
                     <ul className={manuClass}>
                         <li className="/index-business">
-                            <Link href="/about">{translations.nav.about}</Link><span className="menu-arrow"></span>
+                            <Link href={`/${language}/about`}>{translations.nav.about}</Link><span className="menu-arrow"></span>
                         </li>
 
                         <li className={` has-submenu parent-menu-item`}>
-                            <Link href="/services">{translations.nav.services}</Link><span className="menu-arrow"></span>
+                            <Link href={`/${language}/services`}>{translations.nav.services}</Link><span className="menu-arrow"></span>
                         </li>
         
                         <li className="/page-services">
-                            <Link href="/education">{translations.nav.education}</Link><span className="menu-arrow"></span>
+                            <Link href={`/${language}/education`}>{translations.nav.education}</Link><span className="menu-arrow"></span>
                         </li>
 
                         <li className={manu === "/page-contact" || "" ? "active" : ""}>
-                            <Link href="/contact" className="sub-menu-item">{translations.nav.contact}</Link>
+                            <Link href={`/${language}/contact`} className="sub-menu-item">{translations.nav.contact}</Link>
                         </li>
 
                         <li>
                             <button 
-                                onClick={() => setLanguage(language === 'en' ? 'fr' : 'en')}
+                                onClick={() => {
+                                    const scrollY = window.scrollY;
+                                    setLanguage(language === 'en' ? 'fr' : 'en');
+                                    setTimeout(() => {
+                                        window.scrollTo(0, scrollY);
+                                    }, 0);
+                                }}
                                 className="btn btn-primary"
                                 style={{ marginLeft: '10px', marginTop: '15px' }}
                             >

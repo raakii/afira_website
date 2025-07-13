@@ -65,7 +65,7 @@ export default function PageAboutUs(){
                 <div className="position-middle-bottom">
                     <nav aria-label="breadcrumb" className="d-block">
                         <ul className="breadcrumb breadcrumb-muted mb-0 p-0">
-                            <li className="breadcrumb-item"><Link href="/">{translations.about.breadcrumb.home}</Link></li>
+                            <li className="breadcrumb-item"><Link href={`/${language}`}>{translations.about.breadcrumb.home}</Link></li>
                             <li className="breadcrumb-item active" aria-current="page">{translations.about.breadcrumb.current}</li>
                         </ul>
                     </nav>
@@ -120,10 +120,10 @@ export default function PageAboutUs(){
                         <div className="col-lg-3 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0" key={index}>
                             <div className="card shadow p-4 rounded features features-classic feature-primary">
                                 <div className="content my-3 border-bottom">
-                                    <Link href="/page-single-service" className="title h5 text-dark">{item.title}</Link>
-                                    <p className="text-muted mt-3">{item.desc}</p>
+                                    <Link href={`/${language}/services`} className="title h5 text-dark">{item.title}</Link>
+                                    <p className="text-muted mb-0">{item.desc}</p>
                                 </div>
-                                <Link href="/page-single-service" className="d-flex align-items-center justify-content-between">
+                                <Link href={`/${language}/services`} className="d-flex align-items-center justify-content-between">
                                     <span className="fw-medium text-dark">{translations.about.impact.readMore}</span>
                                 </Link>
                             </div>

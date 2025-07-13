@@ -9,9 +9,9 @@
   "home": {
     "whyItMatters": "Pourquoi c'est important ?",
     "bridgingDigitalDivide": "Combler la fracture numérique",
-    "digitalDivideDesc": "L’inclusion financière est l’une des grandes réussites de l’Afrique au cours de la dernière décennie. Plus que jamais, l’inclusion financière est un moyen d’atteindre un objectif. C’est un catalyseur pour le développement équitable et la croissance économique inclusive.",
+    "digitalDivideDesc": "Il existe un besoin croissant au sein de l’industrie à l’échelle du continent pour passer à la prochaine génération de produits numériques. Un marché plus large et diversifié réclame aujourd’hui des produits plus sophistiqués et adaptés, allant au-delà des simples paiements de personne à personne. Il existe des opportunités évidentes pour développer des services de banque digitale, d’épargne et de crédit, ainsi que pour digitaliser le financement des chaînes de valeur et les paiements marchands. Cela peut améliorer considérablement les avantages pour les clients, encourager l’utilisation des services et renforcer la durabilité à long terme pour les fournisseurs.",
     "weAreChanging": "Nous changeons cela",
-    "changingDesc": "Notre plateforme soutient des solutions mobiles inclusives, abordables et localement pertinentes pour accélérer la transformation numérique à travers l'Afrique subsaharienne."
+    "changingDesc": "En lançant des services financiers à faible coût, nous visons à développer de nouvelles approches technologiques et des modèles économiques innovants. Ces leviers représentent à la fois des opportunités et des défis pour faire progresser l’inclusion financière."
   },
   "cta": {
     "mainText": "Afira est à vos côtés pour vous aider à réaliser vos projets."
@@ -103,5 +103,32 @@
         "description": "Réduire les inégalités et les barrières d'accès aux services financiers pour les populations exclues."
       }
     }
+  },
+  "services": {
+    "breadcrumb": "Produits",
+    "subtitle": "Nos Produits",
+    "title": "La nanofinance 100 % mobile, 100 % pour vous.",
+    "steps": [
+      {
+        "id": 1,
+        "title": "1. Enregistrement & Onboarding",
+        "desc": "🎯 Créez votre compte et découvrez nos services\nRemplissez votre profil en quelques étapes simples. Accédez à une initiation interactive à la gestion financière et aux fonctionnalités de la plateforme."
+      },
+      {
+        "id": 2,
+        "title": "2. Demande de Crédit",
+        "desc": "💸 Un microcrédit qui s'adapte à vous\nChoisissez le montant dont vous avez besoin, répondez à quelques questions, et recevez une réponse rapide grâce à notre système d'évaluation alternatif."
+      },
+      {
+        "id": 3,
+        "title": "3. Remboursement Flexible",
+        "desc": "📅 Gérez vos échéances à votre rythme\nSuivez votre échéancier, recevez des rappels et ajustez votre remboursement selon votre situation. Vous gardez le contrôle."
+      },
+      {
+        "id": 4,
+        "title": "4. Suivi & Support Client",
+        "desc": "🤝 Vous n'êtes jamais seul\nAccédez à nos mini-vidéos d'éducation financière, posez vos questions via chat ou appel, et bénéficiez d'un accompagnement humain et bienveillant."
+      }
+    ]
   }
 } 

@@ -38,7 +38,7 @@ export default function HeroSlider() {
                                             {translations.hero.slide1.description}
                                         </p>
                                         <div className="mt-4 pt-2">
-                                            <Link href="/page-services" className="btn btn-primary">
+                                            <Link href={`/${language}/services`} className="btn btn-primary">
                                                 {translations.hero.slide1.button}
                                             </Link>
                                         </div>
@@ -63,7 +63,7 @@ export default function HeroSlider() {
                                             {translations.hero.slide2.description}
                                         </p>
                                         <div className="mt-4 pt-2">
-                                            <Link href="/page-services" className="btn btn-primary">
+                                            <Link href={`/${language}/services`} className="btn btn-primary">
                                                 {translations.hero.slide2.button}
                                             </Link>
                                         </div>
@@ -88,7 +88,7 @@ export default function HeroSlider() {
                                             {translations.hero.slide3.description}
                                         </p>
                                         <div className="mt-4 pt-2">
-                                            <Link href="/page-aboutus" className="btn btn-primary">
+                                            <Link href={`/${language}/about`} className="btn btn-primary">
                                                 {translations.hero.slide3.button}
                                             </Link>
                                         </div>
