@@ -6,28 +6,14 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
+import { useLanguage } from '@/context/LanguageContext';
 
 export default function ClientTwo() {
-    const clientData = [
-        {
-            image: '/images/busi01.jpg',
-            name: 'Johnny Rosario',
-            title: 'C.E.O',
-            desc: '" The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewers attention from the layout. "'
-        },
-        {
-            image: '/images/busi02.jpg',
-            name: 'Gale Larose',
-            title: 'Manager',
-            desc: '" The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewers attention from the layout. "'
-        },
-        {
-            image: '/images/busi03.jpg',
-            name: 'Shelly Goodman',
-            title: 'Manager',
-            desc: '" The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewers attention from the layout. "'
-        },
-    ];
+    const { t, translations, isLoading } = useLanguage();
+    
+    if (isLoading) return null;
+
+    const clientData = translations.clients?.testimonials || [];
 
     return (
         <div className="container">
@@ -57,7 +43,7 @@ export default function ClientTwo() {
                                         alt=""
                                     />
                                     <div className="card-body pb-0 content">
-                                        <p className="h5 fw-normal text-muted fst-italic">{item.desc}</p>
+                                        <p className="h5 fw-normal text-muted fst-italic">"{item.desc}"</p>
                                         <div className="name mt-4">
                                             <small className="text-uppercase fw-semibold d-block">{item.name}</small>
                                             <small className="text-muted">{item.title}</small>

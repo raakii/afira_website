@@ -54,7 +54,7 @@ export default function Home() {
                             )
                         })}
                         <div className="card features feature-primary">
-                            <Link href="/services" className="h5 title text-dark">{t('home.weAreChanging')}</Link>
+
                             <p className="text-muted mt-2 mb-0">{t('home.changingDesc')}</p>
                        </div> 
                     </div>

@@ -19,6 +19,13 @@ export type EducationArticle = {
   tips: string[];
 };
 
+export type ClientTestimonial = {
+  image: string;
+  name: string;
+  title: string;
+  desc: string;
+};
+
 export type EducationTranslations = {
   header: {
     small: string;
@@ -41,6 +48,12 @@ export type ServicesTranslations = {
   steps: ServiceStep[];
 };
 
+export type ClientsTranslations = {
+  title: string;
+  subtitle: string;
+  testimonials: ClientTestimonial[];
+};
+
 export type RootTranslations = {
   nav: Record<string, string>;
   home: Record<string, string>;
@@ -50,5 +63,6 @@ export type RootTranslations = {
   about: Record<string, unknown>;
   services: ServicesTranslations;
   education: EducationTranslations;
+  clients: ClientsTranslations;
   // ...add other sections as needed
 }; 

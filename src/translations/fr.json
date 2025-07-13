@@ -224,5 +224,29 @@
         "desc": "Compétences financières essentielles que chaque jeune adulte devrait apprendre pour un avenir sécurisé."
       }
     ]
+  },
+  "clients": {
+    "title": "Ce que disent nos clients",
+    "subtitle": "Témoignages de notre communauté",
+    "testimonials": [
+      {
+        "image": "/images/busi01.jpg",
+        "name": "Johnny Rosario",
+        "title": "P.D.G",
+        "desc": "L'avantage de son origine latine et du caractère relativement insignifiant du Lorem Ipsum est que le texte n'attire pas l'attention sur lui-même et ne distrait pas l'attention des spectateurs de la mise en page."
+      },
+      {
+        "image": "/images/busi02.jpg",
+        "name": "Gale Larose",
+        "title": "Manager",
+        "desc": "L'avantage de son origine latine et du caractère relativement insignifiant du Lorem Ipsum est que le texte n'attire pas l'attention sur lui-même et ne distrait pas l'attention des spectateurs de la mise en page."
+      },
+      {
+        "image": "/images/busi03.jpg",
+        "name": "Shelly Goodman",
+        "title": "Manager",
+        "desc": "L'avantage de son origine latine et du caractère relativement insignifiant du Lorem Ipsum est que le texte n'attire pas l'attention sur lui-même et ne distrait pas l'attention des spectateurs de la mise en page."
+      }
+    ]
   }
 } 

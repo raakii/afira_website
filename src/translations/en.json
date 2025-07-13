@@ -224,5 +224,29 @@
         "desc": "Essential financial skills every young adult should learn for a secure future."
       }
     ]
+  },
+  "clients": {
+    "title": "What Our Clients Say",
+    "subtitle": "Testimonials from our community",
+    "testimonials": [
+      {
+        "image": "/images/busi01.jpg",
+        "name": "Johnny Rosario",
+        "title": "C.E.O",
+        "desc": "The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewers attention from the layout."
+      },
+      {
+        "image": "/images/busi02.jpg",
+        "name": "Gale Larose",
+        "title": "Manager",
+        "desc": "The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewers attention from the layout."
+      },
+      {
+        "image": "/images/busi03.jpg",
+        "name": "Shelly Goodman",
+        "title": "Manager",
+        "desc": "The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewers attention from the layout."
+      }
+    ]
   }
 } 

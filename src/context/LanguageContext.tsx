@@ -21,7 +21,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   useEffect(() => {
     const loadTranslations = async () => {
       setIsLoading(true);
-      const response = await import(`../locales/${language}.json`);
+      const response = await import(`../translations/${language}.json`);
       setTranslations(response.default);
       setIsLoading(false);
     };

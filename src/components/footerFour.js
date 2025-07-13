@@ -20,11 +20,10 @@ export default function FooterFour(){
                                         <Image src='/images/logo-light.png' width={102} height={102} alt=""/>
                                     </Link>
                                     <p className="mt-4">Our solution is here to help make your projects come true</p>
-                                    <ul className="list-unstyled social-icon foot-social-icon mb-0 mt-4">
- 
-                                        <li className="list-inline-item"><Link href="http://linkedin.com/company/shreethemes" target="_blank" className="rounded"></Link></li>
-                                        <li className="list-inline-item"><Link href="https://www.facebook.com/shreethemes" target="_blank" className="rounded"></Link></li>
-                                        <li className="list-inline-item"><Link href="https://www.instagram.com/shreethemes/" target="_blank" className="rounded"></Link></li>
+                                    <ul className="list-unstyled social-icon foot-social-icon mb-0 mt-4 d-flex align-items-center">
+                                        <li className="list-inline-item me-3" style={{verticalAlign: 'middle', lineHeight: '1'}}><Link href="http://linkedin.com/company/shreethemes" target="_blank" className="rounded d-inline-flex align-items-center justify-content-center" style={{width: '32px', height: '32px'}}></Link></li>
+                                        <li className="list-inline-item me-3" style={{verticalAlign: 'middle', lineHeight: '1'}}><Link href="https://www.facebook.com/shreethemes" target="_blank" className="rounded d-inline-flex align-items-center justify-content-center" style={{width: '32px', height: '32px'}}></Link></li>
+                                        <li className="list-inline-item" style={{verticalAlign: 'middle', lineHeight: '1'}}><Link href="https://www.instagram.com/shreethemes/" target="_blank" className="rounded d-inline-flex align-items-center justify-content-center" style={{width: '32px', height: '32px'}}></Link></li>
                                     </ul>
                                 </div>
                                 
