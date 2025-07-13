@@ -1,41 +1,39 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
 
 type LanguageContextType = {
   language: string;
-  setLanguage: (lang: string) => void;
+  setLanguage: React.Dispatch<React.SetStateAction<string>>;
+  t: (key: string) => string;
+  isLoading: boolean;
+  translations: any;
 };
 
-const LanguageContext = createContext<LanguageContextType>({
-  language: 'en',
-  setLanguage: () => {},
-});
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState('en');
-  const [mounted, setMounted] = useState(false);
+  const [language, setLanguage] = useState<string>('en');
+  const [translations, setTranslations] = useState<any>({});
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    const savedLanguage = typeof window !== 'undefined' ? localStorage.getItem('language') : null;
-    if (savedLanguage && (savedLanguage === 'fr' || savedLanguage === 'en')) {
-      setLanguage(savedLanguage);
-    }
-    setMounted(true);
-  }, []);
+    const loadTranslations = async () => {
+      setIsLoading(true);
+      const response = await import(`../locales/${language}.json`);
+      setTranslations(response.default);
+      setIsLoading(false);
+    };
 
-  const handleLanguageChange = (newLang: string) => {
-    setLanguage(newLang);
-    if (typeof window !== 'undefined') {
-      localStorage.setItem('language', newLang);
-    }
+    loadTranslations();
+  }, [language]);
+
+  const t = (key: string): string => {
+    return key.split('.').reduce((obj: any, k: string) => obj?.[k], translations as any) || key;
   };
 
-  if (!mounted) return null;
-
   return (
-    <LanguageContext.Provider value={{ language, setLanguage: handleLanguageChange }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, isLoading, translations }}>
       {children}
     </LanguageContext.Provider>
   );

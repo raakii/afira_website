@@ -4,8 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from 'next/navigation'
 import { useLanguage } from '../context/LanguageContext';
-import enTranslations from '../translations/en.json';
-import frTranslations from '../translations/fr.json';
+import enTranslations from '../locales/en.json';
+import frTranslations from '../locales/fr.json';
 
 export default function NavbarTwo({navClass,manuClass,navDark}){
     let [scroll, setScroll] = useState(false);
@@ -29,6 +29,24 @@ export default function NavbarTwo({navClass,manuClass,navDark}){
         };
       }, [pathname]);
 
+    // Fix mobile scrolling issue
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const navbar = document.getElementById("topnav");
+            if (navbar) {
+                // Add touch-action to allow scrolling through the navbar
+                navbar.style.touchAction = "pan-y";
+                navbar.style.pointerEvents = "auto";
+                
+                // Ensure the navbar doesn't block scroll events
+                navbar.addEventListener('touchstart', (e) => {
+                    // Allow touch events to pass through to content below
+                    e.stopPropagation();
+                }, { passive: true });
+            }
+        }
+    }, []);
+
     const toggleMenu = () => {
         setisMenu(!isMenu);
         if (document.getElementById("navigation")) {
@@ -49,14 +67,17 @@ export default function NavbarTwo({navClass,manuClass,navDark}){
 
     return(
         <>
-         <header id="topnav" className={`${scroll ? "nav-sticky" :""} ${navClass}`}>
+         <header id="topnav" className={`${scroll ? "nav-sticky" :""} ${navClass}`} style={{ 
+            touchAction: "pan-y",
+            pointerEvents: "auto"
+         }}>
             <div className="container">
                 {navDark === true ?  
-                <Link className="logo" href={`/${language}`}>
+                <Link className="logo" href="/">
                     <Image src='/images/logo-light.png' width={110} height={30} className="logo-light-mode" alt=""/>
                     <Image src='/images/logo-light.png' width={110} height={30} className="logo-dark-mode" alt=""/>
                 </Link> :
-                <Link className="logo" href={`/${language}`}>
+                <Link className="logo" href="/">
                     <span className="logo-light-mode">
                         <Image src='/images/logo-light.png' width={110} height={110} className="l-dark" alt=""/>
                         <Image src='/images/logo-light.png' width={110} height={110} className="l-light" alt=""/>
@@ -79,19 +100,19 @@ export default function NavbarTwo({navClass,manuClass,navDark}){
                 <div id="navigation" style={{ display: isMenu ? 'block' : 'none' }}>
                     <ul className={manuClass}>
                         <li className="/index-business">
-                            <Link href={`/${language}/about`}>{translations.nav.about}</Link><span className="menu-arrow"></span>
+                            <Link href="/about">{translations.nav.about}</Link><span className="menu-arrow"></span>
                         </li>
 
                         <li className={` has-submenu parent-menu-item`}>
-                            <Link href={`/${language}/services`}>{translations.nav.services}</Link><span className="menu-arrow"></span>
+                            <Link href="/services">{translations.nav.services}</Link><span className="menu-arrow"></span>
                         </li>
         
                         <li className="/page-services">
-                            <Link href={`/${language}/education`}>{translations.nav.education}</Link><span className="menu-arrow"></span>
+                            <Link href="/education">{translations.nav.education}</Link><span className="menu-arrow"></span>
                         </li>
 
                         <li className={manu === "/page-contact" || "" ? "active" : ""}>
-                            <Link href={`/${language}/contact`} className="sub-menu-item">{translations.nav.contact}</Link>
+                            <Link href="/contact" className="sub-menu-item">{translations.nav.contact}</Link>
                         </li>
 
                         <li>

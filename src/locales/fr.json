@@ -224,5 +224,53 @@
         "desc": "Compétences financières essentielles que chaque jeune adulte devrait apprendre pour un avenir sécurisé."
       }
     ]
+  },
+  "contact": {
+    "header": {
+      "subtitle": "Contactez-nous",
+      "title": "Contactez-nous",
+      "breadcrumb": "Contact"
+    },
+    "info": {
+      "phone": {
+        "title": "Téléphone",
+        "description": "Contactez notre équipe pour toute question sur nos services",
+        "number": "+152 534-468-854"
+      },
+      "email": {
+        "title": "Email",
+        "description": "Envoyez-nous un email et nous vous répondrons dans les plus brefs délais",
+        "address": "afira@gmail.com"
+      },
+      "location": {
+        "title": "Localisation",
+        "description": "Almadies\nDakar, Sénégal",
+        "mapLink": "Voir sur Google Maps"
+      }
+    },
+    "form": {
+      "title": "Contactez-nous !",
+      "subtitle": "La finance qui vous comprend, au rythme de vos besoins !",
+      "fields": {
+        "name": {
+          "label": "Prénom et Nom",
+          "placeholder": "Nom :"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Email :"
+        },
+        "subject": {
+          "label": "Sujet",
+          "placeholder": "Sujet :"
+        },
+        "message": {
+          "label": "Commentaires",
+          "placeholder": "Message :"
+        }
+      },
+      "submit": "Envoyer un Message",
+      "required": "*"
+    }
   }
 } 

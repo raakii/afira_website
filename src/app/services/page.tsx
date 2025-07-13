@@ -4,8 +4,6 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from '@/context/LanguageContext';
-import enTranslations from '@/translations/en.json';
-import frTranslations from '@/translations/fr.json';
 import NavbarTwo from "@/components/navbarTwo.js";
 import ClientTwo from "@/components/clientTwo.js";
 import BlogOne from "@/components/blogTwo.js";
@@ -14,9 +12,10 @@ import ScrollTop from "@/components/scrollTop.js";
 import Tab from "@/components/tab.js";
 
 export default function Services(){
-    const { language } = useLanguage();
-    const translations = language === 'en' ? enTranslations : frTranslations;
-    const steps = translations.services.steps || [];
+    const { t, translations } = useLanguage();
+    const steps = translations.services?.steps || [];
+
+    if (!steps.length) return null;
 
     return(
         <>
@@ -38,8 +37,8 @@ export default function Services(){
                 <div className="row mt-5 justify-content-center">
                     <div className="col-12">
                         <div className="title-heading text-center">
-                            <small className="text-white-50 mb-1 fw-medium text-uppercase mx-auto">{translations.services.subtitle}</small>
-                            <h5 className="heading fw-semibold mb-0 page-heading text-white title-dark">{translations.services.title}</h5>
+                            <small className="text-white-50 mb-1 fw-medium text-uppercase mx-auto">{t('services.subtitle')}</small>
+                            <h5 className="heading fw-semibold mb-0 page-heading text-white title-dark">{t('services.title')}</h5>
                         </div>
                     </div>
                 </div>
@@ -47,8 +46,8 @@ export default function Services(){
                 <div className="position-middle-bottom">
                     <nav aria-label="breadcrumb" className="d-block">
                         <ul className="breadcrumb breadcrumb-muted mb-0 p-0">
-                            <li className="breadcrumb-item"><Link href={`/${language}`}>Afira</Link></li>
-                            <li className="breadcrumb-item active" aria-current="page">{translations.services.breadcrumb}</li>
+                            <li className="breadcrumb-item"><Link href="/">Afira</Link></li>
+                            <li className="breadcrumb-item active" aria-current="page">{t('services.breadcrumb')}</li>
                         </ul>
                     </nav>
                 </div>
@@ -63,7 +62,7 @@ export default function Services(){
                         <div className="col-lg-3 col-md-6 mt-4 pt-4" key={item.id}>
                             <div className="card border-0 p-4 text-center rounded features features-classic feature-primary">
                                 <div className="content">
-                                    <Link href={`/${language}/services/${item.id}`} className="title text-dark h5">{item.title}</Link>
+                                    <Link href={`/services/${item.id}`} className="title text-dark h5">{item.title}</Link>
                                     <p className="text-muted mb-0 mt-3">{item.desc}</p>
                                 </div>
                             </div>

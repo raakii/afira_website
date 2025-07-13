@@ -5,15 +5,18 @@ import Link from 'next/link';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import { useLanguage } from '../context/LanguageContext';
-import enTranslations from '../translations/en.json';
-import frTranslations from '../translations/fr.json';
+import enTranslations from '../locales/en.json';
+import frTranslations from '../locales/fr.json';
 
 export default function HeroSlider() {
     const { language } = useLanguage();
     const translations = language === 'en' ? enTranslations : frTranslations;
 
     return (
-        <section className="home-slider position-relative">
+        <section className="home-slider position-relative" style={{ 
+            touchAction: "pan-y",
+            pointerEvents: "auto"
+        }}>
             <Carousel 
                 showArrows={false} 
                 selectedItem={0} 
@@ -22,9 +25,20 @@ export default function HeroSlider() {
                 interval={3000} 
                 showStatus={false} 
                 showThumbs={false}
+                swipeable={false}
+                emulateTouch={false}
+                preventMovementUntilSwipeScrollTolerance={true}
+                swipeScrollTolerance={50}
+                style={{
+                    touchAction: "pan-y",
+                    pointerEvents: "auto"
+                }}
             >
-                <div>
-                    <div className="bg-home d-flex align-items-center" style={{ backgroundImage: "url('/images/busi01.jpg')" }}>
+                <div style={{ touchAction: "pan-y" }}>
+                    <div className="bg-home d-flex align-items-center" style={{ 
+                        backgroundImage: "url('/images/busi01.jpg')",
+                        touchAction: "pan-y"
+                    }}>
                         <div className="bg-overlay bg-linear-gradient"></div>
                         <div className="container">
                             <div className="row justify-content-center">
@@ -38,7 +52,7 @@ export default function HeroSlider() {
                                             {translations.hero.slide1.description}
                                         </p>
                                         <div className="mt-4 pt-2">
-                                            <Link href={`/${language}/services`} className="btn btn-primary">
+                                            <Link href="/services" className="btn btn-primary">
                                                 {translations.hero.slide1.button}
                                             </Link>
                                         </div>
@@ -49,8 +63,11 @@ export default function HeroSlider() {
                     </div>
                 </div>
 
-                <div>
-                    <div className="bg-home d-flex align-items-center" style={{ backgroundImage: "url('/images/busi02.jpg')" }}>
+                <div style={{ touchAction: "pan-y" }}>
+                    <div className="bg-home d-flex align-items-center" style={{ 
+                        backgroundImage: "url('/images/busi02.jpg')",
+                        touchAction: "pan-y"
+                    }}>
                         <div className="bg-overlay bg-linear-gradient"></div>
                         <div className="container">
                             <div className="row justify-content-center">
@@ -63,7 +80,7 @@ export default function HeroSlider() {
                                             {translations.hero.slide2.description}
                                         </p>
                                         <div className="mt-4 pt-2">
-                                            <Link href={`/${language}/services`} className="btn btn-primary">
+                                            <Link href="/services" className="btn btn-primary">
                                                 {translations.hero.slide2.button}
                                             </Link>
                                         </div>
@@ -74,8 +91,11 @@ export default function HeroSlider() {
                     </div>
                 </div>
 
-                <div>
-                    <div className="bg-home d-flex align-items-center" style={{ backgroundImage: "url('/images/busi03.jpg')" }}>
+                <div style={{ touchAction: "pan-y" }}>
+                    <div className="bg-home d-flex align-items-center" style={{ 
+                        backgroundImage: "url('/images/busi03.jpg')",
+                        touchAction: "pan-y"
+                    }}>
                         <div className="bg-overlay bg-linear-gradient"></div>
                         <div className="container">
                             <div className="row justify-content-center">
@@ -88,7 +108,7 @@ export default function HeroSlider() {
                                             {translations.hero.slide3.description}
                                         </p>
                                         <div className="mt-4 pt-2">
-                                            <Link href={`/${language}/about`} className="btn btn-primary">
+                                            <Link href="/about" className="btn btn-primary">
                                                 {translations.hero.slide3.button}
                                             </Link>
                                         </div>
