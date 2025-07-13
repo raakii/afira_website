@@ -248,5 +248,53 @@
         "desc": "The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewers attention from the layout."
       }
     ]
+  },
+  "contact": {
+    "header": {
+      "subtitle": "Get In Touch",
+      "title": "Contact Us",
+      "breadcrumb": "Contact"
+    },
+    "info": {
+      "phone": {
+        "title": "Phone",
+        "description": "We would love to hear from you",
+        "number": "+1 (525) 344-6885"
+      },
+      "email": {
+        "title": "Email",
+        "description": "Send us an email anytime",
+        "address": "contact@example.com"
+      },
+      "location": {
+        "title": "Location",
+        "description": "Visit our office",
+        "mapLink": "View on Map"
+      }
+    },
+    "form": {
+      "title": "Send us a Message",
+      "subtitle": "We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
+      "required": "*",
+      "submit": "Send Message",
+      "fields": {
+        "name": {
+          "label": "Name",
+          "placeholder": "Enter your name"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Enter your email"
+        },
+        "subject": {
+          "label": "Subject",
+          "placeholder": "Enter subject"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Enter your message"
+        }
+      }
+    }
   }
 } 

@@ -54,6 +54,55 @@ export type ClientsTranslations = {
   testimonials: ClientTestimonial[];
 };
 
+export type ContactTranslations = {
+  header: {
+    subtitle: string;
+    title: string;
+    breadcrumb: string;
+  };
+  info: {
+    phone: {
+      title: string;
+      description: string;
+      number: string;
+    };
+    email: {
+      title: string;
+      description: string;
+      address: string;
+    };
+    location: {
+      title: string;
+      description: string;
+      mapLink: string;
+    };
+  };
+  form: {
+    title: string;
+    subtitle: string;
+    required: string;
+    submit: string;
+    fields: {
+      name: {
+        label: string;
+        placeholder: string;
+      };
+      email: {
+        label: string;
+        placeholder: string;
+      };
+      subject: {
+        label: string;
+        placeholder: string;
+      };
+      message: {
+        label: string;
+        placeholder: string;
+      };
+    };
+  };
+};
+
 export type RootTranslations = {
   nav: Record<string, string>;
   home: Record<string, string>;
@@ -64,5 +113,6 @@ export type RootTranslations = {
   services: ServicesTranslations;
   education: EducationTranslations;
   clients: ClientsTranslations;
+  contact: ContactTranslations;
   // ...add other sections as needed
 }; 

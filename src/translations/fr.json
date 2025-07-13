@@ -248,5 +248,53 @@
         "desc": "L'avantage de son origine latine et du caractère relativement insignifiant du Lorem Ipsum est que le texte n'attire pas l'attention sur lui-même et ne distrait pas l'attention des spectateurs de la mise en page."
       }
     ]
+  },
+  "contact": {
+    "header": {
+      "subtitle": "Contactez-nous",
+      "title": "Nous Contacter",
+      "breadcrumb": "Contact"
+    },
+    "info": {
+      "phone": {
+        "title": "Téléphone",
+        "description": "Nous aimerions avoir de vos nouvelles",
+        "number": "+1 (525) 344-6885"
+      },
+      "email": {
+        "title": "Email",
+        "description": "Envoyez-nous un email à tout moment",
+        "address": "contact@example.com"
+      },
+      "location": {
+        "title": "Localisation",
+        "description": "Visitez notre bureau",
+        "mapLink": "Voir sur la carte"
+      }
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "subtitle": "Nous aimerions avoir de vos nouvelles. Envoyez-nous un message et nous répondrons dès que possible.",
+      "required": "*",
+      "submit": "Envoyer le message",
+      "fields": {
+        "name": {
+          "label": "Nom",
+          "placeholder": "Entrez votre nom"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Entrez votre email"
+        },
+        "subject": {
+          "label": "Sujet",
+          "placeholder": "Entrez le sujet"
+        },
+        "message": {
+          "label": "Message",
+          "placeholder": "Entrez votre message"
+        }
+      }
+    }
   }
 } 

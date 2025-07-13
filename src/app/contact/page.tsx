@@ -8,7 +8,12 @@ import FooterFour from "@/components/footerFour.js";
 import ScrollTop from "@/components/scrollTop.js";
 
 export default function Contact(){
-    const { t } = useLanguage();
+    const { t, isLoading, translations } = useLanguage();
+    
+    if (isLoading) return null;
+    
+    // Debug: Check if contact translations are loaded
+    console.log('Contact translations:', translations.contact);
     
     return(
         <>
@@ -19,8 +24,8 @@ export default function Contact(){
                 <div className="row mt-5 justify-content-center">
                     <div className="col-12">
                         <div className="title-heading text-center">
-                            <small className="text-white-50 mb-1 fw-medium text-uppercase mx-auto">{t('contact.header.subtitle')}</small>
-                            <h5 className="heading fw-semibold mb-0 page-heading text-white title-dark">{t('contact.header.title')}</h5>
+                            <small className="text-white-50 mb-1 fw-medium text-uppercase mx-auto">{t('contact.header.subtitle') || 'Get In Touch'}</small>
+                            <h5 className="heading fw-semibold mb-0 page-heading text-white title-dark">{t('contact.header.title') || 'Contact Us'}</h5>
                         </div>
                     </div>
                 </div>
@@ -29,7 +34,7 @@ export default function Contact(){
                     <nav aria-label="breadcrumb" className="d-block">
                         <ul className="breadcrumb breadcrumb-muted mb-0 p-0">
                             <li className="breadcrumb-item"><Link href="/">Afira</Link></li>
-                            <li className="breadcrumb-item active" aria-current="page">{t('contact.header.breadcrumb')}</li>
+                            <li className="breadcrumb-item active" aria-current="page">{t('contact.header.breadcrumb') || 'Contact'}</li>
                         </ul>
                     </nav>
                 </div>
