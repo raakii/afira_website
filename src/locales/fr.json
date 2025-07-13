@@ -142,6 +142,23 @@
       "subtitle": "Apprenez, Grandissez et Construisez Votre Avenir Financier",
       "readMore": "Lire Plus"
     },
+    "article": {
+      "notFound": {
+        "title": "Article Non Trouvé",
+        "subtitle": "L'article que vous recherchez n'existe pas.",
+        "description": "L'article que vous recherchez n'existe pas ou a été supprimé.",
+        "backButton": "Retour à l'Éducation"
+      },
+      "relatedArticles": "Articles Connexes",
+      "keyPoints": "Points Clés",
+      "keyPointsList": [
+        "Comprendre les bases et l'importance",
+        "Étapes pratiques pour commencer",
+        "Erreurs courantes à éviter",
+        "Avantages à long terme et stratégies"
+      ],
+      "conclusion": "N'oubliez pas, l'éducation financière est un voyage, pas une destination. Prenez le temps de comprendre ces concepts et appliquez-les à votre situation personnelle."
+    },
     "articles": [
       {
         "title": "Comprendre le Microcrédit : Guide du Débutant",
@@ -225,28 +242,52 @@
       }
     ]
   },
-  "clients": {
-    "title": "Ce que disent nos clients",
-    "subtitle": "Témoignages de notre communauté",
-    "testimonials": [
-      {
-        "image": "/images/busi01.jpg",
-        "name": "Johnny Rosario",
-        "title": "P.D.G",
-        "desc": "L'avantage de son origine latine et du caractère relativement insignifiant du Lorem Ipsum est que le texte n'attire pas l'attention sur lui-même et ne distrait pas l'attention des spectateurs de la mise en page."
+  "contact": {
+    "header": {
+      "subtitle": "Contactez-nous",
+      "title": "Contactez-nous",
+      "breadcrumb": "Contact"
+    },
+    "info": {
+      "phone": {
+        "title": "Téléphone",
+        "description": "Contactez notre équipe pour toute question sur nos services",
+        "number": "+152 534-468-854"
       },
-      {
-        "image": "/images/busi02.jpg",
-        "name": "Gale Larose",
-        "title": "Manager",
-        "desc": "L'avantage de son origine latine et du caractère relativement insignifiant du Lorem Ipsum est que le texte n'attire pas l'attention sur lui-même et ne distrait pas l'attention des spectateurs de la mise en page."
+      "email": {
+        "title": "Email",
+        "description": "Envoyez-nous un email et nous vous répondrons dans les plus brefs délais",
+        "address": "afira@gmail.com"
       },
-      {
-        "image": "/images/busi03.jpg",
-        "name": "Shelly Goodman",
-        "title": "Manager",
-        "desc": "L'avantage de son origine latine et du caractère relativement insignifiant du Lorem Ipsum est que le texte n'attire pas l'attention sur lui-même et ne distrait pas l'attention des spectateurs de la mise en page."
+      "location": {
+        "title": "Localisation",
+        "description": "Almadies\nDakar, Sénégal",
+        "mapLink": "Voir sur Google Maps"
       }
-    ]
+    },
+    "form": {
+      "title": "Contactez-nous !",
+      "subtitle": "La finance qui vous comprend, au rythme de vos besoins !",
+      "fields": {
+        "name": {
+          "label": "Prénom et Nom",
+          "placeholder": "Nom :"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Email :"
+        },
+        "subject": {
+          "label": "Sujet",
+          "placeholder": "Sujet :"
+        },
+        "message": {
+          "label": "Commentaires",
+          "placeholder": "Message :"
+        }
+      },
+      "submit": "Envoyer un Message",
+      "required": "*"
+    }
   }
 } 

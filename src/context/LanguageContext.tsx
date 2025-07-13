@@ -1,43 +1,52 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
-import { usePathname, useRouter } from 'next/navigation';
+import type { RootTranslations } from '@/types/translations';
 
 type LanguageContextType = {
   language: string;
-  setLanguage: (lang: string) => void;
+  setLanguage: React.Dispatch<React.SetStateAction<string>>;
+  t: (key: string) => string;
+  isLoading: boolean;
+  translations: RootTranslations;
 };
 
-const LanguageContext = createContext<LanguageContextType>({
-  language: 'en',
-  setLanguage: () => {},
-});
+const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const pathname = usePathname();
-  const router = useRouter();
-  const [language, setLanguage] = useState('en');
+  const [language, setLanguage] = useState<string>('en');
+  const [translations, setTranslations] = useState<RootTranslations>({} as RootTranslations);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    // Get the language from the URL path
-    const pathLang = pathname.split('/')[1];
-    if (pathLang === 'fr' || pathLang === 'en') {
-      setLanguage(pathLang);
-    }
-  }, [pathname]);
+    const loadTranslations = async () => {
+      setIsLoading(true);
+      const response = await import(`../translations/${language}.json`);
+      setTranslations(response.default);
+      setIsLoading(false);
+    };
 
-  const handleLanguageChange = (newLang: string) => {
-    setLanguage(newLang);
-    // Update the URL to reflect the new language
-    const newPath = pathname.replace(/^\/[a-z]{2}/, `/${newLang}`);
-    router.push(newPath);
+    loadTranslations();
+  }, [language]);
+
+  const t = (key: string): string => {
+    return key.split('.').reduce((obj: unknown, k: string) => {
+      if (obj && typeof obj === 'object' && k in obj) {
+        return (obj as Record<string, unknown>)[k];
+      }
+      return undefined;
+    }, translations as unknown) as string || key;
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage: handleLanguageChange }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, isLoading, translations }}>
       {children}
     </LanguageContext.Provider>
   );
 };
 
-export const useLanguage = () => useContext(LanguageContext); 
+export const useLanguage = () => {
+  const context = useContext(LanguageContext);
+  if (!context) throw new Error('useLanguage must be used within a LanguageProvider');
+  return context;
+}; 

@@ -1,28 +1,37 @@
 'use client'
-import React,{useState} from "react";
+import React, { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function ScrollTop(){
-    let [visible, setVisible] = useState(false) 
+    const [visible, setVisible] = useState(false);
 
-    let toggleVisible = () => { 
-        let scrolled = document.documentElement.scrollTop; 
+    const toggleVisible = () => { 
+        const scrolled = document.documentElement.scrollTop; 
         if (scrolled > 300){ 
           setVisible(true) 
         }  
         else if (scrolled <= 300){ 
           setVisible(false) 
         } 
-      }; 
-      let scrollToTop = () =>{ 
+    }; 
+
+    const scrollToTop = () =>{ 
         window.scrollTo({ 
           top: 0,  
           behavior: 'smooth'
         }); 
-      };
-      if (typeof window !== "undefined") {
-         window.addEventListener('scroll', toggleVisible); 
-      }
+    };
+
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            window.addEventListener('scroll', toggleVisible);
+            
+            // Cleanup function to remove event listener
+            return () => {
+                window.removeEventListener('scroll', toggleVisible);
+            };
+        }
+    }, []); // Empty dependency array means this effect runs once on mount
   
     return(
         <>

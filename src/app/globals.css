@@ -41,6 +41,59 @@ a {
   }
 }
 
+/* Mobile scrolling fixes */
+#topnav {
+  touch-action: pan-y !important;
+  pointer-events: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Ensure content below navbar can be scrolled */
+body {
+  -webkit-overflow-scrolling: touch;
+  overflow-scrolling: touch;
+}
+
+/* Fix for iOS Safari */
+@supports (-webkit-touch-callout: none) {
+  #topnav {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  
+  body {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+/* Carousel touch fixes */
+.home-slider,
+.carousel,
+.carousel .carousel-slider,
+.carousel .slide,
+.carousel .slide > div {
+  touch-action: pan-y !important;
+  pointer-events: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Override carousel's default touch behavior */
+.carousel .carousel-slider {
+  touch-action: pan-y !important;
+}
+
+.carousel .slide {
+  touch-action: pan-y !important;
+  pointer-events: auto !important;
+}
+
+/* Ensure the carousel doesn't block scroll events */
+.carousel-root {
+  touch-action: pan-y !important;
+  pointer-events: auto !important;
+}
+
 /* Swiper Custom Styles */
 .testimonial-slider {
     padding: 0px 20px;

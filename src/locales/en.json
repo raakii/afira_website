@@ -142,6 +142,23 @@
       "subtitle": "Learn, Grow, and Build Your Financial Future",
       "readMore": "Read More"
     },
+    "article": {
+      "notFound": {
+        "title": "Article Not Found",
+        "subtitle": "The article you're looking for doesn't exist.",
+        "description": "The article you're looking for doesn't exist or has been removed.",
+        "backButton": "Back to Education"
+      },
+      "relatedArticles": "Related Articles",
+      "keyPoints": "Key Points",
+      "keyPointsList": [
+        "Understanding the basics and importance",
+        "Practical steps to get started",
+        "Common mistakes to avoid",
+        "Long-term benefits and strategies"
+      ],
+      "conclusion": "Remember, financial education is a journey, not a destination. Take your time to understand these concepts and apply them to your personal situation."
+    },
     "articles": [
       {
         "title": "Understanding Microcredit: A Beginner's Guide",
@@ -225,28 +242,52 @@
       }
     ]
   },
-  "clients": {
-    "title": "What Our Clients Say",
-    "subtitle": "Testimonials from our community",
-    "testimonials": [
-      {
-        "image": "/images/busi01.jpg",
-        "name": "Johnny Rosario",
-        "title": "C.E.O",
-        "desc": "The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewers attention from the layout."
+  "contact": {
+    "header": {
+      "subtitle": "Get in touch",
+      "title": "Contact us",
+      "breadcrumb": "Contact"
+    },
+    "info": {
+      "phone": {
+        "title": "Phone",
+        "description": "Get in touch with our team for any questions about our services",
+        "number": "+152 534-468-854"
       },
-      {
-        "image": "/images/busi02.jpg",
-        "name": "Gale Larose",
-        "title": "Manager",
-        "desc": "The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewers attention from the layout."
+      "email": {
+        "title": "Email",
+        "description": "Send us an email and we'll get back to you as soon as possible",
+        "address": "afira@gmail.com"
       },
-      {
-        "image": "/images/busi03.jpg",
-        "name": "Shelly Goodman",
-        "title": "Manager",
-        "desc": "The advantage of its Latin origin and the relative meaninglessness of Lorum Ipsum is that the text does not attract attention to itself or distract the viewers attention from the layout."
+      "location": {
+        "title": "Location",
+        "description": "Almadies\nDakar, Senegal",
+        "mapLink": "View on Google map"
       }
-    ]
+    },
+    "form": {
+      "title": "Contact us!",
+      "subtitle": "Finance that understands you, at the pace of your needs!",
+      "fields": {
+        "name": {
+          "label": "First and Last Name",
+          "placeholder": "Name :"
+        },
+        "email": {
+          "label": "Email",
+          "placeholder": "Email :"
+        },
+        "subject": {
+          "label": "Subject",
+          "placeholder": "Subject :"
+        },
+        "message": {
+          "label": "Comments",
+          "placeholder": "Message :"
+        }
+      },
+      "submit": "Send Message",
+      "required": "*"
+    }
   }
 } 

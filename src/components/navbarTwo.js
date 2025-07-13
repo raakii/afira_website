@@ -4,8 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from 'next/navigation'
 import { useLanguage } from '../context/LanguageContext';
-import enTranslations from '../translations/en.json';
-import frTranslations from '../translations/fr.json';
+import enTranslations from '../locales/en.json';
+import frTranslations from '../locales/fr.json';
 
 export default function NavbarTwo({navClass,manuClass,navDark}){
     let [scroll, setScroll] = useState(false);
@@ -29,6 +29,24 @@ export default function NavbarTwo({navClass,manuClass,navDark}){
         };
       }, [pathname]);
 
+    // Fix mobile scrolling issue
+    useEffect(() => {
+        if (typeof window !== "undefined") {
+            const navbar = document.getElementById("topnav");
+            if (navbar) {
+                // Add touch-action to allow scrolling through the navbar
+                navbar.style.touchAction = "pan-y";
+                navbar.style.pointerEvents = "auto";
+                
+                // Ensure the navbar doesn't block scroll events
+                navbar.addEventListener('touchstart', (e) => {
+                    // Allow touch events to pass through to content below
+                    e.stopPropagation();
+                }, { passive: true });
+            }
+        }
+    }, []);
+
     const toggleMenu = () => {
         setisMenu(!isMenu);
         if (document.getElementById("navigation")) {
@@ -49,7 +67,10 @@ export default function NavbarTwo({navClass,manuClass,navDark}){
 
     return(
         <>
-         <header id="topnav" className={`${scroll ? "nav-sticky" :""} ${navClass}`}>
+         <header id="topnav" className={`${scroll ? "nav-sticky" :""} ${navClass}`} style={{ 
+            touchAction: "pan-y",
+            pointerEvents: "auto"
+         }}>
             <div className="container">
                 {navDark === true ?  
                 <Link className="logo" href="/">
@@ -96,7 +117,13 @@ export default function NavbarTwo({navClass,manuClass,navDark}){
 
                         <li>
                             <button 
-                                onClick={() => setLanguage(language === 'en' ? 'fr' : 'en')}
+                                onClick={() => {
+                                    const scrollY = window.scrollY;
+                                    setLanguage(language === 'en' ? 'fr' : 'en');
+                                    setTimeout(() => {
+                                        window.scrollTo(0, scrollY);
+                                    }, 0);
+                                }}
                                 className="btn btn-primary"
                                 style={{ marginLeft: '10px', marginTop: '15px' }}
                             >
