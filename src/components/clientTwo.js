@@ -9,7 +9,7 @@ import 'swiper/css/pagination';
 import { useLanguage } from '@/context/LanguageContext';
 
 export default function ClientTwo() {
-    const { t, translations, isLoading } = useLanguage();
+    const { translations, isLoading } = useLanguage();
     
     if (isLoading) return null;
 
@@ -43,7 +43,7 @@ export default function ClientTwo() {
                                         alt=""
                                     />
                                     <div className="card-body pb-0 content">
-                                        <p className="h5 fw-normal text-muted fst-italic">"{item.desc}"</p>
+                                        <p className="h5 fw-normal text-muted fst-italic">&ldquo;{item.desc}&rdquo;</p>
                                         <div className="name mt-4">
                                             <small className="text-uppercase fw-semibold d-block">{item.name}</small>
                                             <small className="text-muted">{item.title}</small>
