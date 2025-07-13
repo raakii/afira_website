@@ -12,7 +12,8 @@ import { useLanguage } from '@/context/LanguageContext';
 import Link from "next/link";
 
 export default function Home() {
-  const { t } = useLanguage();
+  const { t, isLoading } = useLanguage();
+  if (isLoading) return null;
 
   const aboutData = [
     {

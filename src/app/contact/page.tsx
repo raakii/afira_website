@@ -2,14 +2,13 @@
 
 import React from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { useLanguage } from '@/context/LanguageContext';
 import NavbarTwo from "@/components/navbarTwo.js";
 import FooterFour from "@/components/footerFour.js";
 import ScrollTop from "@/components/scrollTop.js";
 
 export default function Contact(){
-    const { t } = useLanguage() as any;
+    const { t } = useLanguage();
     
     return(
         <>

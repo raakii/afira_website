@@ -1,20 +1,21 @@
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
+import type { RootTranslations } from '@/types/translations';
 
 type LanguageContextType = {
   language: string;
   setLanguage: React.Dispatch<React.SetStateAction<string>>;
   t: (key: string) => string;
   isLoading: boolean;
-  translations: any;
+  translations: RootTranslations;
 };
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [language, setLanguage] = useState<string>('en');
-  const [translations, setTranslations] = useState<any>({});
+  const [translations, setTranslations] = useState<RootTranslations>({} as RootTranslations);
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
@@ -29,7 +30,12 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   }, [language]);
 
   const t = (key: string): string => {
-    return key.split('.').reduce((obj: any, k: string) => obj?.[k], translations as any) || key;
+    return key.split('.').reduce((obj: unknown, k: string) => {
+      if (obj && typeof obj === 'object' && k in obj) {
+        return (obj as Record<string, unknown>)[k];
+      }
+      return undefined;
+    }, translations as unknown) as string || key;
   };
 
   return (
@@ -39,4 +45,8 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   );
 };
 
-export const useLanguage = () => useContext(LanguageContext); 
+export const useLanguage = () => {
+  const context = useContext(LanguageContext);
+  if (!context) throw new Error('useLanguage must be used within a LanguageProvider');
+  return context;
+}; 

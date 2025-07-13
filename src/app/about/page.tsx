@@ -11,7 +11,8 @@ import FooterFour from "@/components/footerFour.js";
 import ScrollTop from "@/components/scrollTop.js";
 
 export default function PageAboutUs(){
-    const { t } = useLanguage();
+    const { t, isLoading } = useLanguage();
+    if (isLoading) return null;
 
     const aboutData = [
         {

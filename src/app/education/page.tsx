@@ -6,15 +6,16 @@ import Link from "next/link";
 import { useLanguage } from '@/context/LanguageContext';
 import NavbarTwo from "@/components/navbarTwo.js";
 import BlogSidebar from "@/components/blogSidebar.js";
-import FooterSeven from "@/components/footerSeven.js";
 import ScrollTop from "@/components/scrollTop.js";
+import FooterFour from "@/components/footerFour";
+import type { BlogDataItem } from '@/types/translations';
 
 export default function GridSidebar(){
     const { t, isLoading, translations } = useLanguage();
     if (isLoading) return null;
 
     // Blog data from translations
-    const blogData = translations.education?.blogData || [];
+    const blogData: BlogDataItem[] = translations.education?.blogData || [];
 
     return(
         <>
@@ -37,7 +38,7 @@ export default function GridSidebar(){
                 <div className="row">
                     <div className="col-lg-8 col-md-6">
                         <div className="row">
-                            {blogData.slice(0,8).map((item:any,index:number)=>{
+                            {blogData.slice(0,8).map((item, index) => {
                                 return(
                                     <div className="col-lg-6 mb-4 pb-2" key={index}>
                                         <div className="card blog blog-primary shadow rounded overflow-hidden">
@@ -87,7 +88,7 @@ export default function GridSidebar(){
                 </div>
             </div>
         </section>
-        <FooterSeven/>
+        <FooterFour/>
         <ScrollTop/>
         </>
     )

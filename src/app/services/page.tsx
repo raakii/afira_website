@@ -10,10 +10,13 @@ import BlogOne from "@/components/blogTwo.js";
 import FooterFour from "@/components/footerFour.js";
 import ScrollTop from "@/components/scrollTop.js";
 import Tab from "@/components/tab.js";
+import type { ServiceStep } from '@/types/translations';
 
 export default function Services(){
-    const { t, translations } = useLanguage();
-    const steps = translations.services?.steps || [];
+    const { t, translations, isLoading } = useLanguage();
+    if (isLoading) return null;
+    
+    const steps: ServiceStep[] = translations.services?.steps || [];
 
     if (!steps.length) return null;
 
@@ -57,16 +60,16 @@ export default function Services(){
         <section className="section">
             <div className="container">
                 <div className="row">
-                    {steps.map((item)=>{
+                    {steps.map((item) => {
                         return(
-                        <div className="col-lg-3 col-md-6 mt-4 pt-4" key={item.id}>
-                            <div className="card border-0 p-4 text-center rounded features features-classic feature-primary">
-                                <div className="content">
-                                    <Link href={`/services/${item.id}`} className="title text-dark h5">{item.title}</Link>
-                                    <p className="text-muted mb-0 mt-3">{item.desc}</p>
+                            <div className="col-lg-3 col-md-6 mt-4 pt-4" key={item.id}>
+                                <div className="card border-0 p-4 text-center rounded features features-classic feature-primary">
+                                    <div className="content">
+                                        <Link href={`/services/${item.id}`} className="title text-dark h5">{item.title}</Link>
+                                        <p className="text-muted mb-0 mt-3">{item.desc}</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         )
                     })}
                 </div>
