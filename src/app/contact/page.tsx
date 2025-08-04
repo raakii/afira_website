@@ -2,6 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { useLanguage } from '@/context/LanguageContext';
 import NavbarTwo from "@/components/navbarTwo.js";
 import FooterFour from "@/components/footerFour.js";
@@ -34,6 +35,32 @@ export default function Contact(){
                             <li className="breadcrumb-item active" aria-current="page">{t('contact.header.breadcrumb') || 'Contact'}</li>
                         </ul>
                     </nav>
+                </div>
+            </div>
+        </section>
+        <section className="section">
+            <div className="container">
+                <div className="row align-items-center">
+                    <div className="col-lg-5 col-md-6">
+                        <Image src="/images/femme5.jpg" width={0} height={0} sizes="100vw" style={{width:'100%',height:'auto' }} className="img-fluid rounded shadow" alt=""/>
+                    </div>
+
+                    <div className="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+                        <div className="section-title ms-lg-5">
+                            <h4 className="title mb-3">{t('about.title')}</h4>
+                            <div className="text-muted" style={{ whiteSpace: 'pre-line' }}>{t('contact.intro')}</div>
+                            <ul className="list-unstyled text-muted mb-0">
+                                <li className="mb-0">
+                                    <span className="text-dark h5 me-2">{t('about.vision.title')}</span>
+                                    {t('contact.vision.description')}
+                                </li>
+                                <li className="mb-0">
+                                    <span className="text-dark h5 me-2">{t('about.mission.title')}</span>
+                                    {t('contact.mission.description')}
+                                </li>
+                            </ul>                        
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>

@@ -60,14 +60,18 @@
   },
   "about": {
     "title": "Nous vous accompagnons dans la réalisation de vos projets !",
-    "intro": "Chez AFIRA, nous croyons que chaque vendeuse, livreur et agriculteur mérite une chance de développer son activité, même sans accès aux banques.",
+    "intro": "Chez Afira, nous croyons que l'inclusion financière est un levier puissant pour transformer des vies et bâtir un avenir durable. Notre mission est de démocratiser l'accès aux services financiers et à l'éducation économique, en particulier pour celles et ceux que les systèmes traditionnels laissent souvent de côté : jeunes femmes, étudiants, travailleurs informels et entrepreneurs en devenir. Nous combinons technologie mobile, microcrédit flexible et contenu éducatif accessible pour offrir à chacun·e les outils concrets vers l'autonomie financière.",
     "vision": {
-      "title": "Notre Mission\n",
-      "description": "est simple:\nRendre le financement accessible, rapide et transparent pour ces travailleurs de l’informel, tout en leur donnant les outils pour mieux gérer leur argent et renforcer leur autonomie financière.\nNous savons que les microfinances traditionnelles sont souvent coûteuses, complexes et peu adaptées aux besoins réels des petites activités. Résultat : des millions de femmes et de jeunes restent exclus du système financier, prisonniers de prêts informels abusifs.Chez AFIRA, nous proposons:\nDes micro-prêts instantanés (nanofinance) : Montants adaptés à la réalité débloqués en via un compte mobile money.\nUne approche simple, sans stress : Pas de frais cachés, pas de papiers, pas de réunions interminables.\nL’éducation financière intégrée : Chaque prêt s’accompagne d’un mini-module éducatif pratique pour mieux gérer ses revenus.\nDes incitations positives : Fidélité récompensée, gamification et accompagnement pour grandir ensemble."
+      "title": "Notre vision",
+      "description": "Un monde où chaque jeune femme entrepreneure, chaque travailleur informel peut accéder aux ressources nécessaires pour concrétiser ses idées, sortir de la précarité et devenir acteur de son avenir."
     },
     "mission": {
-      "title": "Notre Ambition ?\n",
-      "description": "\nConstruire la première plateforme inclusive de nanofinance et d’éducation financière en Afrique de l’Ouest, en commençant par le Sénégal, pour donner à des milliers de femmes et jeunes entrepreneurs les moyens de réussir, un prêt à la fois."
+      "title": "Notre Mission",
+      "description": "L'accès ne suffit pas. L'inclusion véritable signifie créer des solutions pour celles et ceux qui sont systématiquement oubliés : les femmes, les populations en zone rurale, les communautés à faibles revenus. Nous développons des services numériques inclusifs, qui sont : Abordables, Faciles à utiliser, même en cas de faible littératie numérique, Disponibles dans les langues locales, Pertinents pour les besoins quotidiens. Ce n'est pas un problème de réseau. C'est un enjeu humain."
+    },
+    "whyAfira": {
+      "title": "Pourquoi Afira",
+      "description": "La connectivité mobile est aujourd'hui un moteur essentiel de la transformation numérique et de la croissance socio-économique en Afrique subsaharienne. Selon le rapport GSMA Mobile Economy 2024 : « La technologie mobile contribue à l'ODD 4, qui vise à garantir une éducation de qualité, inclusive et équitable, et à promouvoir des possibilités d'apprentissage tout au long de la vie. » « La transformation numérique rend les ressources éducatives plus accessibles, améliore les résultats scolaires et soutient l'apprentissage continu. » Nous nous appuyons sur ces constats pour concevoir une plateforme qui renforce les capacités des communautés et génère un impact durable."
     },
     "header": {
       "subtitle": "Qui sommes nous?",
@@ -75,7 +79,7 @@
     },
     "breadcrumb": {
       "home": "Afira",
-      "current": "À propos"
+      "current": "Nanofinance"
     },
     "impact": {
       "title": "Nos Valeurs",
@@ -246,10 +250,20 @@
     ]
   },
   "contact": {
+    "title": "Nous vous accompagnons dans la réalisation de vos projets !",
+    "intro": "Chez AFIRA, nous croyons que chaque vendeuse, livreur et agriculteur mérite une chance de développer son activité, même sans accès aux banques.",
+    "vision": {
+      "title": "Notre Mission\n",
+      "description": "est simple:\nRendre le financement accessible, rapide et transparent pour ces travailleurs de l’informel, tout en leur donnant les outils pour mieux gérer leur argent et renforcer leur autonomie financière.\nNous savons que les microfinances traditionnelles sont souvent coûteuses, complexes et peu adaptées aux besoins réels des petites activités. Résultat : des millions de femmes et de jeunes restent exclus du système financier, prisonniers de prêts informels abusifs.Chez AFIRA, nous proposons:\nDes micro-prêts instantanés (nanofinance) : Montants adaptés à la réalité débloqués en via un compte mobile money.\nUne approche simple, sans stress : Pas de frais cachés, pas de papiers, pas de réunions interminables.\nL’éducation financière intégrée : Chaque prêt s’accompagne d’un mini-module éducatif pratique pour mieux gérer ses revenus.\nDes incitations positives : Fidélité récompensée, gamification et accompagnement pour grandir ensemble."
+    },
+    "mission": {
+      "title": "Notre Ambition ?\n",
+      "description": "\nConstruire la première plateforme inclusive de nanofinance et d’éducation financière en Afrique de l’Ouest, en commençant par le Sénégal, pour donner à des milliers de femmes et jeunes entrepreneurs les moyens de réussir, un prêt à la fois."
+    },
     "header": {
-      "subtitle": "Contactez-nous",
-      "title": "Contactez-nous",
-      "breadcrumb": "Contact"
+      "subtitle": "Qui sommes nous ?",
+      "title": "A propos de nous",
+      "breadcrumb": "A propos de nous"
     },
     "info": {
       "phone": {

@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from '@/context/LanguageContext';
 import NavbarTwo from "@/components/navbarTwo.js";
-import ClientTwo from "@/components/clientTwo.js";
 import Counter from "@/components/counter.js";
 import FooterFour from "@/components/footerFour.js";
 import ScrollTop from "@/components/scrollTop.js";
@@ -68,6 +67,10 @@ export default function PageAboutUs(){
                                     <span className="text-dark h5 me-2">{t('about.mission.title')}</span>
                                     {t('about.mission.description')}
                                 </li>
+                                <li className="mb-0">
+                                    <span className="text-dark h5 me-2">{t('about.whyAfira.title')}</span>
+                                    {t('about.whyAfira.description')}
+                                </li>
                             </ul>                        
                         </div>
                     </div>
@@ -92,11 +95,6 @@ export default function PageAboutUs(){
                     })}
                 </div>
             </div>
-
-            <div className=" mt-100 mt-60">
-                <ClientTwo/>
-            </div>
-
             <Counter/>
         </section>
         <FooterFour/>
