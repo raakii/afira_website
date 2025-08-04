@@ -1,10 +1,10 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About",
+    "about": "Nanofinance",
     "services": "Services",
     "education": "Education",
-    "contact": "Contact"
+    "contact": "About us"
   },
   "home": {
     "whyItMatters": "Why it matters?",

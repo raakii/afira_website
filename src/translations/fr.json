@@ -1,10 +1,10 @@
 {
   "nav": {
     "home": "Accueil",
-    "about": "À propos",
+    "about": "Nanofinance",
     "services": "Services",
     "education": "Éducation",
-    "contact": "Contact"
+    "contact": "A propos de nous"
   },
   "home": {
     "whyItMatters": "Pourquoi c'est important ?",

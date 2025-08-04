@@ -4,7 +4,6 @@ import Image from "next/image";
 import HeroSlider from "@/components/heroSlider.js"; 
 import NavbarTwo from "@/components/navbarTwo.js";  
 import Cta from "@/components/cta.js";
-import ClientTwo from "@/components/clientTwo.js";
 import BlogTwo from "@/components/blogTwo.js";
 import FooterFour from "@/components/footerFour.js";
 import ScrollTop from "@/components/scrollTop.js";
@@ -67,7 +66,7 @@ export default function Home() {
     </section>
     <Cta/>
         <section className="section">
-           <ClientTwo/>
+           {/* <ClientTwo/> */}
             <div className="container mt-100 mt-60">
                <BlogTwo/>
             </div>
