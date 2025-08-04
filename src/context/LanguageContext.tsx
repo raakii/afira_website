@@ -7,6 +7,7 @@ type LanguageContextType = {
   language: string;
   setLanguage: React.Dispatch<React.SetStateAction<string>>;
   t: (key: string) => string;
+  tWithLineBreaks: (key: string) => React.JSX.Element;
   isLoading: boolean;
   translations: RootTranslations;
 };
@@ -38,8 +39,23 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
     }, translations as unknown) as string || key;
   };
 
+  // Helper function to render text with line breaks
+  const tWithLineBreaks = (key: string): React.JSX.Element => {
+    const text = t(key);
+    return (
+      <>
+        {text.split('\n').map((line, index) => (
+          <React.Fragment key={index}>
+            {line}
+            {index < text.split('\n').length - 1 && <br />}
+          </React.Fragment>
+        ))}
+      </>
+    );
+  };
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t, isLoading, translations }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, tWithLineBreaks, isLoading, translations }}>
       {children}
     </LanguageContext.Provider>
   );

@@ -11,7 +11,7 @@ import FooterFour from "@/components/footerFour.js";
 import ScrollTop from "@/components/scrollTop.js";
 
 export default function PageAboutUs(){
-    const { t, isLoading } = useLanguage();
+    const { t, tWithLineBreaks, isLoading } = useLanguage();
     if (isLoading) return null;
 
     const aboutData = [
@@ -70,7 +70,7 @@ export default function PageAboutUs(){
                     <div className="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
                         <div className="section-title ms-lg-5">
                             <h4 className="title mb-3">{t('about.title')}</h4>
-                            <p className="text-muted">{t('about.intro')}</p>
+                            <p className="text-muted" style={{whiteSpace: 'pre-line'}}>{t('about.intro')}</p>
                             <ul className="list-unstyled text-muted mb-0">
                                 <li className="mb-0">
                                     <span className="text-dark h5 me-2">{t('about.vision.title')}</span>
