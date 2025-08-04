@@ -4,16 +4,13 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from 'next/navigation'
 import { useLanguage } from '../context/LanguageContext';
-import enTranslations from '../locales/en.json';
-import frTranslations from '../locales/fr.json';
 
 export default function NavbarTwo({navClass,manuClass,navDark}){
     let [scroll, setScroll] = useState(false);
     let [isMenu, setisMenu] = useState(false);
     let [manu , setManu] = useState('');
     let pathname = usePathname();
-    const { language, setLanguage } = useLanguage();
-    const translations = language === 'en' ? enTranslations : frTranslations;
+    const { language, setLanguage, t } = useLanguage();
 
     useEffect(() => {
         setManu(pathname)
@@ -100,19 +97,19 @@ export default function NavbarTwo({navClass,manuClass,navDark}){
                 <div id="navigation" style={{ display: isMenu ? 'block' : 'none' }}>
                     <ul className={manuClass}>
                         <li className="/index-business">
-                            <Link href="/about">{translations.nav.about}</Link><span className="menu-arrow"></span>
+                            <Link href="/about">{t('nav.about')}</Link><span className="menu-arrow"></span>
                         </li>
 
                         <li className={` has-submenu parent-menu-item`}>
-                            <Link href="/services">{translations.nav.services}</Link><span className="menu-arrow"></span>
+                            <Link href="/services">{t('nav.services')}</Link><span className="menu-arrow"></span>
                         </li>
         
                         <li className="/page-services">
-                            <Link href="/education">{translations.nav.education}</Link><span className="menu-arrow"></span>
+                            <Link href="/education">{t('nav.education')}</Link><span className="menu-arrow"></span>
                         </li>
 
                         <li className={manu === "/page-contact" || "" ? "active" : ""}>
-                            <Link href="/contact" className="sub-menu-item">{translations.nav.contact}</Link>
+                            <Link href="/contact" className="sub-menu-item">{t('nav.contact')}</Link>
                         </li>
 
                         <li>

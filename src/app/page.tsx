@@ -33,7 +33,7 @@ export default function Home() {
                 <div className="col-lg-5 col-md-6 order-1 order-md-2">
                     <div className="">
                         <div className="position-relative">
-                            <Image src='/images/busi01.jpg' width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} className="img-fluid rounded shadow" alt=""/>
+                            <Image src='/images/femme2.jpg' width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} className="img-fluid rounded shadow" alt=""/>
                         </div>
                     </div>
                 </div>

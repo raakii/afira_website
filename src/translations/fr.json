@@ -60,18 +60,14 @@
   },
   "about": {
     "title": "Nous vous accompagnons dans la réalisation de vos projets !",
-    "intro": "Chez Afira, nous croyons que l'inclusion financière est un levier puissant pour transformer des vies et bâtir un avenir durable. Notre mission est de démocratiser l'accès aux services financiers et à l'éducation économique, en particulier pour celles et ceux que les systèmes traditionnels laissent souvent de côté : jeunes femmes, étudiants, travailleurs informels et entrepreneurs en devenir. Nous combinons technologie mobile, microcrédit flexible et contenu éducatif accessible pour offrir à chacun·e les outils concrets vers l'autonomie financière.",
+    "intro": "Chez AFIRA, nous croyons que chaque vendeuse, livreur et agriculteur mérite une chance de développer son activité, même sans accès aux banques.",
     "vision": {
-      "title": "Notre vision",
-      "description": "Un monde où chaque jeune femme entrepreneure, chaque travailleur informel peut accéder aux ressources nécessaires pour concrétiser ses idées, sortir de la précarité et devenir acteur de son avenir."
+      "title": "Notre Mission\n",
+      "description": "est simple:\nRendre le financement accessible, rapide et transparent pour ces travailleurs de l’informel, tout en leur donnant les outils pour mieux gérer leur argent et renforcer leur autonomie financière.\nNous savons que les microfinances traditionnelles sont souvent coûteuses, complexes et peu adaptées aux besoins réels des petites activités. Résultat : des millions de femmes et de jeunes restent exclus du système financier, prisonniers de prêts informels abusifs.Chez AFIRA, nous proposons:\nDes micro-prêts instantanés (nanofinance) : Montants adaptés à la réalité débloqués en via un compte mobile money.\nUne approche simple, sans stress : Pas de frais cachés, pas de papiers, pas de réunions interminables.\nL’éducation financière intégrée : Chaque prêt s’accompagne d’un mini-module éducatif pratique pour mieux gérer ses revenus.\nDes incitations positives : Fidélité récompensée, gamification et accompagnement pour grandir ensemble."
     },
     "mission": {
-      "title": "Notre Mission",
-      "description": "L'accès ne suffit pas. L'inclusion véritable signifie créer des solutions pour celles et ceux qui sont systématiquement oubliés : les femmes, les populations en zone rurale, les communautés à faibles revenus. Nous développons des services numériques inclusifs, qui sont : Abordables, Faciles à utiliser, même en cas de faible littératie numérique, Disponibles dans les langues locales, Pertinents pour les besoins quotidiens. Ce n'est pas un problème de réseau. C'est un enjeu humain."
-    },
-    "whyAfira": {
-      "title": "Pourquoi Afira",
-      "description": "La connectivité mobile est aujourd'hui un moteur essentiel de la transformation numérique et de la croissance socio-économique en Afrique subsaharienne. Selon le rapport GSMA Mobile Economy 2024 : « La technologie mobile contribue à l'ODD 4, qui vise à garantir une éducation de qualité, inclusive et équitable, et à promouvoir des possibilités d'apprentissage tout au long de la vie. » « La transformation numérique rend les ressources éducatives plus accessibles, améliore les résultats scolaires et soutient l'apprentissage continu. » Nous nous appuyons sur ces constats pour concevoir une plateforme qui renforce les capacités des communautés et génère un impact durable."
+      "title": "Notre Ambition ?\n",
+      "description": "\nConstruire la première plateforme inclusive de nanofinance et d’éducation financière en Afrique de l’Ouest, en commençant par le Sénégal, pour donner à des milliers de femmes et jeunes entrepreneurs les moyens de réussir, un prêt à la fois."
     },
     "header": {
       "subtitle": "Qui sommes nous?",
@@ -82,25 +78,25 @@
       "current": "À propos"
     },
     "impact": {
-      "title": "Notre Impact",
+      "title": "Nos Valeurs",
       "readMore": "Lire Plus"
     },
-    "sdgs": {
-      "sdg4": {
-        "title": "📚 ODD 4 – Éducation de qualité",
-        "description": "Assurer l'accès de tous à une éducation financière, inclusive et de qualité, et promouvoir des opportunités d'apprentissage."
+    "values": {
+      "value1": {
+        "title": " 💡 Innovation utile",
+        "description": "Nous développons des solutions technologiques accessibles, ancrées dans les réalités du terrain. Chaque fonctionnalité que nous créons a pour but de résoudre un problème concret"
       },
-      "sdg5": {
-        "title": "👩🏽‍🤝‍👨🏾 ODD 5 – Égalité entre les sexes",
-        "description": "Autonomiser les femmes et les filles en mettant un accent particulier sur l'autonomisation économique des jeunes femmes."
+      "value2": {
+        "title": "🤝 Inclusion & Impact social",
+        "description": "Afira agit pour une inclusion financière durable. Nous visons particulièrement les femmes, les jeunes et les travailleurs du secteur informel, en leur donnant les moyens de se développer économiquement."
       },
-      "sdg8": {
-        "title": "💼 ODD 8 – Travail décent et croissance économique",
-        "description": "Promouvoir une croissance économique soutenue, inclusive et durable, le plein emploi productif et un travail décent pour tous."
+      "value3": {
+        "title": "📱 Simplicité digitale",
+        "description": "Nos produits sont pensés pour être simples, intuitifs et adaptés à tous les niveaux de littératie numérique, afin que personne ne soit laissé de côté dans la transition digitale."
       },
-      "sdg10": {
-        "title": "🏘️ ODD 10 – Réduction des inégalités",
-        "description": "Réduire les inégalités et les barrières d'accès aux services financiers pour les populations exclues."
+      "value4": {
+        "title": "🔐 Confiance & transparence",
+        "description": "Nous plaçons l’éthique au cœur de nos relations. Sécurité des données, clarté des offres et responsabilité sont les fondements de la relation de confiance que nous bâtissons avec nos utilisateurs et partenaires."
       }
     }
   },
@@ -197,7 +193,7 @@
       },
       {
         "id": 5,
-        "image": "/images/busi01.jpg",
+        "image": "/images/femme1.jpg",
         "tag": "Investissement",
         "title": "Bases de l'Investissement pour Débutants",
         "desc": "Un guide complet pour comprendre les opportunités et risques d'investissement."
@@ -252,49 +248,49 @@
   "contact": {
     "header": {
       "subtitle": "Contactez-nous",
-      "title": "Nous Contacter",
+      "title": "Contactez-nous",
       "breadcrumb": "Contact"
     },
     "info": {
       "phone": {
         "title": "Téléphone",
-        "description": "Nous aimerions avoir de vos nouvelles",
-        "number": "+1 (525) 344-6885"
+        "description": "Contactez notre équipe pour toute question sur nos services",
+        "number": "+152 534-468-854"
       },
       "email": {
         "title": "Email",
-        "description": "Envoyez-nous un email à tout moment",
-        "address": "contact@example.com"
+        "description": "Envoyez-nous un email et nous vous répondrons dans les plus brefs délais",
+        "address": "afira@gmail.com"
       },
       "location": {
         "title": "Localisation",
-        "description": "Visitez notre bureau",
-        "mapLink": "Voir sur la carte"
+        "description": "Almadies\nDakar, Sénégal",
+        "mapLink": "Voir sur Google Maps"
       }
     },
     "form": {
-      "title": "Envoyez-nous un message",
-      "subtitle": "Nous aimerions avoir de vos nouvelles. Envoyez-nous un message et nous répondrons dès que possible.",
-      "required": "*",
-      "submit": "Envoyer le message",
+      "title": "Contactez-nous !",
+      "subtitle": "La finance qui vous comprend, au rythme de vos besoins !",
       "fields": {
         "name": {
-          "label": "Nom",
-          "placeholder": "Entrez votre nom"
+          "label": "Prénom et Nom",
+          "placeholder": "Nom :"
         },
         "email": {
           "label": "Email",
-          "placeholder": "Entrez votre email"
+          "placeholder": "Email :"
         },
         "subject": {
           "label": "Sujet",
-          "placeholder": "Entrez le sujet"
+          "placeholder": "Sujet :"
         },
         "message": {
-          "label": "Message",
-          "placeholder": "Entrez votre message"
+          "label": "Commentaires",
+          "placeholder": "Message :"
         }
-      }
+      },
+      "submit": "Envoyer un Message",
+      "required": "*"
     }
   }
 } 

@@ -14,30 +14,18 @@ export default function PageAboutUs(){
     const { t, isLoading } = useLanguage();
     if (isLoading) return null;
 
-    const aboutData = [
-        {
-            title: t('about.sdgs.sdg4.title'),
-            desc: t('about.sdgs.sdg4.description')
-        },
-        {
-            title: t('about.sdgs.sdg5.title'),
-            desc: t('about.sdgs.sdg5.description')
-        },
-        {
-            title: t('about.sdgs.sdg8.title'),
-            desc: t('about.sdgs.sdg8.description')
-        },
-        {
-            title: t('about.sdgs.sdg10.title'),
-            desc: t('about.sdgs.sdg10.description')
-        }
-    ]
+    // Collect about values in a more maintainable way
+    const valueKeys = [1, 2, 3, 4];
+    const aboutData = valueKeys.map(i => ({
+        title: t(`about.values.value${i}.title`),
+        desc: t(`about.values.value${i}.description`)
+    }));
 
     return(
         <>
         <NavbarTwo navClass="defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" navDark={false}/>
 
-        <section className="bg-half-170 d-table w-100" style={{backgroundImage:`url(/images/about-us.png)`, backgroundPosition:'center'}}>
+        <section className="bg-half-170 d-table w-100" style={{backgroundImage:`url(/images/femme5.jpg)`, backgroundPosition:'center'}}>
             <div className="bg-overlay bg-gradient-overlay"></div>
             <div className="container">
                 <div className="row mt-5 justify-content-center">
@@ -64,13 +52,13 @@ export default function PageAboutUs(){
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-lg-5 col-md-6">
-                        <Image src="/images/about-us2.png" width={0} height={0} sizes="100vw" style={{width:'100%',height:'auto' }} className="img-fluid rounded shadow" alt=""/>
+                        <Image src="/images/femme6.jpg" width={0} height={0} sizes="100vw" style={{width:'100%',height:'auto' }} className="img-fluid rounded shadow" alt=""/>
                     </div>
 
                     <div className="col-lg-7 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
                         <div className="section-title ms-lg-5">
                             <h4 className="title mb-3">{t('about.title')}</h4>
-                            <p className="text-muted">{t('about.intro')}</p>
+                            <div className="text-muted" style={{ whiteSpace: 'pre-line' }}>{t('about.intro')}</div>
                             <ul className="list-unstyled text-muted mb-0">
                                 <li className="mb-0">
                                     <span className="text-dark h5 me-2">{t('about.vision.title')}</span>
@@ -80,10 +68,6 @@ export default function PageAboutUs(){
                                     <span className="text-dark h5 me-2">{t('about.mission.title')}</span>
                                     {t('about.mission.description')}
                                 </li>
-                                <li className="mb-0">
-                                    <span className="text-dark h5 me-2">{t('about.whyAfira.title')}</span>
-                                    {t('about.whyAfira.description')}
-                                </li>
                             </ul>                        
                         </div>
                     </div>
@@ -92,18 +76,16 @@ export default function PageAboutUs(){
 
             <div className="container mt-100 mt-60">
                 <h1 className="mb-16 text-center">{t('about.impact.title')}</h1>
-                <div className="row justify-content-center mt-8">
+                <div className="row justify-content-center mt-8 align-items-stretch">
                     {aboutData.map((item, index) =>{
                         return(
                         <div className="col-lg-3 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0" key={index}>
-                            <div className="card shadow p-4 rounded features features-classic feature-primary">
-                                <div className="content my-3 border-bottom">
+                            <div className="card shadow p-4 rounded features features-classic feature-primary h-100 d-flex flex-column">
+                                <div className="content my-3 border-bottom flex-grow-1">
                                     <Link href="/services" className="title h5 text-dark">{item.title}</Link>
                                     <p className="text-muted mb-0">{item.desc}</p>
                                 </div>
-                                <Link href="/services" className="d-flex align-items-center justify-content-between">
-                                    <span className="fw-medium text-dark">{t('about.impact.readMore')}</span>
-                                </Link>
+                                
                             </div>
                         </div>
                         )

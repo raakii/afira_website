@@ -13,16 +13,46 @@ type LanguageContextType = {
 
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
+// Helper functions for localStorage
+const getStoredLanguage = (): string => {
+  if (typeof window !== 'undefined') {
+    return localStorage.getItem('afira-language') || 'fr';
+  }
+  return 'fr';
+};
+
+const setStoredLanguage = (language: string): void => {
+  if (typeof window !== 'undefined') {
+    localStorage.setItem('afira-language', language);
+  }
+};
+
 export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [language, setLanguage] = useState<string>('en');
+  const [language, setLanguage] = useState<string>(getStoredLanguage);
   const [translations, setTranslations] = useState<RootTranslations>({} as RootTranslations);
   const [isLoading, setIsLoading] = useState(true);
+
+  // Custom setLanguage function that also saves to localStorage
+  const updateLanguage = (newLanguage: string | ((prev: string) => string)) => {
+    const actualLanguage = typeof newLanguage === 'function' ? newLanguage(language) : newLanguage;
+    setLanguage(actualLanguage);
+    setStoredLanguage(actualLanguage);
+  };
 
   useEffect(() => {
     const loadTranslations = async () => {
       setIsLoading(true);
-      const response = await import(`../translations/${language}.json`);
-      setTranslations(response.default);
+      try {
+        const response = await import(`../translations/${language}.json`);
+        setTranslations(response.default);
+      } catch (error) {
+        console.error('Failed to load translations:', error);
+        // Fallback to English if the language file fails to load
+        if (language !== 'en') {
+          const fallbackResponse = await import(`../translations/en.json`);
+          setTranslations(fallbackResponse.default);
+        }
+      }
       setIsLoading(false);
     };
 
@@ -39,7 +69,7 @@ export const LanguageProvider: React.FC<{ children: React.ReactNode }> = ({ chil
   };
 
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t, isLoading, translations }}>
+    <LanguageContext.Provider value={{ language, setLanguage: updateLanguage, t, isLoading, translations }}>
       {children}
     </LanguageContext.Provider>
   );

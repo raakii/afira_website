@@ -27,7 +27,7 @@ export default function BlogTwo() {
         <div className="col-lg-4 col-md-6 mt-4 pt-2">
                 <div className="card blog blog-primary shadow rounded overflow-hidden">
                     <div className="image position-relative overflow-hidden">
-                        <Image src='/images/busi02.jpg' width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} className="img-fluid" alt=""/>
+                        <Image src='/images/femme1.jpg' width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} className="img-fluid" alt=""/>
 
                         <div className="blog-tag">
                             <Link href="#" className="badge text-bg-light">{translations.blog.posts.post3.category}</Link>
@@ -63,7 +63,7 @@ export default function BlogTwo() {
             <div className="col-lg-4 col-md-6 mt-4 pt-2">
                 <div className="card blog blog-primary shadow rounded overflow-hidden">
                     <div className="image position-relative overflow-hidden">
-                        <Image src='/images/busi02.jpg' width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} className="img-fluid" alt=""/>
+                        <Image src='/images/femme4.jpg' width={0} height={0} sizes="100vw" style={{width:'100%', height:'auto'}} className="img-fluid" alt=""/>
 
                         <div className="blog-tag">
                             <Link href="#" className="badge text-bg-light">{translations.blog.posts.post3.category}</Link>

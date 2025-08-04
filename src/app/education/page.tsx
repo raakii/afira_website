@@ -20,7 +20,7 @@ export default function GridSidebar(){
     return(
         <>
         <NavbarTwo navClass="defaultscroll sticky" manuClass="navigation-menu nav-light nav-right" navDark={false}/>
-        <section className="bg-half-170 d-table w-100" style={{backgroundImage:"url('/images/about-us.png')", backgroundPosition:'center'}}>
+        <section className="bg-half-170 d-table w-100" style={{backgroundImage:"url('/images/femme3.jpg')", backgroundPosition:'center'}}>
             <div className="bg-overlay bg-gradient-overlay"></div>
             <div className="container">
                 <div className="row mt-5 justify-content-center">

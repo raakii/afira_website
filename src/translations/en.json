@@ -102,6 +102,24 @@
         "title": "🏘️ SDG 10 – Reduced Inequalities",
         "description": "Reduce inequalities and barriers to financial services for excluded populations."
       }
+    },
+    "values": {
+      "value1": {
+        "title": "💡 Useful Innovation",
+        "description": "We develop accessible technological solutions, anchored in field realities. Every feature we create aims to solve a concrete problem."
+      },
+      "value2": {
+        "title": "🤝 Inclusion & Social Impact",
+        "description": "Afira works for sustainable financial inclusion. We specifically target women, youth, and informal sector workers, giving them the means to develop economically."
+      },
+      "value3": {
+        "title": "📱 Digital Simplicity",
+        "description": "Our products are designed to be simple, intuitive, and adapted to all levels of digital literacy, so that no one is left behind in the digital transition."
+      },
+      "value4": {
+        "title": "🔐 Trust & Transparency",
+        "description": "We place ethics at the heart of our relationships. Data security, offer clarity, and responsibility are the foundations of the trust relationship we build with our users and partners."
+      }
     }
   },
   "services": {
@@ -251,50 +269,50 @@
   },
   "contact": {
     "header": {
-      "subtitle": "Get In Touch",
-      "title": "Contact Us",
+      "subtitle": "Get in touch",
+      "title": "Contact us",
       "breadcrumb": "Contact"
     },
     "info": {
       "phone": {
         "title": "Phone",
-        "description": "We would love to hear from you",
-        "number": "+1 (525) 344-6885"
+        "description": "Get in touch with our team for any questions about our services",
+        "number": "+152 534-468-854"
       },
       "email": {
         "title": "Email",
-        "description": "Send us an email anytime",
-        "address": "contact@example.com"
+        "description": "Send us an email and we'll get back to you as soon as possible",
+        "address": "afira@gmail.com"
       },
       "location": {
         "title": "Location",
-        "description": "Visit our office",
-        "mapLink": "View on Map"
+        "description": "Almadies\nDakar, Senegal",
+        "mapLink": "View on Google map"
       }
     },
     "form": {
-      "title": "Send us a Message",
-      "subtitle": "We'd love to hear from you. Send us a message and we'll respond as soon as possible.",
-      "required": "*",
-      "submit": "Send Message",
+      "title": "Contact us!",
+      "subtitle": "Finance that understands you, at the pace of your needs!",
       "fields": {
         "name": {
-          "label": "Name",
-          "placeholder": "Enter your name"
+          "label": "First and Last Name",
+          "placeholder": "Name :"
         },
         "email": {
           "label": "Email",
-          "placeholder": "Enter your email"
+          "placeholder": "Email :"
         },
         "subject": {
           "label": "Subject",
-          "placeholder": "Enter subject"
+          "placeholder": "Subject :"
         },
         "message": {
-          "label": "Message",
-          "placeholder": "Enter your message"
+          "label": "Comments",
+          "placeholder": "Message :"
         }
-      }
+      },
+      "submit": "Send Message",
+      "required": "*"
     }
   }
 } 
