@@ -51,11 +51,11 @@ export default function Contact(){
                             <div className="text-muted" style={{ whiteSpace: 'pre-line' }}>{t('contact.intro')}</div>
                             <ul className="list-unstyled text-muted mb-0">
                                 <li className="mb-0">
-                                    <span className="text-dark h5 me-2">{t('about.vision.title')}</span>
+                                    <span className="text-dark h5 me-2">{t('contact.vision.title')}</span>
                                     {t('contact.vision.description')}
                                 </li>
                                 <li className="mb-0">
-                                    <span className="text-dark h5 me-2">{t('about.mission.title')}</span>
+                                    <span className="text-dark h5 me-2">{t('contact.mission.title')}</span>
                                     {t('contact.mission.description')}
                                 </li>
                             </ul>                        
