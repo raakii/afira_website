@@ -8,23 +8,23 @@ export default function Counter(){
     const counterData = [
         {
             start:'0',
-            end:'1',
-            title:'Milliard de Comptes Momo'
+            end:' 40',
+            title:'% d\'adultes africains possédant un compte de mobile money en 2024'
         },
         {
             start:'0',
-            end:'170',
-            title:'milliards de dollars d’ici 2030'
+            end:'32',
+            title:'% des adultes ont emprunté via un opérateur mobile'
         },
         {
             start:'0',
-            end:'4',
-            title:'Millions d’emplois générés'
+            end:'90',
+            title:'abonnements mobiles par 100 personnes'
         },
         {
             start:'0',
-            end:'25',
-            title:' % utilisation Internet mobile'
+            end:'25,6',
+            title:'% Progression de l\'encours de monnaie électronique'
         },
     ]
 
@@ -33,10 +33,10 @@ export default function Counter(){
         <div className="row">
             {counterData.map((item,index)=>{
                 return(
-                <div className="col-md-3 col-6" key={index}>
+                <div className="col-md-3 col-3" key={index}>
                     <div className="counter-box position-relative text-center">
                         <h2 className="mb-0 display-1 fw-bold title-dark mt-2 opacity-05"><CountUp start={item.start} end={item.end}/></h2>
-                        <span className="counter-head fw-semibold title-dark position-absolute top-50 start-50 translate-middle">{item.title}</span>
+                        <span className="counter-head fw-semibold title-dark position-absolute top-70 start-50 translate-middle">{item.title}</span>
                     </div>
                 </div>
                 )
