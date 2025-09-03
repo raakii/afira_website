@@ -23,7 +23,7 @@ export default function Counter(){
         },
         {
             start:'0',
-            end:'25,6',
+            end:'26',
             title:'% Progression de l\'encours de monnaie électronique'
         },
     ]
