@@ -393,5 +393,33 @@
         "description": "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century."
       }
     ]
+  },
+  "counter": {
+    "stats": [
+      {
+        "id": 1,
+        "start": "0",
+        "end": "40",
+        "title": "% of African adults own a mobile money account in 2024"
+      },
+      {
+        "id": 2,
+        "start": "0",
+        "end": "32",
+        "title": "% of adults have borrowed via a mobile operator"
+      },
+      {
+        "id": 3,
+        "start": "0",
+        "end": "90",
+        "title": "mobile subscriptions per 100 people"
+      },
+      {
+        "id": 4,
+        "start": "0",
+        "end": "26",
+        "title": "% Growth in electronic money outstanding"
+      }
+    ]
   }
 } 

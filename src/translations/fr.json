@@ -375,5 +375,33 @@
         "description": "Le texte fictif le plus connu est le 'Lorem Ipsum', qui aurait vu le jour au 16ème siècle."
       }
     ]
+  },
+  "counter": {
+    "stats": [
+      {
+        "id": 1,
+        "start": "0",
+        "end": "40",
+        "title": "% d'adultes africains possédent un compte de mobile money en 2024"
+      },
+      {
+        "id": 2,
+        "start": "0",
+        "end": "32",
+        "title": "% des adultes ont emprunté via un opérateur mobile"
+      },
+      {
+        "id": 3,
+        "start": "0",
+        "end": "90",
+        "title": "abonnements mobiles par 100 personnes"
+      },
+      {
+        "id": 4,
+        "start": "0",
+        "end": "26",
+        "title": "% Progression de l'encours de monnaie électronique"
+      }
+    ]
   }
 } 
