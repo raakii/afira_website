@@ -2,34 +2,15 @@
 import React,{useState} from "react";
 import Link from "next/link";
 import Image from "next/image";
+import { useLanguage } from '../context/LanguageContext';
 
 export default function Tab(){
-
-    const tabData = [
-        {
-            id:1,
-            image:'/images/about-us2.png',
-            tag:'Finance',
-            title:'Developing strategy for startup business',
-            desc:"The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century."
-        },
-        {
-            id:2,
-            image:'/images/about-us2.png',
-            tag:'Technologie',
-            title:'How to Get a Successful Ad for Your Business',
-            desc:"The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century."
-        },
-        {
-            id:3,
-            image:'/images/about-us2.png',
-            tag:'Education',
-            title:'How to Get a Successful Ad for Your Business',
-            desc:"The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century."
-        },
-    ]
-
-    let [activeIndex, setActiveIndex] = useState(1);
+    const [activeIndex, setActiveIndex] = useState(1);
+    const { t, translations, isLoading } = useLanguage();
+    
+    if (isLoading) return null;
+    
+    const tabData = translations.tab?.content || [];
     return(
         <div className="row align-items-center w-[50%] mx-auto">
             <div className="col-lg-4">
@@ -37,8 +18,8 @@ export default function Tab(){
                     <li className="nav-item">
                         <Link className={`${activeIndex === 1 ? 'active' : ''} nav-link rounded shadow`} href="#" scroll={false} onClick={() => setActiveIndex(1)}>
                             <div className="text-start p-4">
-                                <h5>Inclusion financière ciblée</h5>
-                                <p className="mb-0 text-muted tab-para mt-3">It is advantageous when the dummy text is realistic</p>
+                                <h5>{t('tab.tabs.0.title')}</h5>
+                                <p className="mb-0 text-muted tab-para mt-3">{t('tab.tabs.0.description')}</p>
                             </div>
                         </Link>
                     </li>
@@ -46,8 +27,8 @@ export default function Tab(){
                     <li className="nav-item mt-4 pt-2">
                         <Link className={`${activeIndex === 2 ? 'active' : ''} nav-link rounded shadow`} href="#" scroll={false} onClick={() => setActiveIndex(2)}>
                             <div className="text-start p-4">
-                                <h5>Technologie mobile accessible</h5>
-                                <p className="mb-0 text-muted tab-para mt-3">It is advantageous when the dummy text is realistic</p>
+                                <h5>{t('tab.tabs.1.title')}</h5>
+                                <p className="mb-0 text-muted tab-para mt-3">{t('tab.tabs.1.description')}</p>
                             </div>
                         </Link>
                     </li>
@@ -55,8 +36,8 @@ export default function Tab(){
                     <li className="nav-item mt-4 pt-2">
                         <Link className={`${activeIndex === 3 ? 'active' : ''} nav-link rounded shadow`} href="#" scroll={false} onClick={() => setActiveIndex(3)}>
                             <div className="text-start p-4">
-                                <h5>Éducation économique intégrée</h5>
-                                <p className="mb-0 text-muted tab-para mt-3">It is advantageous when the dummy text is realistic</p>
+                                <h5>{t('tab.tabs.2.title')}</h5>
+                                <p className="mb-0 text-muted tab-para mt-3">{t('tab.tabs.2.description')}</p>
                             </div>
                         </Link>
                     </li>

@@ -36,7 +36,7 @@
   "blog": {
     "title": "Blog",
     "subtitle": "Derniers Articles et Actualités",
-    "description": "Nos projets de design sont frais et simples et bénéficieront grandement à votre entreprise. En savoir plus sur notre travail !",
+    "description": "Découvrez nos derniers projets et actualités !",
     "posts": {
       "post1": {
         "category": "Finance",
@@ -129,7 +129,12 @@
         "title": "4. Suivi & Support Client",
         "desc": "🤝 Vous n'êtes jamais seul\nAccédez à nos mini-vidéos d'éducation financière, posez vos questions via chat ou appel, et bénéficiez d'un accompagnement humain et bienveillant."
       }
-    ]
+    ],
+    "cta": {
+      "title": "Catalyseur de Croissance",
+      "subtitle": "Rejoignez la communauté Afira.",
+      "button": "Rejoignez-nous Maintenant"
+    }
   },
   "education": {
     "header": {
@@ -254,11 +259,11 @@
     "intro": "Chez AFIRA, nous croyons que chaque vendeuse, livreur et agriculteur mérite une chance de développer son activité, même sans accès aux banques.",
     "vision": {
       "title": "Notre Mission\n",
-      "description": "est simple:\nRendre le financement accessible, rapide et transparent pour ces travailleurs de l’informel, tout en leur donnant les outils pour mieux gérer leur argent et renforcer leur autonomie financière.\nNous savons que les microfinances traditionnelles sont souvent coûteuses, complexes et peu adaptées aux besoins réels des petites activités. Résultat : des millions de femmes et de jeunes restent exclus du système financier, prisonniers de prêts informels abusifs.Chez AFIRA, nous proposons:\nDes micro-prêts instantanés (nanofinance) : Montants adaptés à la réalité débloqués en via un compte mobile money.\nUne approche simple, sans stress : Pas de frais cachés, pas de papiers, pas de réunions interminables.\nL’éducation financière intégrée : Chaque prêt s’accompagne d’un mini-module éducatif pratique pour mieux gérer ses revenus.\nDes incitations positives : Fidélité récompensée, gamification et accompagnement pour grandir ensemble."
+      "description": "est simple:\nRendre le financement accessible, rapide et transparent pour ces travailleurs de l'informel, tout en leur donnant les outils pour mieux gérer leur argent et renforcer leur autonomie financière.\nNous savons que les microfinances traditionnelles sont souvent coûteuses, complexes et peu adaptées aux besoins réels des petites activités. Résultat : des millions de femmes et de jeunes restent exclus du système financier, prisonniers de prêts informels abusifs.Chez AFIRA, nous proposons:\nDes micro-prêts instantanés (nanofinance) : Montants adaptés à la réalité débloqués en via un compte mobile money.\nUne approche simple, sans stress : Pas de frais cachés, pas de papiers, pas de réunions interminables.\nL'éducation financière intégrée : Chaque prêt s'accompagne d'un mini-module éducatif pratique pour mieux gérer ses revenus.\nDes incitations positives : Fidélité récompensée, gamification et accompagnement pour grandir ensemble."
     },
     "mission": {
       "title": "Notre Ambition ?\n",
-      "description": "\nConstruire la première plateforme inclusive de nanofinance et d’éducation financière en Afrique de l’Ouest, en commençant par le Sénégal, pour donner à des milliers de femmes et jeunes entrepreneurs les moyens de réussir, un prêt à la fois."
+      "description": "\nConstruire la première plateforme inclusive de nanofinance et d'éducation financière en Afrique de l'Ouest, en commençant par le Sénégal, pour donner à des milliers de femmes et jeunes entrepreneurs les moyens de réussir, un prêt à la fois."
     },
     "header": {
       "subtitle": "Qui sommes nous ?",
@@ -306,5 +311,69 @@
       "submit": "Envoyer un Message",
       "required": "*"
     }
+  },
+  "footer": {
+    "description": "Notre solution est là pour vous aider à concrétiser vos projets",
+    "company": {
+      "title": "Entreprise",
+      "about": "À propos de nous",
+      "services": "Services",
+      "team": "Équipe",
+      "miniAcademy": "Mini académie"
+    },
+    "usefulLinks": {
+      "title": "Liens Utiles",
+      "termsOfServices": "Conditions de Service",
+      "privacyPolicy": "Politique de Confidentialité",
+      "contactUs": "Nous Contacter"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Inscrivez-vous et recevez les derniers conseils par email.",
+      "emailPlaceholder": "Email :"
+    },
+    "copyright": "© Copyright Afira 2025"
+  },
+  "tab": {
+    "tabs": [
+      {
+        "id": 1,
+        "title": "Inclusion financière ciblée",
+        "description": "Il est avantageux que le texte fictif soit réaliste"
+      },
+      {
+        "id": 2,
+        "title": "Technologie mobile accessible",
+        "description": "Il est avantageux que le texte fictif soit réaliste"
+      },
+      {
+        "id": 3,
+        "title": "Éducation économique intégrée",
+        "description": "Il est avantageux que le texte fictif soit réaliste"
+      }
+    ],
+    "content": [
+      {
+        "id": 1,
+        "image": "/images/about-us2.png",
+        "tag": "Finance",
+        "title": "Développer une stratégie pour une entreprise en démarrage",
+        "description": "Le texte fictif le plus connu est le 'Lorem Ipsum', qui aurait vu le jour au 16ème siècle."
+      },
+      {
+        "id": 2,
+        "image": "/images/about-us2.png",
+        "tag": "Technologie",
+        "title": "Comment obtenir une publicité réussie pour votre entreprise",
+        "description": "Le texte fictif le plus connu est le 'Lorem Ipsum', qui aurait vu le jour au 16ème siècle."
+      },
+      {
+        "id": 3,
+        "image": "/images/about-us2.png",
+        "tag": "Éducation",
+        "title": "Comment obtenir une publicité réussie pour votre entreprise",
+        "description": "Le texte fictif le plus connu est le 'Lorem Ipsum', qui aurait vu le jour au 16ème siècle."
+      }
+    ]
   }
 } 

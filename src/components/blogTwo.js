@@ -53,9 +53,9 @@ export default function BlogTwo() {
                     </div>
 
                     <div className="card-body content">
-                        <Link href={`/${language}/education`} className="h5 title text-dark d-block mb-0">{translations.blog.posts.post2.title}</Link>
+                        <Link href="/education" className="h5 title text-dark d-block mb-0">{translations.blog.posts.post2.title}</Link>
                         <p className="text-muted mt-3">{translations.blog.posts.post2.excerpt}</p>
-                        <Link href={`/${language}/education`} className="link text-dark">{translations.blog.posts.post2.readMore}</Link>
+                        <Link href="/education" className="link text-dark">{translations.blog.posts.post2.readMore}</Link>
                     </div>
                 </div>
             </div>

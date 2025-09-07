@@ -102,11 +102,11 @@ export default function Services(){
                 <div className="container my-5">
                     <div className="row align-items-center">
                         <div className="col-lg-8 col-md-7">
-                            <h4 className="display-6 h4 mb-0 text-white title-dark fw-medium">Catalyst for Growth<br/> Join the Afira community.</h4>
+                            <h4 className="display-6 h4 mb-0 text-white title-dark fw-medium">{t('services.cta.title')}<br/> {t('services.cta.subtitle')}</h4>
                         </div>
 
                         <div className="col-lg-4 col-md-5 text-md-end mt-4 mt-sm-0">
-                            <Link href="#" className="btn btn-light">Join us Now</Link>
+                            <Link href="#" className="btn btn-light">{t('services.cta.button')}</Link>
                         </div>
                     </div>
                 </div>

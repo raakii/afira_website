@@ -36,7 +36,7 @@
   "blog": {
     "title": "Blogs",
     "subtitle": "Latest Blog and News",
-    "description": "Our design projects are fresh and simple and will benefit your business greatly. Learn more about our work!",
+    "description": "Learn about our recent projects and news!",
     "posts": {
       "post1": {
         "category": "Finance",
@@ -147,7 +147,12 @@
         "title": "4. Tracking & Customer Support",
         "desc": "🤝 You are never alone\nAccess our mini financial education videos, ask your questions via chat or call, and benefit from human and caring support."
       }
-    ]
+    ],
+    "cta": {
+      "title": "Catalyst for Growth",
+      "subtitle": "Join the Afira community.",
+      "button": "Join us Now"
+    }
   },
   "education": {
     "header": {
@@ -268,6 +273,16 @@
     ]
   },
   "contact": {
+    "title": "We support you in achieving your projects!",
+    "intro": "At AFIRA, we believe that every vendor, delivery person and farmer deserves a chance to develop their business, even without access to banks.",
+    "vision": {
+      "title": "Our Mission\n",
+      "description": "is simple:\nMake financing accessible, fast and transparent for these informal workers, while giving them the tools to better manage their money and strengthen their financial autonomy.\nWe know that traditional microfinance is often expensive, complex and poorly adapted to the real needs of small businesses. Result: millions of women and young people remain excluded from the financial system, prisoners of abusive informal loans.At AFIRA, we offer:\nInstant micro-loans (nanofinance): Amounts adapted to reality unlocked via a mobile money account.\nA simple, stress-free approach: No hidden fees, no papers, no endless meetings.\nIntegrated financial education: Each loan comes with a practical mini-educational module to better manage your income.\nPositive incentives: Loyalty rewarded, gamification and support to grow together."
+    },
+    "mission": {
+      "title": "Our Ambition?\n",
+      "description": "\nBuild the first inclusive nanofinance and financial education platform in West Africa, starting with Senegal, to give thousands of women and young entrepreneurs the means to succeed, one loan at a time."
+    },
     "header": {
       "subtitle": "Get in touch",
       "title": "Contact us",
@@ -314,5 +329,69 @@
       "submit": "Send Message",
       "required": "*"
     }
+  },
+  "footer": {
+    "description": "Our solution is here to help make your projects come true",
+    "company": {
+      "title": "Company",
+      "about": "About us",
+      "services": "Services",
+      "team": "Team",
+      "miniAcademy": "Mini academy"
+    },
+    "usefulLinks": {
+      "title": "Useful Links",
+      "termsOfServices": "Terms of Services",
+      "privacyPolicy": "Privacy Policy",
+      "contactUs": "Contact Us"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "description": "Sign up and receive the latest tips via email.",
+      "emailPlaceholder": "Email :"
+    },
+    "copyright": "© Copyright Afira 2025"
+  },
+  "tab": {
+    "tabs": [
+      {
+        "id": 1,
+        "title": "Targeted Financial Inclusion",
+        "description": "It is advantageous when the dummy text is realistic"
+      },
+      {
+        "id": 2,
+        "title": "Accessible Mobile Technology",
+        "description": "It is advantageous when the dummy text is realistic"
+      },
+      {
+        "id": 3,
+        "title": "Integrated Economic Education",
+        "description": "It is advantageous when the dummy text is realistic"
+      }
+    ],
+    "content": [
+      {
+        "id": 1,
+        "image": "/images/about-us2.png",
+        "tag": "Finance",
+        "title": "Developing strategy for startup business",
+        "description": "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century."
+      },
+      {
+        "id": 2,
+        "image": "/images/about-us2.png",
+        "tag": "Technology",
+        "title": "How to Get a Successful Ad for Your Business",
+        "description": "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century."
+      },
+      {
+        "id": 3,
+        "image": "/images/about-us2.png",
+        "tag": "Education",
+        "title": "How to Get a Successful Ad for Your Business",
+        "description": "The most well-known dummy text is the 'Lorem Ipsum', which is said to have originated in the 16th century."
+      }
+    ]
   }
 } 

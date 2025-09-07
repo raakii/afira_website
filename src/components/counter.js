@@ -9,7 +9,7 @@ export default function Counter(){
         {
             start:'0',
             end:' 40',
-            title:'% d\'adultes africains possédant un compte de mobile money en 2024'
+            title:'% d\'adultes africains possédent un compte de mobile money en 2024'
         },
         {
             start:'0',
