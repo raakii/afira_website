@@ -68,7 +68,7 @@ export default async function RootLayout({
             __html: `
               // Préchargement immédiat des pages principales
               document.addEventListener('DOMContentLoaded', function() {
-                const criticalRoutes = ['/en', '/fr', '/en/about', '/fr/about', '/en/services', '/fr/services', '/en/contact', '/fr/contact'];
+                const criticalRoutes = ['/', '/about', '/services', '/contact', '/education'];
                 criticalRoutes.forEach(route => {
                   const link = document.createElement('link');
                   link.rel = 'prefetch';

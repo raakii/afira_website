@@ -4,7 +4,7 @@ import CountUp from 'react-countup';
 import { useLanguage } from '../context/LanguageContext';
 
 export default function Counter(){
-    const { translations, isLoading, t, language } = useLanguage();
+    const { translations, isLoading, t} = useLanguage();
     
     if (isLoading) return null;
     
@@ -38,17 +38,13 @@ export default function Counter(){
 
     return(
     <div className="container mt-100 mt-60">
-        {/* Debug: Show current language */}
-        <div style={{textAlign: 'center', marginBottom: '20px', fontSize: '12px', color: '#666'}}>
-            Current language: {language} | Data loaded: {counterData.length > 0 ? 'Yes' : 'No'}
-        </div>
         <div className="row">
             {finalData.map((item,index)=>{
                 return(
-                <div className="col-md-3 col-3" key={index}>
-                    <div className="counter-box position-relative text-center">
-                        <h2 className="mb-0 display-1 fw-bold title-dark mt-2 opacity-05"><CountUp start={item.start} end={item.end}/></h2>
-                        <span className="counter-head fw-semibold title-dark position-absolute top-70 start-50 translate-middle">{item.title}</span>
+                <div className="col-md-3 col-6 mb-4" key={index}>
+                    <div className="counter-box text-center p-4">
+                        <h2 className="mb-3 display-1 fw-bold title-dark opacity-05"><CountUp start={item.start} end={item.end}/></h2>
+                        <p className="counter-head fw-semibold title-dark mb-0" style={{lineHeight: '1.4', fontSize: '14px'}}>{item.title}</p>
                     </div>
                 </div>
                 )
