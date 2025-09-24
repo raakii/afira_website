@@ -18,7 +18,12 @@ export default function Home() {
     {
         icon: (props: React.HTMLAttributes<HTMLElement>) => <i className="bi bi-credit-card" {...props}></i>,
         title: t('home.whyItMatters'),
-        desc: t('home.digitalDivideDesc')
+        desc: t('home.digitalDivideDesc'),
+        descUl1: t('home.digitalDivideDescUl1'),
+        descUl2: t('home.digitalDivideDescUl2'),
+        descUl3: t('home.digitalDivideDescUl3'),
+        objectif: t('home.objectif'),
+        changingDesc: t('home.changingDesc'),
     }
   ]
 
@@ -47,14 +52,19 @@ export default function Home() {
                                     <Icon className="icon h1 d-block mb-3"/>
                                     <Link href="/services" className="h5 title text-dark">{item.title}</Link>
                                     <p className="text-muted mt-2 mb-0">{item.desc}</p>
+                                    <ul className="list-unstyled text-muted mb-0">
+                                        <ol className="mb-0 bullet">{item.descUl1}</ol>
+                                        <ol className="mb-0">{item.descUl2}</ol>
+                                        <ol className="mb-0">{item.descUl3}</ol>
+                                    </ul>
+                                    <p className="text-muted mt-2 mb-0">{item.objectif}</p>
+                                    <p className="text-muted mt-2 mb-0">{item.changingDesc}</p>
                                    
                                 </div>
                             </div>
                             )
                         })}
                         <div className="card features feature-primary">
-
-                            <p className="text-muted mt-2 mb-0">{t('home.changingDesc')}</p>
                        </div> 
                     </div>
                 </div>

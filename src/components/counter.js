@@ -15,22 +15,22 @@ export default function Counter(){
         {
             start: "0",
             end: "40",
-            title: t('counter.stats.0.title') || "% of African adults own a mobile money account in 2024"
+            title: t('counter.stats.0.title') || "of African adults own a mobile money account in 2024"
         },
         {
             start: "0", 
             end: "32",
-            title: t('counter.stats.1.title') || "% of adults have borrowed via a mobile operator"
+            title: t('counter.stats.1.title') || "of adults have borrowed via a mobile operator"
         },
         {
             start: "0",
             end: "90", 
-            title: t('counter.stats.2.title') || "mobile subscriptions per 100 people"
+            title: t('counter.stats.2.title') || "mobile subscriptions"
         },
         {
             start: "0",
             end: "26",
-            title: t('counter.stats.3.title') || "% Growth in electronic money outstanding"
+            title: t('counter.stats.3.title') || "Growth in electronic money outstanding"
         }
     ];
     
@@ -43,7 +43,7 @@ export default function Counter(){
                 return(
                 <div className="col-md-3 col-6 mb-4" key={index}>
                     <div className="counter-box text-center p-4">
-                        <h2 className="mb-3 display-1 fw-bold title-dark opacity-05"><CountUp start={item.start} end={item.end}/></h2>
+                        <h2 className="mb-3 display-1 fw-bold title-dark opacity-05"><CountUp start={item.start} end={item.end}/>%</h2>
                         <p className="counter-head fw-semibold title-dark mb-0" style={{lineHeight: '1.4', fontSize: '14px'}}>{item.title}</p>
                     </div>
                 </div>

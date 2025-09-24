@@ -9,9 +9,12 @@
   "home": {
     "whyItMatters": "Why it matters?",
     "bridgingDigitalDivide": "Bridging the Digital Divide",
-    "digitalDivideDesc": "There is a need in the broader industry across the continent to shift to the next generation of digital products. A broader, more multi-faceted market is asking for more sophisticated and relevant products beyond person-to-person payments. There are evident opportunities to develop digital banking, savings and credit products, as well as the digitization of value chain financing and merchant payments. This can significantly improve customer benefits and usage, as well as long-term sustainability for providers.",
-    "weAreChanging": "",
-    "changingDesc": "By launching low-cost financial services we aim to develop new technological approaches and innovative business models. Both are opportunities and challenges in furthering financial inclusion"
+    "digitalDivideDesc": "At AFIRA, we believe that technology can transform how people access finance. Through accessible microfinance and the digitization of value chains, we want to:",
+    "digitalDivideDescUl1": "Simplify access to financial services",
+    "digitalDivideDescUl2": "Offer more benefits and flexibility to informal sector workers",
+    "digitalDivideDescUl3": "Strengthen sustainability and positive impact for the entire ecosystem",
+    "objectif": "✨ Our goal: make finance more inclusive, practical, and sustainable for women and informal sector workers.",
+    "changingDesc": "By launching financial services accessible to all, we aim to develop new technological approaches and innovative business models. These levers represent opportunities to advance financial inclusion."
   },
   "cta": {
     "mainText": "Afira is by your side to help you achieve your projects."
@@ -60,7 +63,7 @@
   },
   "about": {
     "title": "We support you in achieving your projects!",
-    "intro": "At Afira, we believe that financial inclusion is a powerful lever for transforming lives and building a sustainable future. Our mission is to democratize access to financial services and economic education, especially for those often left behind by traditional systems: young women, students, informal workers, and aspiring entrepreneurs. We combine mobile technology, flexible microcredit, and accessible educational content to provide everyone with concrete tools for financial autonomy.",
+    "intro": "At Afira, we believe that financial inclusion is a powerful lever to transform lives and build a sustainable future. Our mission is to democratize access to financial services and economic education, especially for those whom traditional systems often leave out: women and informal workers. We combine mobile technology, flexible nanotechnology and accessible educational content to offer everyone the concrete tools towards financial autonomy.",
     "vision": {
       "title": "Our Vision",
       "description": "A world where every young woman entrepreneur, every informal worker can access the resources needed to realize their ideas, escape precariousness, and become an actor in their future."

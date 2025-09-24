@@ -9,9 +9,12 @@
   "home": {
     "whyItMatters": "Pourquoi c'est important ?",
     "bridgingDigitalDivide": "Combler la fracture numérique",
-    "digitalDivideDesc": "Il existe un besoin croissant au sein de l’industrie à l’échelle du continent pour passer à la prochaine génération de produits numériques. Un marché plus large et diversifié réclame aujourd’hui des produits plus sophistiqués et adaptés, allant au-delà des simples paiements de personne à personne. Il existe des opportunités évidentes pour développer des services de banque digitale, d’épargne et de crédit, ainsi que pour digitaliser le financement des chaînes de valeur et les paiements marchands. Cela peut améliorer considérablement les avantages pour les clients, encourager l’utilisation des services et renforcer la durabilité à long terme pour les fournisseurs.",
-    "weAreChanging": "Nous changeons cela",
-    "changingDesc": "En lançant des services financiers à faible coût, nous visons à développer de nouvelles approches technologiques et des modèles économiques innovants. Ces leviers représentent à la fois des opportunités et des défis pour faire progresser l’inclusion financière."
+    "digitalDivideDesc": "Chez AFIRA, nous croyons que la technologie peut transformer la façon dont les populations accèdent à la finance.\nGrâce à la nanofinance accessible à tous, mais aussi à la digitalisation des chaînes de valeur, nous voulons:",
+    "digitalDivideDescUl1":"Simplifier l’accès aux services financiers",
+    "digitalDivideDescUl2":"Offrir plus d’avantages et de flexibilité aux travailleurs du secteur informel",
+    "digitalDivideDescUl3":"Renforcer la durabilité et l’impact positif pour tout l’écosystème",
+    "objectif":"✨ Notre objectif : rendre la finance plus inclusive, pratique et durable pour les femmes et les travailleurs du secteur informel.",
+    "changingDesc": "En lançant des services financiers accessibles à tous, nous visons à développer de nouvelles approches technologiques et des modèles économiques innovants. Ces leviers représentent sont des opportunités pour faire progresser l’inclusion financière."
   },
   "cta": {
     "mainText": "Afira est à vos côtés pour vous aider à réaliser vos projets."
@@ -60,7 +63,7 @@
   },
   "about": {
     "title": "Nous vous accompagnons dans la réalisation de vos projets !",
-    "intro": "Chez Afira, nous croyons que l'inclusion financière est un levier puissant pour transformer des vies et bâtir un avenir durable. Notre mission est de démocratiser l'accès aux services financiers et à l'éducation économique, en particulier pour celles et ceux que les systèmes traditionnels laissent souvent de côté : jeunes femmes, étudiants, travailleurs informels et entrepreneurs en devenir. Nous combinons technologie mobile, microcrédit flexible et contenu éducatif accessible pour offrir à chacun·e les outils concrets vers l'autonomie financière.",
+    "intro": "Chez Afira, nous croyons que l'inclusion financière est un levier puissant pour transformer des vies et bâtir un avenir durable. Notre mission est de démocratiser l'accès aux services financiers et à l'éducation économique, en particulier pour celles et ceux que les systèmes traditionnels laissent souvent de côté : Femmes et Travailleurs informels. Nous combinons technologie mobile, nanocrédit flexible et contenu éducatif accessible pour offrir à chacun·e les outils concrets vers l'autonomie financière.",
     "vision": {
       "title": "Notre vision",
       "description": "Un monde où chaque jeune femme entrepreneure, chaque travailleur informel peut accéder aux ressources nécessaires pour concrétiser ses idées, sortir de la précarité et devenir acteur de son avenir."
@@ -274,12 +277,12 @@
       "phone": {
         "title": "Téléphone",
         "description": "Contactez notre équipe pour toute question sur nos services",
-        "number": "+152 534-468-854"
+        "number": "+221 78 688 41 40"
       },
       "email": {
         "title": "Email",
         "description": "Envoyez-nous un email et nous vous répondrons dans les plus brefs délais",
-        "address": "afira@gmail.com"
+        "address": "workwithafira@gmail.com"
       },
       "location": {
         "title": "Localisation",
