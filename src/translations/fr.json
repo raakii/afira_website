@@ -322,7 +322,7 @@
       "about": "À propos de nous",
       "services": "Services",
       "team": "Équipe",
-      "miniAcademy": "Mini académie"
+      "miniAcademy": "Education financière"
     },
     "usefulLinks": {
       "title": "Liens Utiles",
@@ -385,25 +385,25 @@
         "id": 1,
         "start": "0",
         "end": "40",
-        "title": "% d'adultes africains possédent un compte de mobile money en 2024"
+        "title": "Adultes africains possédent un compte de mobile money en 2024"
       },
       {
         "id": 2,
         "start": "0",
         "end": "32",
-        "title": "% des adultes ont emprunté via un opérateur mobile"
+        "title": "Adultes ayant emprunté via un opérateur mobile"
       },
       {
         "id": 3,
         "start": "0",
         "end": "90",
-        "title": "abonnements mobiles par 100 personnes"
+        "title": "Abonnements mobiles par 100 personnes"
       },
       {
         "id": 4,
         "start": "0",
         "end": "26",
-        "title": "% Progression de l'encours de monnaie électronique"
+        "title": "Progression de l'encours de monnaie électronique"
       }
     ]
   }

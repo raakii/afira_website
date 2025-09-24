@@ -51,7 +51,7 @@ export default function FooterFour(){
                                         <li><Link href="/about" className="text-foot d-flex align-items-center"> {t('footer.company.about')}</Link></li>
                                         <li><Link href="/services" className="text-foot d-flex align-items-center"> {t('footer.company.services')}</Link></li>
                                         <li><Link href="/team" className="text-foot d-flex align-items-center"> {t('footer.company.team')}</Link></li>
-                                        <li><Link href="#" className="text-foot d-flex align-items-center"> {t('footer.company.miniAcademy')}</Link></li>
+                                        <li><Link href="/education" className="text-foot d-flex align-items-center"> {t('footer.company.miniAcademy')}</Link></li>
                                     </ul>
                                 </div>
                                 

@@ -340,7 +340,7 @@
       "about": "About us",
       "services": "Services",
       "team": "Team",
-      "miniAcademy": "Mini academy"
+      "miniAcademy": "Financial literacy"
     },
     "usefulLinks": {
       "title": "Useful Links",
@@ -403,25 +403,25 @@
         "id": 1,
         "start": "0",
         "end": "40",
-        "title": "% of African adults own a mobile money account in 2024"
+        "title": "African that adults own a mobile money account in 2024"
       },
       {
         "id": 2,
         "start": "0",
         "end": "32",
-        "title": "% of adults have borrowed via a mobile operator"
+        "title": "Adults thathave borrowed via a mobile operator"
       },
       {
         "id": 3,
         "start": "0",
         "end": "90",
-        "title": "mobile subscriptions per 100 people"
+        "title": "Mobile subscriptions per 100 people"
       },
       {
         "id": 4,
         "start": "0",
         "end": "26",
-        "title": "% Growth in electronic money outstanding"
+        "title": "Growth in electronic money outstanding"
       }
     ]
   }
