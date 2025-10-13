@@ -5,7 +5,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useLanguage } from '@/context/LanguageContext';
 import NavbarTwo from "@/components/navbarTwo.js";
-import ClientTwo from "@/components/clientTwo.js";
 import BlogOne from "@/components/blogTwo.js";
 import FooterFour from "@/components/footerFour.js";
 import ScrollTop from "@/components/scrollTop.js";
@@ -24,14 +23,14 @@ export default function Services(){
         <>
         <NavbarTwo navClass="defaultscroll sticky" manuClass="navigation-menu nav-right nav-light" navDark={false}/>
 
-        <section className="bg-half-170 d-table w-100 h-32 position-relative">
-            <div className="position-absolute w-100 h-100" style={{zIndex: -1, top: 0, left: 0}}>
+        <section className="bg-half-170 d-table w-100 position-relative" style={{minHeight: '400px'}}>
+            <div className="position-absolute w-100 h-100" style={{zIndex: -1, top: 0, left: 0, right: 0, bottom: 0}}>
                 <Image 
                     src="/images/about-us.png"
                     alt="Background"
                     fill
                     sizes="100vw"
-                    style={{objectFit: 'cover'}}
+                    style={{objectFit: 'cover', objectPosition: 'center'}}
                     priority
                 />
             </div>
@@ -81,7 +80,7 @@ export default function Services(){
         </section>
 
         <section className="section">
-            <ClientTwo/>
+            {/* <ClientTwo/> */}
 
             <div className="container mt-100 mt-60">
                 <BlogOne/>
@@ -89,13 +88,13 @@ export default function Services(){
         </section>
         <div className="container-fluid px-0">
             <div className="py-5 position-relative">
-                <div className="position-absolute w-100 h-100" style={{zIndex: -1}}>
+                <div className="position-absolute w-100 h-100" style={{zIndex: -1, top: 0, left: 0, right: 0, bottom: 0}}>
                     <Image 
                         src="/images/busi04.jpg"
                         alt="Background"
                         fill
                         sizes="100vw"
-                        style={{objectFit: 'cover'}}
+                        style={{objectFit: 'cover', objectPosition: 'center'}}
                     />
                 </div>
                 <div className="bg-overlay bg-gradient-overlay"></div>

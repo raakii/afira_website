@@ -262,7 +262,7 @@
     "intro": "Chez AFIRA, nous croyons que chaque vendeuse, livreur et agriculteur mérite une chance de développer son activité, même sans accès aux banques.",
     "vision": {
       "title": "Notre Mission\n",
-      "description": "est simple:\nRendre le financement accessible, rapide et transparent pour ces travailleurs de l'informel, tout en leur donnant les outils pour mieux gérer leur argent et renforcer leur autonomie financière.\nNous savons que les microfinances traditionnelles sont souvent coûteuses, complexes et peu adaptées aux besoins réels des petites activités. Résultat : des millions de femmes et de jeunes restent exclus du système financier, prisonniers de prêts informels abusifs.Chez AFIRA, nous proposons:\nDes micro-prêts instantanés (nanofinance) : Montants adaptés à la réalité débloqués en via un compte mobile money.\nUne approche simple, sans stress : Pas de frais cachés, pas de papiers, pas de réunions interminables.\nL'éducation financière intégrée : Chaque prêt s'accompagne d'un mini-module éducatif pratique pour mieux gérer ses revenus.\nDes incitations positives : Fidélité récompensée, gamification et accompagnement pour grandir ensemble."
+      "description": "Rendre le financement accessible, rapide et transparent pour ces travailleurs de l'informel, tout en leur donnant les outils pour mieux gérer leur argent et renforcer leur autonomie financière.\nNous savons que les microfinances traditionnelles sont souvent coûteuses, complexes et peu adaptées aux besoins réels des petites activités. Résultat : des millions de femmes et de jeunes restent exclus du système financier, prisonniers de prêts informels abusifs.Chez AFIRA, nous proposons:\nDes micro-prêts instantanés (nanofinance) : Montants adaptés à la réalité débloqués en via un compte mobile money.\nUne approche simple, sans stress : Pas de frais cachés, pas de papiers, pas de réunions interminables.\nL'éducation financière intégrée : Chaque prêt s'accompagne d'un mini-module éducatif pratique pour mieux gérer ses revenus.\nDes incitations positives : Fidélité récompensée, gamification et accompagnement pour grandir ensemble."
     },
     "mission": {
       "title": "Notre Ambition ?\n",
@@ -379,6 +379,10 @@
       }
     ]
   },
+  "team": {
+    "title": "À propos de l'équipe",
+    "subtitle": "Rencontrez l'équipe qui rend Afira possible."
+  },
   "counter": {
     "stats": [
       {
@@ -397,7 +401,7 @@
         "id": 3,
         "start": "0",
         "end": "90",
-        "title": "Abonnements mobiles par 100 personnes"
+        "title": "Personnes ayant un abonnements mobiles"
       },
       {
         "id": 4,

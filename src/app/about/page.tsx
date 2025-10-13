@@ -58,20 +58,64 @@ export default function PageAboutUs(){
                         <div className="section-title ms-lg-5">
                             <h4 className="title mb-3">{t('about.title')}</h4>
                             <div className="text-muted" style={{ whiteSpace: 'pre-line' }}>{t('about.intro')}</div>
-                            <ul className="list-unstyled text-muted mb-0">
-                                <li className="mb-0">
-                                    <span className="text-dark h5 me-2">{t('about.vision.title')}</span>
-                                    {t('about.vision.description')}
-                                </li>
-                                <li className="mb-0">
-                                    <span className="text-dark h5 me-2">{t('about.mission.title')}</span>
-                                    {t('about.mission.description')}
-                                </li>
-                                <li className="mb-0">
-                                    <span className="text-dark h5 me-2">{t('about.whyAfira.title')}</span>
-                                    {t('about.whyAfira.description')}
-                                </li>
-                            </ul>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container mt-5">
+                <div className="row g-4">
+                    {/* Vision - Right aligned */}
+                    <div className="col-lg-8 col-md-10 offset-lg-4 offset-md-2">
+                        <div className="card border-0 shadow-sm rounded-3 p-4 h-100 position-relative overflow-hidden">
+                            <div className="position-absolute top-0 end-0 w-100 h-100" style={{background: 'linear-gradient(135deg, rgba(13, 110, 253, 0.05) 0%, rgba(13, 110, 253, 0.1) 100%)'}}></div>
+                            <div className="d-flex align-items-start position-relative">
+                                <div className="flex-shrink-0">
+                                    <div className="avatar-sm bg-primary bg-gradient rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{width: '3rem', height: '3rem'}}>
+                                        <i className="mdi mdi-eye text-white fs-5"></i>
+                                    </div>
+                                </div>
+                                <div className="flex-grow-1 ms-3">
+                                    <h5 className="text-dark mb-2 fw-semibold">{t('about.vision.title')}</h5>
+                                    <p className="text-muted mb-0 lh-lg">{t('about.vision.description')}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/* Mission - Left aligned */}
+                    <div className="col-lg-8 col-md-10">
+                        <div className="card border-0 shadow-sm rounded-3 p-4 h-100 position-relative overflow-hidden">
+                            <div className="position-absolute top-0 end-0 w-100 h-100" style={{background: 'linear-gradient(135deg, rgba(25, 135, 84, 0.05) 0%, rgba(25, 135, 84, 0.1) 100%)'}}></div>
+                            <div className="d-flex align-items-start position-relative">
+                                <div className="flex-shrink-0">
+                                    <div className="avatar-sm bg-success bg-gradient rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{width: '3rem', height: '3rem'}}>
+                                        <i className="mdi mdi-target text-white fs-5"></i>
+                                    </div>
+                                </div>
+                                <div className="flex-grow-1 ms-3">
+                                    <h5 className="text-dark mb-2 fw-semibold">{t('about.mission.title')}</h5>
+                                    <p className="text-muted mb-0 lh-lg">{t('about.mission.description')}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    {/* Why Afira - Right aligned */}
+                    <div className="col-lg-8 col-md-10 offset-lg-4 offset-md-2">
+                        <div className="card border-0 shadow-sm rounded-3 p-4 h-100 position-relative overflow-hidden">
+                            <div className="position-absolute top-0 end-0 w-100 h-100" style={{background: 'linear-gradient(135deg, rgba(255, 193, 7, 0.05) 0%, rgba(255, 193, 7, 0.1) 100%)'}}></div>
+                            <div className="d-flex align-items-start position-relative">
+                                <div className="flex-shrink-0">
+                                    <div className="avatar-sm bg-warning bg-gradient rounded-circle d-flex align-items-center justify-content-center shadow-sm" style={{width: '3rem', height: '3rem'}}>
+                                        <i className="mdi mdi-heart text-white fs-5"></i>
+                                    </div>
+                                </div>
+                                <div className="flex-grow-1 ms-3">
+                                    <h5 className="text-dark mb-2 fw-semibold">{t('about.whyAfira.title')}</h5>
+                                    <p className="text-muted mb-0 lh-lg">{t('about.whyAfira.description')}</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

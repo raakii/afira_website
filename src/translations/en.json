@@ -280,7 +280,7 @@
     "intro": "At AFIRA, we believe that every vendor, delivery person and farmer deserves a chance to develop their business, even without access to banks.",
     "vision": {
       "title": "Our Mission\n",
-      "description": "is simple:\nMake financing accessible, fast and transparent for these informal workers, while giving them the tools to better manage their money and strengthen their financial autonomy.\nWe know that traditional microfinance is often expensive, complex and poorly adapted to the real needs of small businesses. Result: millions of women and young people remain excluded from the financial system, prisoners of abusive informal loans.At AFIRA, we offer:\nInstant micro-loans (nanofinance): Amounts adapted to reality unlocked via a mobile money account.\nA simple, stress-free approach: No hidden fees, no papers, no endless meetings.\nIntegrated financial education: Each loan comes with a practical mini-educational module to better manage your income.\nPositive incentives: Loyalty rewarded, gamification and support to grow together."
+      "description": "Make financing accessible, fast and transparent for these informal workers, while giving them the tools to better manage their money and strengthen their financial autonomy.\nWe know that traditional microfinance is often expensive, complex and poorly adapted to the real needs of small businesses. Result: millions of women and young people remain excluded from the financial system, prisoners of abusive informal loans.At AFIRA, we offer:\nInstant micro-loans (nanofinance): Amounts adapted to reality unlocked via a mobile money account.\nA simple, stress-free approach: No hidden fees, no papers, no endless meetings.\nIntegrated financial education: Each loan comes with a practical mini-educational module to better manage your income.\nPositive incentives: Loyalty rewarded, gamification and support to grow together."
     },
     "mission": {
       "title": "Our Ambition?\n",
@@ -295,12 +295,12 @@
       "phone": {
         "title": "Phone",
         "description": "Get in touch with our team for any questions about our services",
-        "number": "+152 534-468-854"
+        "number": "+221 78 688 41 40"
       },
       "email": {
         "title": "Email",
         "description": "Send us an email and we'll get back to you as soon as possible",
-        "address": "afira@gmail.com"
+        "address": "workwithafira@gmail.com"
       },
       "location": {
         "title": "Location",
@@ -397,6 +397,10 @@
       }
     ]
   },
+  "team": {
+    "title": "About the team",
+    "subtitle": "Meet the team that makes Afira possible."
+  },
   "counter": {
     "stats": [
       {
@@ -415,7 +419,7 @@
         "id": 3,
         "start": "0",
         "end": "90",
-        "title": "Mobile subscriptions per 100 people"
+        "title": "People having mobile subscriptions"
       },
       {
         "id": 4,
